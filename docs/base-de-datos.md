@@ -14,7 +14,6 @@ Lo primero que pregunta cualquiera es qué queda si no hay base. Casi todo:
 |---|---|
 | `/` la portada, `/plan`, `/presentacion` | **No.** Salen de `src/contenido/` |
 | `/curso/1ro…3ro` y sus 36 semanas | **No.** `force-static`: las diapositivas son archivos |
-| `/taller/…` el cocurricular | **No** |
 | `/presentaciones` el índice para proyectar | **No** |
 | `/diagnostico` | La prueba se ve; enviarla sí necesita base |
 | El editor de Python de cada clase | **No.** Pyodide corre en el navegador |
