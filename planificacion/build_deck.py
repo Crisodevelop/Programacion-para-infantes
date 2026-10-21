@@ -1,19 +1,18 @@
 # -*- coding: utf-8 -*-
 """Genera presentacion-criso.html (deck de la primera clase)"""
-import io, base64, os, sys, re, json, subprocess, html
-from PIL import Image
+import base64, os, sys, re, json, subprocess, html
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import contenido as C
 import ilustra as IL
-SRC = "/Users/crisodevelop/Documents/Simple-Nextjs/simple-nextjs/public/team/Crisodevelop.jpg"
+# El retrato ya recortado a 800×1000 vive en el proyecto: así generar.sh
+# funciona en cualquier ordenador, no solo en el de Criso.
+SRC = os.path.join(HERE, "recursos", "criso.jpg")
 
 def foto():
-    im = Image.open(SRC).convert("RGB")
-    im = im.crop((350, 40, 1450, 1415)).resize((800, 1000), Image.LANCZOS)
-    b = io.BytesIO(); im.save(b, "JPEG", quality=82, optimize=True, progressive=True)
-    return "data:image/jpeg;base64," + base64.b64encode(b.getvalue()).decode()
+    with open(SRC, "rb") as f:
+        return "data:image/jpeg;base64," + base64.b64encode(f.read()).decode()
 
 CSS = r"""
 :root{
