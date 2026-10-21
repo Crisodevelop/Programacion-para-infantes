@@ -1,0 +1,13 @@
+Question - max 120 characters	Answer 1 - max 75 characters	Answer 2 - max 75 characters	Answer 3 - max 75 characters	Answer 4 - max 75 characters	Time limit (sec)	Correct answer(s)
+En Python, ¿cuál de estos valores es un booleano?	sí	1	"True"	True	20	4
+¿De qué tipo es "25", escrito entre comillas?	Número decimal (float)	Número entero (int)	Texto (str), aunque parezca un número	Booleano (bool)	20	3
+¿Para qué sirve una función?	Para guardar una lista de datos	Para repetir algo un número fijo de veces	Para dar estilo a la página	Para agrupar pasos y reutilizarlos con un nombre	20	4
+¿Qué es una lista en Python?	Una etiqueta de HTML	Una función que devuelve varios resultados	Varios valores ordenados bajo un solo nombre	Una variable que solo guarda números	20	3
+¿Cuándo conviene un for y cuándo un while?	Da igual, son idénticos	while siempre, for es antiguo	for si sé cuántas veces; while si depende de una condición	for para números y while para texto	20	3
+¿Qué hace return dentro de una función?	Devuelve un resultado a quien la llamó	Vuelve a ejecutar la función	Muestra el resultado en la página	Termina el programa completo	20	1
+En Python, "3" * 2 da "33". ¿Por qué?	Porque 3 por 2 es 33	Porque Python multiplica mal	Porque faltan paréntesis	Porque "3" es texto y se repite dos veces	20	4
+document.querySelector("#edad").value siempre devuelve…	Un número, si escriben un número	Texto, aunque escriban un número	Un booleano	El tipo que toque, automáticamente	20	2
+¿Cómo sabe Python si un número n es par?	Si n / 2 == 1	Si el resto de dividirlo entre 2 es 0: n % 2 == 0	Si n tiene dos cifras	Si al dividirlo entre 2 da un número	20	2
+¿Qué diferencia hay entre = y == en Python?	== solo sirve para texto	Son lo mismo, == es más elegante	= guarda un valor; == compara dos valores	= compara; == guarda un valor	20	3
+a = [10, 20, 30]  ·  a.append(40)  ·  display(len(a))   ¿Qué muestra?	40	3	[10, 20, 30, 40]	4	30	4
+Mira el bucle for de la imagen. ¿Qué muestra en la página?	1, 2 y 3	1, 2, 3 y 4	0, 1, 2 y 3	Solo el 3	30	1

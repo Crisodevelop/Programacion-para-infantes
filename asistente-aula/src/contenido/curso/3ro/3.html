@@ -1,0 +1,287 @@
+<div class="prog" id="prog"></div>
+<div class="chrome tl"><a class="volver" href="/presentaciones">&#8592; Presentaciones</a></div>
+<div class="chrome tr" role="group" aria-label="Controles"><nav class="a-cursos" aria-label="Curso"><a class="a-curso" href="/curso/1ro/semana/3">1ro</a><a class="a-curso" href="/curso/2do/semana/3">2do</a><a class="a-curso" href="/curso/3ro/semana/3" aria-current="page">3ro</a></nav><span class="sep"></span><span data-hueco-docente style="display:flex"></span><button type="button" class="a-guion-btn" aria-expanded="false" title="Notas del docente">Guion</button><span class="sep"></span><button class="tembtn" data-tema="oscuro" aria-pressed="false">Oscuro</button><button class="tembtn" data-tema="claro" aria-pressed="false">Claro</button><button class="tembtn" data-tema="pared" aria-pressed="false">Pared</button></div>
+
+<main class="deck">
+  <section class="slide">
+   <div class="inner">
+    <div class="a-portada con-escena">
+     <div>
+      <p class="eyebrow">3RO DE SECUNDARIA · Programar con Python para resolver problemas reales</p>
+      <div class="cinta"><span class="cinta-num">03</span><span class="cinta-txt">Semana 3 de 12</span></div>
+      <h1 class="mid">Ciclos: repetir con for</h1>
+      <p class="a-hoy">Vas a repetir con for: saludar cinco veces, sumar del 1 al 10 y una cuenta regresiva.</p>
+     </div>
+     <div class="a-escena"><svg viewBox="220 55 760 560" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="1200" height="675" fill="none"/><rect x="370" y="156.5" width="460" height="42" rx="21" fill="#7C3AED"/><rect x="370" y="220.5" width="460" height="42" rx="21" fill="#7C3AED"/><rect x="370" y="284.5" width="460" height="42" rx="21" fill="#7C3AED"/><rect x="370" y="348.5" width="460" height="42" rx="21" fill="#7C3AED"/><rect x="370" y="412.5" width="460" height="42" rx="21" fill="#7C3AED"/><rect x="370" y="476.5" width="460" height="42" rx="21" fill="#7C3AED"/></svg></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · La idea · 1 – 3 min</p>
+    <p class="a-quien">Todos · escuchamos</p><h2 class="a-teo-titulo">¿Qué es un bucle?</h2><p class="a-teo-texto">Un bucle repite unas líneas varias veces sin tener que escribirlas de nuevo.</p><div class="a-teo-ejemplo"><p class="a-etq">En la vida real</p><p>Hacer 10 sentadillas: no piensas diez órdenes distintas, repites la misma diez veces.</p></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · Las partes · 3 – 5 min</p>
+    <h2 class="a-titulo">Las partes de un ciclo</h2><div class="a-teo-partes con-escena"><ol class="a-teo-lista"><li><b>La cabecera</b><span>for i in range(5): dice cuántas vueltas y termina en dos puntos.</span></li><li><b>La sangría</b><span>Lo corrido a la derecha es lo que se repite. Lo demás, no.</span></li><li><b>El range</b><span>range(desde, hasta, salto). El hasta nunca entra.</span></li><li><b>El acumulador</b><span>total = 0 antes del ciclo; total += n adentro, vuelta a vuelta.</span></li></ol><div class="a-teo-ejemplos"><p class="a-etq">Así se escriben ✓</p><ol class="a-teo-cod"><li><code>for i in range(5):</code></li><li><code>    display("¡Hola!")</code></li><li><code>total = 0</code></li><li><code>for n in range(1, 11):</code></li><li><code>    total += n</code></li><li><code>display(total)</code></li></ol></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · ¿Lo entendí? · 5 – 8 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><h2 class="a-titulo">¿Qué números da range(1, 5)?</h2><div class="a-panel a-teo-check" data-nota="teoria" data-pts="5" data-nota-tipo="reto" data-act="opciones"><div class="a-ops"><button type="button" class="a-op" data-txt="0, 1, 2, 3, 4"><span class="a-letra">A</span><span>0, 1, 2, 3, 4</span></button><button type="button" class="a-op" data-txt="1, 2, 3, 4, 5"><span class="a-letra">B</span><span>1, 2, 3, 4, 5</span></button><button type="button" class="a-op" data-txt="1, 2, 3, 4" data-ok><span class="a-letra">C</span><span>1, 2, 3, 4</span></button></div><p class="a-fb" role="status" aria-live="polite"></p><p class="a-explica" hidden>Empieza en el primero y se para antes del segundo: el hasta nunca entra.</p><div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Calentamiento · 8 – 10 min</p>
+    <p class="a-quien">Todos · a mano alzada</p><h2 class="a-titulo">¿Cuántas veces se repite for i in range(10)?</h2>
+    <div class="a-vota" data-nota="calent" data-pts="5" data-nota-tipo="reto" data-act="vota">
+      <div class="a-ops"><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">A</span><span>9</span></button><button type="button" class="a-op" aria-pressed="false" data-ok><span class="a-letra">B</span><span>10</span></button><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">C</span><span>11</span></button><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">D</span><span>1</span></button></div>
+      <div class="a-acc"><button type="button" class="a-btn" data-revelar>Revelar la respuesta</button></div>
+      <p class="a-fb" role="status"></p>
+      <p class="a-porque" hidden>range(10) da 0, 1, 2… hasta 9: son diez vueltas.</p>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Mira cómo funciona · 10 – 13 min</p>
+    <h2 class="a-titulo">Tres ciclos</h2>
+    <div class="a-ejemplo" data-act="notas">
+      <ol class="a-cod" data-leng="python"><li><span>from pyscript import display</span></li><li><span></span></li><li><span>for i in range(5):</span></li><li><span>    display("¡Hola!")</span></li><li><span></span></li><li><span>total = 0</span></li><li><span>for n in range(1, 11):</span></li><li><span>    total = total + n   # o total += n</span></li><li><span>display("Suma del 1 al 10:", total)</span></li><li><span></span></li><li><span>for n in range(10, 0, -1):</span></li><li><span>    display(n)</span></li><li><span>display("¡Despegue!")</span></li></ol>
+      <div><p class="a-etq">Toca una nota y mira su línea</p><ol class="a-notas"><li><button type="button" class="a-nota" data-marca="3" aria-pressed="false"><b>Línea 3</b><span>range(5) repite cinco veces lo que está debajo con sangría.</span></button></li><li><button type="button" class="a-nota" data-marca="8" aria-pressed="false"><b>Línea 8</b><span>El acumulador: total guarda lo que llevaba y le suma n.</span></button></li><li><button type="button" class="a-nota" data-marca="11" aria-pressed="false"><b>Línea 11</b><span>El tercer número es el salto: -1 cuenta hacia atrás.</span></button></li></ol></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Retos 1 y 2 · 13 – 16 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><div class="a-grid2"><div class="a-panel" data-nota="r1" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">¿Qué muestra?</p>
+      <ol class="a-cod" data-leng="python"><li><span>for i in range(3):</span></li><li><span>    display(i)</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="1 · 2 · 3"><span class="a-letra">A</span><span><code>1 · 2 · 3</code></span></button><button type="button" class="a-op" data-txt="0 · 1 · 2 · 3"><span class="a-letra">B</span><span><code>0 · 1 · 2 · 3</code></span></button><button type="button" class="a-op" data-txt="3"><span class="a-letra">C</span><span><code>3</code></span></button><button type="button" class="a-op" data-txt="0 · 1 · 2" data-ok><span class="a-letra">D</span><span><code>0 · 1 · 2</code></span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>range(3) empieza en 0 y no llega al 3.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div><div class="a-panel" data-nota="r2" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">Completa la línea que falta</p>
+      <ol class="a-cod" data-leng="python"><li><span>total = 0</span></li><li><span>for i in range(5):</span></li><li><span>    total <span class="a-hueco">___</span> 2</span></li><li><span>display(total)</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="+=" data-ok><span class="a-letra">A</span><span><code>+=</code></span></button><button type="button" class="a-op" data-txt="="><span class="a-letra">B</span><span><code>=</code></span></button><button type="button" class="a-op" data-txt="-="><span class="a-letra">C</span><span><code>-=</code></span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>+= acumula: en cinco vueltas suma 2 cada vez y queda 10.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Retos 3 y 4 · 16 – 19 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><div class="a-grid2"><div class="a-panel" data-nota="r3" data-pts="10" data-nota-tipo="reto" data-act="ordena" data-orden="[&quot;for n in range(3, 0, -1):&quot;, &quot;    display(n)&quot;, &quot;display(\&quot;¡Despegue!\&quot;)&quot;]">
+      <p class="a-etq">Ordena</p>
+      <h3>Ordena la cuenta regresiva.</h3>
+      <ol class="a-orden" data-leng="python"><li data-txt="    display(n)"><span>    display(n)</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="for n in range(3, 0, -1):"><span>for n in range(3, 0, -1):</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="display(&quot;¡Despegue!&quot;)"><span>display("¡Despegue!")</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li></ol>
+      <div class="a-acc"><button type="button" class="a-btn" data-comprobar>Comprobar</button>
+        <button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+    </div><div class="a-panel" data-nota="r4" data-pts="10" data-nota-tipo="reto" data-act="error">
+      <p class="a-etq">Encuentra el error</p>
+      <h3>Toca la línea que está mal.</h3>
+      <div class="a-lineas" data-leng="python"><button type="button" class="a-linea"><i>1</i><span>total = 0</span></button><button type="button" class="a-linea"><i>2</i><span>for i in range(10):</span></button><button type="button" class="a-linea" data-mala><i>3</i><span>total += 1</span></button><button type="button" class="a-linea"><i>4</i><span>display(total)</span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <div class="a-explica" hidden><p class="a-etq">Así queda bien</p>
+        <pre class="a-arreglo">    total += 1</pre><p>Sin sangría, total += 1 no está dentro del for: Python da un IndentationError.</p></div>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Sube de nivel · 19 – 22 min</p>
+    <p class="a-quien">Para los que quieren más</p><div class="a-grid2"><div class="a-panel" data-nota="x1" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">¿Qué muestra?</p>
+      <ol class="a-cod" data-leng="python"><li><span>notas = [60, 80, 100]</span></li><li><span>display(max(notas) - min(notas))</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="240"><span class="a-letra">A</span><span><code>240</code></span></button><button type="button" class="a-op" data-txt="60"><span class="a-letra">B</span><span><code>60</code></span></button><button type="button" class="a-op" data-txt="40" data-ok><span class="a-letra">C</span><span><code>40</code></span></button><button type="button" class="a-op" data-txt="100"><span class="a-letra">D</span><span><code>100</code></span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>El mayor es 100 y el menor 60: la diferencia es 40.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div><div class="a-panel" data-nota="x2" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">¿Qué muestra?</p>
+      <ol class="a-cod" data-leng="python"><li><span>notas = [60, 80, 100]</span></li><li><span>total = 0</span></li><li><span>for n in notas:</span></li><li><span>    total += n</span></li><li><span>display(total / len(notas))</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="80.0" data-ok><span class="a-letra">A</span><span><code>80.0</code></span></button><button type="button" class="a-op" data-txt="100"><span class="a-letra">B</span><span><code>100</code></span></button><button type="button" class="a-op" data-txt="240"><span class="a-letra">C</span><span><code>240</code></span></button><button type="button" class="a-op" data-txt="3"><span class="a-letra">D</span><span><code>3</code></span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>El ciclo acumula 240 y lo reparte entre las tres notas: el promedio es 80.0.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Tu primer ciclo · 22 – 26 min</p>
+    <p class="a-quien">Primero en grupo · después en tu compu</p><div class="a-escalera" data-nota="primera" data-pts="10" data-nota-tipo="juego" data-act="escalera" data-cfg="{&quot;misiones&quot;: [{&quot;pide&quot;: &quot;Escribe un ciclo que repita 5 veces.&quot;, &quot;secuencia&quot;: [0, 1, 2, 3, 4]}, {&quot;pide&quot;: &quot;Ahora uno que cuente del 1 al 10.&quot;, &quot;secuencia&quot;: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, {&quot;pide&quot;: &quot;Uno que cuente hacia atrás, del 5 al 1.&quot;, &quot;secuencia&quot;: [5, 4, 3, 2, 1]}, {&quot;pide&quot;: &quot;Uno que vaya de 2 en 2: 2, 4, 6, 8, 10.&quot;, &quot;secuencia&quot;: [2, 4, 6, 8, 10]}, {&quot;pide&quot;: &quot;El último: de 5 en 5 hasta el 25.&quot;, &quot;secuencia&quot;: [5, 10, 15, 20, 25]}]}" style="--n:5">
+      <div class="a-col">
+        <details class="a-mt-din">
+          <summary>Antes, en grupo · Repite conmigo · 3 min</summary>
+          <ol><li>El docente pide en voz alta: «un ciclo que repita 3 veces».</li><li>Todos escriben la cabecera en el cuaderno: for i in range(3):</li><li>Se escribe la buena en la pizarra y cada quien revisa la suya: los dos puntos y la sangría.</li></ol>
+        </details>
+        <div class="a-mt-mision"><p class="a-etq" data-num></p><p class="a-mt-pide" data-pide></p></div>
+        <div class="a-mt-escribe">
+          <input class="campo a-mt-in" data-linea autocomplete="off" spellcheck="false"
+                 aria-label="Escribe la cabecera de tu ciclo" placeholder="for i in range(…):">
+          <button type="button" class="a-btn" data-subir>Subir ▲</button>
+        </div>
+        <p class="a-mt-pista">Así se escribe: <code>for i in range(desde, hasta, salto):</code></p>
+        <p class="a-es-sale" data-sale aria-live="polite"></p>
+        <p class="a-fb" role="status" aria-live="polite"></p>
+        <p class="a-etq">Tu programa</p>
+        <pre class="a-mt-prog" data-prog></pre>
+        <div class="a-acc"><button type="button" class="a-btn a-sec" data-reiniciar>Empezar de nuevo</button></div>
+      </div>
+      <div class="a-es-vista" aria-hidden="true">
+        <i class="a-es-escalon" style="--k:1"></i><i class="a-es-escalon" style="--k:2"></i><i class="a-es-escalon" style="--k:3"></i><i class="a-es-escalon" style="--k:4"></i><i class="a-es-escalon" style="--k:5"></i>
+        <span class="a-es-meta">🏁</span>
+        <span class="a-es-yo" data-yo>🤖</span>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Mini juego · 26 – 29 min</p>
+    <p class="a-quien">Tú solo o en parejas</p><h2 class="a-titulo">La máquina de sumar</h2><p class="pista a-pista">PRIMERO APUESTA, DESPUÉS MIRA</p><div class="a-ramas" data-nota="juego" data-pts="10" data-nota-tipo="juego" data-act="bucle" data-traza="{&quot;filas&quot;: [{&quot;vuelta&quot;: 1, &quot;var&quot;: &quot;4&quot;, &quot;acum&quot;: &quot;4&quot;}, {&quot;vuelta&quot;: 2, &quot;var&quot;: &quot;2&quot;, &quot;acum&quot;: &quot;6&quot;}, {&quot;vuelta&quot;: 3, &quot;var&quot;: &quot;6&quot;, &quot;acum&quot;: &quot;12&quot;}, {&quot;vuelta&quot;: 4, &quot;var&quot;: &quot;1&quot;, &quot;acum&quot;: &quot;13&quot;}, {&quot;vuelta&quot;: 5, &quot;var&quot;: &quot;5&quot;, &quot;acum&quot;: &quot;18&quot;}, {&quot;vuelta&quot;: 6, &quot;var&quot;: &quot;3&quot;, &quot;acum&quot;: &quot;21&quot;}, {&quot;vuelta&quot;: 7, &quot;var&quot;: &quot;6&quot;, &quot;acum&quot;: &quot;27&quot;}, {&quot;vuelta&quot;: 8, &quot;var&quot;: &quot;2&quot;, &quot;acum&quot;: &quot;29&quot;}, {&quot;vuelta&quot;: 9, &quot;var&quot;: &quot;4&quot;, &quot;acum&quot;: &quot;33&quot;}, {&quot;vuelta&quot;: 10, &quot;var&quot;: &quot;5&quot;, &quot;acum&quot;: &quot;38&quot;}], &quot;final&quot;: &quot;Terminó: total = 38&quot;}">
+      <ol class="a-cod" data-leng="python"><li><span>total = 0</span></li><li data-cab><span>for dado in [4, 2, 6, 1, 5, 3, 6, 2, 4, 5]:</span></li><li><span>    total += dado</span></li></ol>
+      <div class="a-control">
+        <div class="a-bu-apuesta" data-apuesta><p class="a-etq">Antes de correrlo</p><p class="a-bu-preg">Diez tiradas: 4, 2, 6, 1, 5, 3, 6, 2, 4 y 5. ¿Con cuánto termina total?</p><div class="a-ops"><button type="button" class="a-op" data-ap="0"><span class="a-letra">A</span><code>28</code></button><button type="button" class="a-op" data-ap="1" data-ok><span class="a-letra">B</span><code>38</code></button><button type="button" class="a-op" data-ap="2"><span class="a-letra">C</span><code>48</code></button></div></div>
+        <div class="a-acc"><button type="button" class="a-btn" data-sig>Siguiente vuelta</button>
+          <button type="button" class="a-btn a-sec" data-todo>Todas de una</button>
+          <button type="button" class="a-btn a-sec" data-reiniciar>Reiniciar</button></div>
+        <div class="a-tabla-caja"><table class="a-traza"><thead><tr><th>Vuelta</th><th>dado</th>
+          <th>total</th></tr></thead><tbody></tbody></table></div>
+        <p class="a-res" data-res aria-live="polite"></p>
+        <p class="a-fb" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Otro juego · 29 – 32 min</p>
+    <p class="a-quien">Tú solo o en parejas</p><h2 class="a-titulo">La fábrica de números</h2><p class="pista a-pista">MUEVE DESDE, HASTA Y SALTO</p><div class="a-vueltas" data-nota="juego2" data-pts="10" data-nota-tipo="juego" data-act="vueltas" data-cfg="{&quot;rondas&quot;: [{&quot;objetivo&quot;: [0, 1, 2, 3, 4], &quot;pista&quot;: &quot;El de siempre: range con un solo número.&quot;}, {&quot;objetivo&quot;: [1, 2, 3, 4, 5], &quot;pista&quot;: &quot;Ahora no empieza en 0. ¿Dónde se pone el desde?&quot;}, {&quot;objetivo&quot;: [2, 4, 6, 8, 10], &quot;pista&quot;: &quot;De dos en dos: eso es el salto.&quot;}, {&quot;objetivo&quot;: [10, 9, 8, 7, 6], &quot;pista&quot;: &quot;Hacia atrás: el salto puede ser negativo.&quot;}, {&quot;objetivo&quot;: [20, 15, 10, 5], &quot;pista&quot;: &quot;Hacia atrás y de cinco en cinco. La última.&quot;}]}">
+      <div class="a-col">
+        <div class="a-mt-mision"><p class="a-etq" data-num></p>
+          <p class="a-mt-pide">Haz que salga: <b data-meta></b></p>
+          <p class="a-vu-pista" data-pista></p></div>
+        <div class="a-vu-linea">
+          <code>for n in range(</code>
+          <label><span>desde</span><input class="campo" type="number" data-a value="0"></label>
+          <code>,</code>
+          <label><span>hasta</span><input class="campo" type="number" data-b value="5"></label>
+          <code>,</code>
+          <label><span>salto</span><input class="campo" type="number" data-p value="1"></label>
+          <code>):</code>
+        </div>
+        <p class="a-vu-sale">Tu ciclo da: <b data-sale>—</b></p>
+        <div class="a-acc"><button type="button" class="a-btn" data-probar>Probar</button>
+          <button type="button" class="a-btn a-sec" data-reiniciar>Empezar de nuevo</button></div>
+        <p class="a-fb" role="status" aria-live="polite"></p>
+      </div>
+      <div class="a-vu-marca"><p class="a-etq">Rondas</p><div class="a-vu-luces" data-luces></div></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Manos a la obra · 32 – 42 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><h2 class="a-titulo">Mis tres ciclos</h2><ol class="a-pasos a-pasos-fila"><li>Pulsa Ejecutar y mira los cinco saludos y la suma.</li><li>Cambia el 5 por otro número y vuelve a ejecutar.</li><li>Escribe la cuenta regresiva del 10 al 1 con range(10, 0, -1).</li><li>Escribe la tabla del 5 con un solo ciclo.</li><li>Pulsa Ejecutar una última vez: tu código se guarda con tu nota.</li></ol><div class="a-editor" data-nota="practica" data-pts="15" data-nota-tipo="practica" data-act="editor" data-cfg="{&quot;v&quot;: &quot;2026.7.3&quot;, &quot;html&quot;: &quot;&lt;h1&gt;Mis ciclos&lt;/h1&gt;&quot;, &quot;css&quot;: &quot;body{font-family:system-ui,sans-serif;background:#0f172a;color:#f8fafc;padding:24px;font-size:1.3rem}&quot;, &quot;py&quot;: &quot;from pyscript import display\n\nfor i in range(5):\n    display(\&quot;¡Hola!\&quot;)\n\ntotal = 0\nfor n in range(1, 11):\n    total = total + n\ndisplay(\&quot;Suma del 1 al 10:\&quot;, total)\n\n# Tu turno: la cuenta regresiva del 10 al 1 y «¡Despegue!»\n# Tu turno: la tabla del 5 (5, 10, 15 ... 50)\n&quot;, &quot;inicio&quot;: &quot;py&quot;}">
+      <div class="a-ed-col">
+        <div class="a-ed-tabs" role="tablist" aria-label="Qué parte del código"><button type="button" role="tab" class="a-ed-tab" data-tab="py" aria-selected="true">Python</button><button type="button" role="tab" class="a-ed-tab" data-tab="html" aria-selected="false">HTML</button><button type="button" role="tab" class="a-ed-tab" data-tab="css" aria-selected="false">CSS</button></div>
+        <textarea class="a-ed-code" data-codigo spellcheck="false" aria-label="Tu código"></textarea>
+        <div class="a-acc"><button type="button" class="a-btn" data-correr>▶ Ejecutar</button>
+          <button type="button" class="a-btn a-sec" data-completa>Pantalla completa ↗</button>
+          <button type="button" class="a-btn a-sec" data-volver>Volver al código de partida</button></div>
+        <p class="a-explica">Cada vez que pulsas Ejecutar, tu código se guarda con tu nota.</p>
+      </div>
+      <div class="a-ed-col">
+        <p class="a-etq">Lo que se ve</p>
+        <iframe class="a-ed-vista" data-marco title="Resultado de tu código" allow="camera; microphone"
+                sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">El reto de hoy · 32 – 44 min</p>
+    <div class="bloque"><p>La tabla del 5 con un solo ciclo: 5, 10, 15 hasta 50, cada número en su línea.</p></div><div class="bloque a-sube"><p class="a-etq">Sube de nivel · si terminas antes</p><p>Un acumulador que saque el promedio y cuente cuántos están por debajo de él.</p></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Chuleta de la semana · para llevar</p>
+    <div class="a-chuleta" data-act="imprimir">
+      <p class="a-ch-cab">3RO DE SECUNDARIA · Semana 3</p>
+      <h2 class="a-titulo">Ciclos en Python</h2>
+      <ul class="a-ch-lista"><li><code>for i in range(5):</code><span>Repite cinco veces lo que va debajo con sangría.</span></li><li><code>    display(i)</code><span>La sangría manda: solo esto se repite.</span></li><li><code>range(1, 11)</code><span>Del 1 al 10. El hasta nunca entra.</span></li><li><code>range(10, 0, -1)</code><span>Cuenta hacia atrás: el salto puede ser negativo.</span></li><li><code>total = 0</code><span>El acumulador se pone en cero ANTES del ciclo.</span></li><li><code>    total += n</code><span>Dentro, suma lo de esta vuelta a lo que llevaba.</span></li></ul>
+      <div class="a-acc a-ch-acc"><button type="button" class="a-btn" data-imprimir>🖨 Imprimir la chuleta</button></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Sigue practicando · en casa</p>
+    <p class="a-quien">Gratis · sin instalar nada</p><h2 class="a-titulo">Sigue practicando Python en casa</h2><div class="a-recs"><a class="a-rec" href="https://pythontutor.com/python-compiler.html" target="_blank" rel="noopener"><b>Python Tutor</b><span>Pega tu ciclo y míralo vuelta por vuelta: ves cómo cambia el acumulador.</span><i>pythontutor.com/python-compiler.html ↗</i></a><a class="a-rec" href="https://es.futurecoder.io/course/" target="_blank" rel="noopener"><b>futurecoder</b><span>Curso de Python desde cero con ejercicios que se corrigen solos. Gratis y sin cuenta.</span><i>es.futurecoder.io/course ↗</i></a><a class="a-rec" href="https://blockly.games/maze?lang=es" target="_blank" rel="noopener"><b>Blockly · Laberinto</b><span>Los mismos bucles, pero en bloques y con un laberinto que resolver.</span><i>blockly.games/maze?lang=es ↗</i></a></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Ticket de salida · 44 – 45 min</p>
+    <p class="a-quien">Tú solo</p><h2 class="a-titulo">¿Por qué total = 0 va antes del for y no adentro?</h2><div data-nota="salida" data-pts="5" data-nota-tipo="salida" data-act="salida"><textarea class="a-ticket" aria-label="Tu respuesta" placeholder="Escribe tu respuesta. No se guarda: es para ti."></textarea><div class="a-acc"><button type="button" class="a-btn a-sec" data-ver>Ver una buena respuesta</button></div><p class="a-resp" hidden>Porque si va adentro vuelve a 0 en cada vuelta y nunca acumula.</p></div><dl class="dato"><dt>Qué entregas hoy</dt><dd>Tu código en el editor de la clase, guardado con tu nota: los tres ciclos funcionando: el saludo, la suma y la cuenta regresiva.</dd></dl>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Tu nota · al final</p>
+    <p class="a-quien">Tú solo · al terminar</p><div class="a-nota" data-act="nota">
+      <div class="a-nota-grande"><b data-total>0</b><span>/ 100</span></div>
+      <ul class="a-nota-lista" data-desglose></ul>
+      <p class="a-explica a-nota-quien" data-quien></p>
+    </div>
+   </div>
+  </section>
+</main>
+
+<aside class="a-guion" hidden aria-label="Guion del docente">
+  <div class="a-g-cab"><h2>Guion de la clase</h2>
+    <button type="button" class="a-btn a-sec" data-cerrar aria-label="Cerrar el guion">✕</button></div>
+  <p class="a-g-obj">Repetir líneas con for y range sin copiarlas, y acumular un total dentro del ciclo.</p>
+  <div class="a-g-bloque"><b>0 – 5</b> <em>Enganche</em><p>Reto relámpago: «muestren ¡Hola! cinco veces». Cuando alguien copie la línea cinco veces, pregunta: «¿y si fueran mil?».</p></div><div class="a-g-bloque"><b>5 – 13</b> <em>Concepto</em><p>Modela for i in range(5): con sus dos puntos y su sangría: lo corrido a la derecha es lo que se repite. Después el acumulador: total = 0 antes del ciclo y total = total + n adentro, que también se escribe total += n. Cierra con range(10, 0, -1) para contar hacia atrás.</p></div><div class="a-g-bloque"><b>13 – 38</b> <em>Práctica</em><p>Cada estudiante escribe tres ciclos: saludar cinco veces, sumar del 1 al 10 y la cuenta regresiva del 10 al 1 terminando en «¡Despegue!».</p></div><div class="a-g-bloque"><b>13 – 38</b> <em>Reto</em><p>La tabla del 5 con un solo ciclo: 5, 10, 15 hasta 50, cada número en su línea.</p></div><div class="a-g-bloque"><b>38 – 45</b> <em>Cierre</em><p>«¿Qué pasa si total = 0 se escribe dentro del ciclo?». Se prueba en vivo y se ve que nunca acumula.</p></div>
+  <div class="a-g-bloque"><em>Sube de nivel</em><p>Un acumulador que saque el promedio y cuente cuántos están por debajo de él.</p></div>
+  <div class="a-g-bloque"><em>Recursos</em><p>Editor de Python de la clase, proyector.</p></div>
+  <div class="a-g-bloque"><em>Evidencia</em><p>Tu código en el editor de la clase, guardado con tu nota: los tres ciclos funcionando: el saludo, la suma y la cuenta regresiva.</p></div>
+</aside>
+
+<div class="chrome bl"><span class="count" id="cnt">01 / 18</span></div>
+<div class="chrome br">
+  <button class="navb" id="prev" aria-label="Diapositiva anterior">&#8592;</button>
+  <button class="navb" id="next" aria-label="Diapositiva siguiente">&#8594;</button>
+</div>
+<div class="paginacion"><div class="caps" id="caps"></div><div class="pass" id="pass"></div></div>

@@ -1,0 +1,241 @@
+<div class="prog" id="prog"></div>
+<div class="chrome tl"><a class="volver" href="/presentaciones">&#8592; Presentaciones</a></div>
+<div class="chrome tr" role="group" aria-label="Controles"><nav class="a-cursos" aria-label="Curso"><a class="a-curso" href="/curso/1ro/semana/6" aria-current="page">1ro</a><a class="a-curso" href="/curso/2do/semana/6">2do</a><a class="a-curso" href="/curso/3ro/semana/6">3ro</a></nav><span class="sep"></span><span data-hueco-docente style="display:flex"></span><button type="button" class="a-guion-btn" aria-expanded="false" title="Notas del docente">Guion</button><span class="sep"></span><button class="tembtn" data-tema="oscuro" aria-pressed="false">Oscuro</button><button class="tembtn" data-tema="claro" aria-pressed="false">Claro</button><button class="tembtn" data-tema="pared" aria-pressed="false">Pared</button></div>
+
+<main class="deck">
+  <section class="slide">
+   <div class="inner">
+    <div class="a-portada con-escena">
+     <div>
+      <p class="eyebrow">1RO DE SECUNDARIA · Programar con Python, paso a paso y jugando</p>
+      <div class="cinta"><span class="cinta-num">06</span><span class="cinta-txt">Semana 6 de 12</span></div>
+      <h1 class="mid">Funciones: mis propias órdenes</h1>
+      <p class="a-hoy">Vas a crear tus propias órdenes con def y llamarlas cuando quieras.</p>
+     </div>
+     <div class="a-escena"><svg viewBox="220 55 760 560" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="1200" height="675" fill="none"/><path d="M180 247.5l108 90l-108 90z" fill="#2563EB" stroke="#14213D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M420 247.5l108 90l-108 90z" fill="#2563EB" stroke="#14213D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M660 247.5l108 90l-108 90z" fill="#2563EB" stroke="#14213D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M900 247.5l108 90l-108 90z" fill="#2563EB" stroke="#14213D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · La idea · 1 – 3 min</p>
+    <p class="a-quien">Todos · escuchamos</p><h2 class="a-teo-titulo">¿Qué es una función?</h2><p class="a-teo-texto">Un bloque de pasos con nombre que puedes usar todas las veces que quieras.</p><div class="a-teo-ejemplo"><p class="a-etq">En la vida real</p><p>«Lávate los dientes» es una función: nadie te repite los pasos cada noche, solo dice su nombre.</p></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · Las partes · 3 – 5 min</p>
+    <h2 class="a-titulo">Las partes de una función</h2><div class="a-teo-partes con-escena"><ol class="a-teo-lista"><li><b>def nombre():</b><span>Crea la función. Lo de adentro va con sangría.</span></li><li><b>Parámetros</b><span>Datos que recibe, como escena(texto, op1, op2).</span></li><li><b>Llamarla</b><span>Se escribe su nombre con paréntesis: cueva().</span></li><li><b>Menos repetición</b><span>Se escribe una vez y se usa en muchas partes.</span></li></ol><div class="a-teo-ejemplos"><p class="a-etq">Así se escriben ✓</p><ol class="a-teo-cod"><li><code>def saluda(nombre):</code></li><li><code>    display("Hola, " + nombre)</code></li><li><code>saluda("Ana")</code></li><li><code>saluda("Luis")</code></li></ol></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · ¿Lo entendí? · 5 – 8 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><h2 class="a-titulo">Escribes def cofre(): pero nunca escribes cofre(). ¿Qué pasa?</h2><div class="a-panel a-teo-check" data-nota="teoria" data-pts="5" data-nota-tipo="reto" data-act="opciones"><div class="a-ops"><button type="button" class="a-op" data-txt="Se ejecuta igual"><span class="a-letra">A</span><span>Se ejecuta igual</span></button><button type="button" class="a-op" data-txt="Da error siempre"><span class="a-letra">B</span><span>Da error siempre</span></button><button type="button" class="a-op" data-txt="No se ejecuta nunca" data-ok><span class="a-letra">C</span><span>No se ejecuta nunca</span></button></div><p class="a-fb" role="status" aria-live="polite"></p><p class="a-explica" hidden>Crear la función no la ejecuta: hay que llamarla con su nombre y paréntesis.</p><div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Calentamiento · 8 – 10 min</p>
+    <p class="a-quien">Todos · a mano alzada</p><h2 class="a-titulo">¿Para qué sirve una función con def?</h2>
+    <div class="a-vota" data-nota="calent" data-pts="5" data-nota-tipo="reto" data-act="vota">
+      <div class="a-ops"><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">A</span><span>Para repetir un nombre</span></button><button type="button" class="a-op" aria-pressed="false" data-ok><span class="a-letra">B</span><span>Para guardar pasos con nombre y reusarlos</span></button><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">C</span><span>Para borrar variables</span></button><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">D</span><span>Para mostrar errores</span></button></div>
+      <div class="a-acc"><button type="button" class="a-btn" data-revelar>Revelar la respuesta</button></div>
+      <p class="a-fb" role="status"></p>
+      <p class="a-porque" hidden>def guarda un bloque de pasos con un nombre. Cada vez que escribes su nombre con (), se ejecutan.</p>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Mira cómo funciona · 10 – 13 min</p>
+    <h2 class="a-titulo">Mis propias órdenes</h2>
+    <div class="a-ejemplo" data-act="notas">
+      <ol class="a-cod" data-leng="python"><li><span>from pyscript import display</span></li><li><span></span></li><li><span>def saludar(nombre):</span></li><li><span>    display("¡Hola,", nombre + "!")</span></li><li><span></span></li><li><span>def escena(texto, opcion):</span></li><li><span>    display(texto)</span></li><li><span>    display("Puedes:", opcion)</span></li><li><span></span></li><li><span>saludar("Luna")</span></li><li><span>saludar("Marcos")</span></li><li><span>escena("Estás frente a una cueva.", "entrar o huir")</span></li></ol>
+      <div><p class="a-etq">Toca una nota y mira su línea</p><ol class="a-notas"><li><button type="button" class="a-nota" data-marca="3" aria-pressed="false"><b>Línea 3</b><span>def crea la orden; lo de adentro va con sangría.</span></button></li><li><button type="button" class="a-nota" data-marca="10" aria-pressed="false"><b>Línea 10</b><span>Llamarla es escribir su nombre con paréntesis.</span></button></li><li><button type="button" class="a-nota" data-marca="12" aria-pressed="false"><b>Línea 12</b><span>La misma función sirve para muchas escenas: cambian los paréntesis.</span></button></li></ol></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Retos 1 y 2 · 13 – 16 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><div class="a-grid2"><div class="a-panel" data-nota="r1" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">¿Qué muestra?</p>
+      <ol class="a-cod" data-leng="python"><li><span>def saludar(nombre):</span></li><li><span>    display("Hola,", nombre)</span></li><li><span></span></li><li><span>saludar("Ana")</span></li><li><span>saludar("Leo")</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="Hola, nombre · Hola, nombre"><span class="a-letra">A</span><span><code>Hola, nombre · Hola, nombre</code></span></button><button type="button" class="a-op" data-txt="Hola, Ana · Hola, Leo" data-ok><span class="a-letra">B</span><span><code>Hola, Ana · Hola, Leo</code></span></button><button type="button" class="a-op" data-txt="Hola, Ana"><span class="a-letra">C</span><span><code>Hola, Ana</code></span></button><button type="button" class="a-op" data-txt="Nada"><span class="a-letra">D</span><span><code>Nada</code></span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>La función se llama dos veces, cada una con un nombre distinto.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div><div class="a-panel" data-nota="r2" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">Completa la línea que falta</p>
+      <ol class="a-cod" data-leng="python"><li><span><span class="a-hueco">___</span> cofre():</span></li><li><span>    display("¡Encontraste el tesoro!")</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="if"><span class="a-letra">A</span><span><code>if</code></span></button><button type="button" class="a-op" data-txt="def" data-ok><span class="a-letra">B</span><span><code>def</code></span></button><button type="button" class="a-op" data-txt="function"><span class="a-letra">C</span><span><code>function</code></span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>En Python una función se crea con def, su nombre, paréntesis y dos puntos.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Retos 3 y 4 · 16 – 19 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><div class="a-grid2"><div class="a-panel" data-nota="r3" data-pts="10" data-nota-tipo="reto" data-act="ordena" data-orden="[&quot;def final():&quot;, &quot;    display(\&quot;Fin de la aventura\&quot;)&quot;, &quot;final()&quot;]">
+      <p class="a-etq">Ordena</p>
+      <h3>Ordena: primero se crea la función y después se usa.</h3>
+      <ol class="a-orden" data-leng="python"><li data-txt="    display(&quot;Fin de la aventura&quot;)"><span>    display("Fin de la aventura")</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="final()"><span>final()</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="def final():"><span>def final():</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li></ol>
+      <div class="a-acc"><button type="button" class="a-btn" data-comprobar>Comprobar</button>
+        <button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+    </div><div class="a-panel" data-nota="r4" data-pts="10" data-nota-tipo="reto" data-act="error">
+      <p class="a-etq">Encuentra el error</p>
+      <h3>Toca la línea que está mal.</h3>
+      <div class="a-lineas" data-leng="python"><button type="button" class="a-linea"><i>1</i><span>def puente():</span></button><button type="button" class="a-linea"><i>2</i><span>    display("Cruzas el puente")</span></button><button type="button" class="a-linea" data-mala><i>3</i><span>puente</span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <div class="a-explica" hidden><p class="a-etq">Así queda bien</p>
+        <pre class="a-arreglo">puente()</pre><p>Sin paréntesis la función no se ejecuta: solo se nombra y no pasa nada.</p></div>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Tu primera función · 19 – 23 min</p>
+    <p class="a-quien">Primero en grupo · después en tu compu</p><div class="a-taller a-marcador" data-nota="primera" data-pts="10" data-nota-tipo="juego" data-act="taller" data-cfg="{&quot;tipo&quot;: &quot;funcion&quot;, &quot;misiones&quot;: [{&quot;pista&quot;: &quot;Empieza con def, después el nombre, los paréntesis y los dos puntos.&quot;, &quot;pide&quot;: &quot;Escribe la cabecera de una función saluda que reciba nombre.&quot;, &quot;nombre&quot;: &quot;saluda&quot;, &quot;parametros&quot;: [&quot;nombre&quot;], &quot;sale&quot;: &quot;def saluda(nombre):&quot;}, {&quot;pista&quot;: &quot;Dos parámetros van dentro del paréntesis, separados por una coma.&quot;, &quot;pide&quot;: &quot;Otra: suma, que reciba dos números, a y b.&quot;, &quot;nombre&quot;: &quot;suma&quot;, &quot;parametros&quot;: [&quot;a&quot;, &quot;b&quot;], &quot;sale&quot;: &quot;def suma(a, b):&quot;}, {&quot;pista&quot;: &quot;Si no recibe nada, los paréntesis van vacíos.&quot;, &quot;pide&quot;: &quot;Una que no recibe nada: titulo.&quot;, &quot;nombre&quot;: &quot;titulo&quot;, &quot;parametros&quot;: [], &quot;sale&quot;: &quot;def titulo():&quot;}, {&quot;pista&quot;: &quot;Los parámetros se llaman como dice la misión, en ese orden.&quot;, &quot;pide&quot;: &quot;La última: ficha, que recibe nombre y edad.&quot;, &quot;nombre&quot;: &quot;ficha&quot;, &quot;parametros&quot;: [&quot;nombre&quot;, &quot;edad&quot;], &quot;sale&quot;: &quot;def ficha(nombre, edad):&quot;}], &quot;unidad&quot;: &quot;línea&quot;}">
+      <div class="a-col">
+        <details class="a-mt-din">
+          <summary>Antes, en grupo · La máquina de saludar · 3 min</summary>
+          <ol><li>Un voluntario es la máquina: recibe un papelito con un nombre y dice «Hola, …».</li><li>La clase la llama tres veces con nombres distintos: una máquina, muchos usos.</li><li>Todos escriben en el cuaderno la cabecera: def saluda(nombre):</li></ol>
+        </details>
+        <div class="a-mt-mision"><p class="a-etq" data-num></p><p class="a-mt-pide" data-pide></p>
+          <button type="button" class="a-tl-pista" data-pista hidden>💡 Pista</button>
+          <p class="a-tl-dice" data-dice hidden></p></div>
+        <div class="a-mt-escribe"><input class="campo a-mt-in" data-linea autocomplete="off" spellcheck="false" aria-label="Escribe tu línea" placeholder="def saluda(nombre):"><button type="button" class="a-btn" data-probar>Probar</button></div><p class="a-mt-pista" data-forma></p><div class="a-tl-ayuda"><p class="a-etq">La forma de una función</p><span class="a-tl-ay"><code>def nombre():</code><i>sin parámetros</i></span><span class="a-tl-ay"><code>def nombre(a, b):</code><i>con dos</i></span></div>
+        <p class="a-tl-sale" data-sale aria-live="polite"></p>
+        <p class="a-fb" role="status" aria-live="polite"></p>
+      </div>
+      <div class="a-col">
+        <div class="a-tl-vista" data-vista hidden></div>
+        <p class="a-etq">Lo que llevas</p>
+        <pre class="a-mt-prog" data-prog></pre>
+        <div class="a-tl-barra" aria-hidden="true"><i data-barra></i></div>
+        <div class="a-acc"><button type="button" class="a-btn a-sec" data-reiniciar>Empezar de nuevo</button></div>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Mini juego · 23 – 26 min</p>
+    <p class="a-quien">Tú solo o en parejas</p><h2 class="a-titulo">La cueva del dragón</h2><p class="pista a-pista">CADA SALA ES UNA FUNCIÓN</p><div class="a-aventura" data-nota="juego" data-pts="10" data-nota-tipo="juego" data-act="aventura" data-cfg="{&quot;inicio&quot;: &quot;entrada&quot;, &quot;salas&quot;: {&quot;entrada&quot;: {&quot;texto&quot;: &quot;Estás frente a una cueva oscura. Se oye un ruido adentro.&quot;, &quot;opciones&quot;: [[&quot;Entrar con la linterna&quot;, &quot;cueva&quot;], [&quot;Rodear la montaña&quot;, &quot;rio&quot;]]}, &quot;cueva&quot;: {&quot;texto&quot;: &quot;Hay dos túneles: uno brilla y el otro huele a humo.&quot;, &quot;opciones&quot;: [[&quot;Ir al que brilla&quot;, &quot;tesoro&quot;], [&quot;Ir al del humo&quot;, &quot;dragon&quot;]]}, &quot;rio&quot;: {&quot;texto&quot;: &quot;Un río corta el camino. Hay un bote viejo en la orilla.&quot;, &quot;opciones&quot;: [[&quot;Subir al bote&quot;, &quot;tesoro&quot;], [&quot;Volver a la cueva&quot;, &quot;entrada&quot;]]}, &quot;dragon&quot;: {&quot;texto&quot;: &quot;¡Un dragón dormido! Se despierta y te persigue hasta la salida. Fin: sin tesoro.&quot;, &quot;opciones&quot;: []}, &quot;tesoro&quot;: {&quot;texto&quot;: &quot;¡Encontraste el cofre del tesoro! Fin: ganaste.&quot;, &quot;opciones&quot;: []}}}">
+      <div class="a-sala"><code data-cab></code><p data-txt></p><div class="a-ops" data-ops></div></div>
+      <p class="a-rastro" data-rastro></p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reiniciar>Empezar otra vez</button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Otro juego · 26 – 29 min</p>
+    <p class="a-quien">Tú solo o en parejas</p><h2 class="a-titulo">¿Qué hace esta función?</h2><p class="pista a-pista">45 SEGUNDOS</p><div class="a-carrera" data-nota="juego2" data-pts="10" data-nota-tipo="juego" data-act="carrera" data-cfg="{&quot;segundos&quot;: 45, &quot;preguntas&quot;: [{&quot;pregunta&quot;: &quot;¿Con qué palabra se crea una función?&quot;, &quot;opciones&quot;: [&quot;def&quot;, &quot;for&quot;, &quot;if&quot;], &quot;correcta&quot;: 0}, {&quot;pregunta&quot;: &quot;def saludar(): ¿qué le falta al final de la línea?&quot;, &quot;opciones&quot;: [&quot;dos puntos&quot;, &quot;un punto&quot;, &quot;nada&quot;], &quot;correcta&quot;: 0}, {&quot;pregunta&quot;: &quot;¿Cómo se llama a una función llamada jugar?&quot;, &quot;opciones&quot;: [&quot;jugar()&quot;, &quot;jugar&quot;, &quot;def jugar&quot;], &quot;correcta&quot;: 0}, {&quot;pregunta&quot;: &quot;Lo que va dentro de la función, ¿cómo se escribe?&quot;, &quot;opciones&quot;: [&quot;Con sangría&quot;, &quot;Pegado al borde&quot;, &quot;Entre comillas&quot;], &quot;correcta&quot;: 0}, {&quot;pregunta&quot;: &quot;¿Para qué sirve una función?&quot;, &quot;opciones&quot;: [&quot;Guardar pasos y repetirlos&quot;, &quot;Guardar un número&quot;, &quot;Pintar la página&quot;], &quot;correcta&quot;: 0}, {&quot;pregunta&quot;: &quot;def sumar(a, b): a y b son…&quot;, &quot;opciones&quot;: [&quot;Lo que recibe&quot;, &quot;Lo que devuelve&quot;, &quot;Errores&quot;], &quot;correcta&quot;: 0}, {&quot;pregunta&quot;: &quot;¿Qué hace return?&quot;, &quot;opciones&quot;: [&quot;Devuelve un resultado&quot;, &quot;Borra la función&quot;, &quot;Repite&quot;], &quot;correcta&quot;: 0}, {&quot;pregunta&quot;: &quot;Si nadie la llama, la función…&quot;, &quot;opciones&quot;: [&quot;No hace nada&quot;, &quot;Se ejecuta igual&quot;, &quot;Da error&quot;], &quot;correcta&quot;: 0}]}">
+      <div class="a-car-top"><span>Tiempo <b data-t>45</b></span><span>Aciertos <b data-pts>0</b></span>
+        <span>Racha <b data-racha>0</b></span></div>
+      <button type="button" class="a-btn" data-empezar>▶ Empezar la carrera</button>
+      <div data-zona hidden><p class="a-car-preg" data-preg></p><div class="a-ops" data-ops></div></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Manos a la obra · 29 – 42 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><h2 class="a-titulo">Mi historia con funciones</h2><ol class="a-pasos a-pasos-fila"><li>Pulsa Ejecutar y lee las dos escenas.</li><li>Llama a escena tres veces más para seguir tu historia.</li><li>Crea una función saludar(nombre) y llámala con dos nombres.</li><li>Crea una despedida() sin paréntesis por dentro y llámala al final.</li><li>Pulsa Ejecutar una última vez: tu código se guarda con tu nota.</li></ol><div class="a-editor" data-nota="practica" data-pts="15" data-nota-tipo="practica" data-act="editor" data-cfg="{&quot;v&quot;: &quot;2026.7.3&quot;, &quot;html&quot;: &quot;&lt;h1&gt;Mi historia&lt;/h1&gt;&quot;, &quot;css&quot;: &quot;body{font-family:system-ui,sans-serif;background:#0f172a;color:#f8fafc;padding:24px;font-size:1.3rem}&quot;, &quot;py&quot;: &quot;from pyscript import display\n\ndef escena(texto, opcion):\n    display(texto)\n    display(\&quot;Puedes:\&quot;, opcion)\n\nescena(\&quot;Estás frente a una cueva.\&quot;, \&quot;entrar o huir\&quot;)\nescena(\&quot;Dentro hay un cofre.\&quot;, \&quot;abrirlo o salir\&quot;)\n\n# Tu turno: una función saludar(nombre) y otra despedida()\n# Tu turno: llama a escena tres veces más para seguir la historia\n&quot;, &quot;inicio&quot;: &quot;py&quot;}">
+      <div class="a-ed-col">
+        <div class="a-ed-tabs" role="tablist" aria-label="Qué parte del código"><button type="button" role="tab" class="a-ed-tab" data-tab="py" aria-selected="true">Python</button><button type="button" role="tab" class="a-ed-tab" data-tab="html" aria-selected="false">HTML</button><button type="button" role="tab" class="a-ed-tab" data-tab="css" aria-selected="false">CSS</button></div>
+        <textarea class="a-ed-code" data-codigo spellcheck="false" aria-label="Tu código"></textarea>
+        <div class="a-acc"><button type="button" class="a-btn" data-correr>▶ Ejecutar</button>
+          <button type="button" class="a-btn a-sec" data-completa>Pantalla completa ↗</button>
+          <button type="button" class="a-btn a-sec" data-volver>Volver al código de partida</button></div>
+        <p class="a-explica">Cada vez que pulsas Ejecutar, tu código se guarda con tu nota.</p>
+      </div>
+      <div class="a-ed-col">
+        <p class="a-etq">Lo que se ve</p>
+        <iframe class="a-ed-vista" data-marco title="Resultado de tu código" allow="camera; microphone"
+                sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">El reto de hoy · 29 – 44 min</p>
+    <div class="bloque"><p>Una función con dos parámetros usada al menos tres veces con valores distintos.</p></div><div class="bloque a-sube"><p class="a-etq">Sube de nivel · si terminas antes</p><p>Una función que reciba un número y muestre su tabla de multiplicar, usando el ciclo de la semana 3.</p></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Chuleta de la semana · para llevar</p>
+    <div class="a-chuleta" data-act="imprimir">
+      <p class="a-ch-cab">1RO DE SECUNDARIA · Semana 6</p>
+      <h2 class="a-titulo">Funciones en Python</h2>
+      <ul class="a-ch-lista"><li><code>def saluda(nombre):</code><span>Se crea una vez: nombre, paréntesis y dos puntos.</span></li><li><code>    display("Hola, " + nombre)</code><span>Lo de dentro, con sangría: es lo que hace.</span></li><li><code>saluda("Ana")</code><span>Se llama todas las veces que quieras.</span></li><li><code>def suma(a, b):</code><span>Puede recibir varios parámetros, separados por comas.</span></li><li><code>    return a + b</code><span>return devuelve el resultado a quien la llamó.</span></li><li><code>total = suma(2, 3)</code><span>Y ese resultado se puede guardar.</span></li></ul>
+      <div class="a-acc a-ch-acc"><button type="button" class="a-btn" data-imprimir>🖨 Imprimir la chuleta</button></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Sigue practicando · en casa</p>
+    <p class="a-quien">Gratis · sin instalar nada</p><h2 class="a-titulo">Sigue practicando Python en casa</h2><div class="a-recs"><a class="a-rec" href="https://pythontutor.com/python-compiler.html" target="_blank" rel="noopener"><b>Python Tutor</b><span>Mira cómo entra y sale el programa de tu función en cada llamada.</span><i>pythontutor.com/python-compiler.html ↗</i></a><a class="a-rec" href="https://es.futurecoder.io/course/" target="_blank" rel="noopener"><b>futurecoder</b><span>Ejercicios de funciones que se corrigen solos, en español y sin cuenta.</span><i>es.futurecoder.io/course ↗</i></a><a class="a-rec" href="https://jupyter.org/try-jupyter/lab/" target="_blank" rel="noopener"><b>JupyterLite</b><span>Python en el navegador para escribir tus funciones sin instalar nada.</span><i>jupyter.org/try-jupyter/lab ↗</i></a></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Ticket de salida · 44 – 45 min</p>
+    <p class="a-quien">Tú solo</p><h2 class="a-titulo">¿Qué te ahorra escribir una función?</h2><div data-nota="salida" data-pts="5" data-nota-tipo="salida" data-act="salida"><textarea class="a-ticket" aria-label="Tu respuesta" placeholder="Escribe tu respuesta. No se guarda: es para ti."></textarea><div class="a-acc"><button type="button" class="a-btn a-sec" data-ver>Ver una buena respuesta</button></div><p class="a-resp" hidden>Escribir los mismos pasos una sola vez: después se llaman con su nombre las veces que haga falta.</p></div><dl class="dato"><dt>Qué entregas hoy</dt><dd>Tu código en el editor de la clase, guardado con tu nota: tres funciones propias, llamadas al menos cinco veces en total.</dd></dl>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Tu nota · al final</p>
+    <p class="a-quien">Tú solo · al terminar</p><div class="a-nota" data-act="nota">
+      <div class="a-nota-grande"><b data-total>0</b><span>/ 100</span></div>
+      <ul class="a-nota-lista" data-desglose></ul>
+      <p class="a-explica a-nota-quien" data-quien></p>
+    </div>
+   </div>
+  </section>
+</main>
+
+<aside class="a-guion" hidden aria-label="Guion del docente">
+  <div class="a-g-cab"><h2>Guion de la clase</h2>
+    <button type="button" class="a-btn a-sec" data-cerrar aria-label="Cerrar el guion">✕</button></div>
+  <p class="a-g-obj">Guardar pasos con un nombre y volver a usarlos, con parámetros para cambiar lo que hacen.</p>
+  <div class="a-g-bloque"><b>0 – 5</b> <em>Enganche</em><p>Escribe en la pizarra las mismas cuatro líneas repetidas tres veces con pequeños cambios. «¿Y si pudieran darle un nombre a ese bloque y llamarlo cuando quieran?».</p></div><div class="a-g-bloque"><b>5 – 13</b> <em>Concepto</em><p>Modela def saludar(nombre): con sus dos puntos y su sangría, y llámala dos veces con nombres distintos. Después def escena(texto, opcion): con dos parámetros, para ver que la misma función sirve para muchas escenas. Señala que si nadie la llama, no pasa nada.</p></div><div class="a-g-bloque"><b>13 – 38</b> <em>Práctica</em><p>Cada estudiante escribe tres funciones (una escena, un saludo y una despedida) y las llama en orden para contar una historia corta.</p></div><div class="a-g-bloque"><b>13 – 38</b> <em>Reto</em><p>Una función con dos parámetros usada al menos tres veces con valores distintos.</p></div><div class="a-g-bloque"><b>38 – 45</b> <em>Cierre</em><p>«¿Cuántas líneas te ahorró la función?». Se cuentan en voz alta las líneas repetidas que desaparecieron.</p></div>
+  <div class="a-g-bloque"><em>Sube de nivel</em><p>Una función que reciba un número y muestre su tabla de multiplicar, usando el ciclo de la semana 3.</p></div>
+  <div class="a-g-bloque"><em>Recursos</em><p>Editor de Python de la clase, hoja para el mapa de la historia, proyector.</p></div>
+  <div class="a-g-bloque"><em>Evidencia</em><p>Tu código en el editor de la clase, guardado con tu nota: tres funciones propias, llamadas al menos cinco veces en total.</p></div>
+</aside>
+
+<div class="chrome bl"><span class="count" id="cnt">01 / 17</span></div>
+<div class="chrome br">
+  <button class="navb" id="prev" aria-label="Diapositiva anterior">&#8592;</button>
+  <button class="navb" id="next" aria-label="Diapositiva siguiente">&#8594;</button>
+</div>
+<div class="paginacion"><div class="caps" id="caps"></div><div class="pass" id="pass"></div></div>

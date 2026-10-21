@@ -1,0 +1,21 @@
+Question - max 120 characters	Answer 1 - max 75 characters	Answer 2 - max 75 characters	Answer 3 - max 75 characters	Answer 4 - max 75 characters	Time limit (sec)	Correct answer(s)
+Un algoritmo es…	Una lista de pasos ordenados para lograr algo	Un programa de computadora muy complicado	Una fórmula matemática	Un idioma que hablan las computadoras	20	1
+Un robot hace exactamente lo que le dices, ni más ni menos. Le dices «pon el pan». ¿Qué hace?	No hace nada porque no entiende	Pone el paquete entero sobre la mesa	Saca dos rebanadas y las pone	Pregunta cuántas rebanadas	20	2
+¿Por qué importa el orden de los pasos?	Solo importa en el primer paso	No importa, la computadora los reordena sola	Importa solo si son más de diez pasos	Porque cambiar el orden cambia el resultado	20	4
+¿Una computadora adivina lo que uno quiere?	Sí, si la pregunta está bien hecha	Solo cuando está conectada a internet	Sí, las modernas sí	No: solo hace lo que se le dice	20	4
+Una caja rotulada PUNTOS donde el número va cambiando durante el juego. En programación eso es…	Una variable	Un algoritmo	Una condición	Un programa	20	1
+Hay que repetir la misma instrucción diez veces. ¿Qué conviene?	Escribirla diez veces, es más seguro	Usar una repetición y escribirla una sola vez	Dividirla en diez programas	Escribirla una vez y esperar	20	2
+«Si está lloviendo llevo paraguas; si no, no lo llevo.» Eso en un programa es…	Una repetición	Una variable	Una decisión	Un error	20	3
+¿Qué es un programa?	Una aplicación que se descarga	Instrucciones que la computadora ejecuta en orden	La pantalla que uno ve	El teclado y el mouse juntos	20	2
+Tiras un dado y salen 2, 4 y 6. ¿Qué número sale en la próxima tirada?	El 8, porque va de dos en dos	El 6 otra vez, porque fue el último	No se puede saber: puede salir cualquiera del 1 al 6	El 1, porque todavía no ha salido	20	3
+En «preparar un jugo de naranja», ¿cuál es la ENTRADA?	La receta	Las naranjas	Exprimirlas	El jugo servido en el vaso	20	2
+Buscas un video: escribes el nombre y aparecen resultados. ¿Cuál es la SALIDA?	La búsqueda que hace el sistema	La lista de resultados	Lo que escribiste	El teclado	20	2
+¿Cuál de estas instrucciones NO sirve para un robot?	Camina un rato	Repite dos veces: avanza	Avanza tres pasos	Gira a la derecha	20	1
+«Avanza, avanza, avanza, avanza» son cuatro instrucciones. ¿Cómo se escribe más corto?	Repite 4 veces: avanza	No se puede escribir más corto	Avanza rápido	Avanza mucho	20	1
+Dos algoritmos resuelven la misma tarea. ¿Cuál es mejor?	El que tiene más pasos	El que tiene menos pasos siempre	El que escribió el más rápido	El que otra persona puede seguir sin preguntar nada	20	4
+Tu programa hace algo raro. ¿De quién es el error, normalmente?	De la computadora, que falla	Del internet	De las instrucciones que escribimos	De nadie, a veces pasa	20	3
+¿Para qué sirve que un compañero pruebe tu programa?	Para terminar más rápido	Para copiar su solución	Para descubrir lo que a uno se le escapó	Para que le ponga una nota	20	3
+Pasos: 1 enjuagar · 2 poner pasta · 3 cepillar · 4 mojar el cepillo. ¿Cuál está fuera de lugar?	Ninguno, el orden está bien	El 3: cepillar va primero	El 4: mojar el cepillo va antes de poner la pasta	El 1: enjuagar debería ir al final	30	3
+El robot mira al norte. Ejecuta: AVANZA · GIRA DERECHA · AVANZA. ¿Hacia dónde mira al final?	Al sur	Al norte	Al oeste	Al este	30	4
+Pasos: 1 abrir la puerta · 2 sacar la llave · 3 girar la llave. ¿Cuál es el problema?	Abrir la puerta está antes de girar la llave	Sacar la llave sobra	Falta cerrar la puerta	No hay ningún problema	30	1
+REPITE 3 VECES: [AVANZA, AVANZA]. ¿Cuántos pasos avanza el robot en total?	5	2	3	6	30	4

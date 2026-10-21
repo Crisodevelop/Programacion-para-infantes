@@ -1,0 +1,33 @@
+{
+  "name": "asistente-aula",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0 -p 3000",
+    "build": "next build",
+    "verificar": "NEXT_DIST_DIR=.next-verificar next build",
+    "start": "next start -H 0.0.0.0 -p 3000",
+    "typecheck": "tsc --noEmit",
+    "db:migrar": "node --experimental-strip-types scripts/migrar.ts",
+    "lista:importar": "node --experimental-strip-types scripts/importar-lista.ts",
+    "listas:cargar": "node --experimental-strip-types scripts/cargar-listas.ts",
+    "docente:crear": "node --experimental-strip-types scripts/crear-docente.ts",
+    "notas:semana": "node --experimental-strip-types scripts/nota-semana.ts"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.5",
+    "@supabase/supabase-js": "^2.58.0",
+    "next": "15.5.24",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "server-only": "^0.0.1",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.6",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "qrcode": "^1.5.4",
+    "typescript": "^5.9.2"
+  }
+}

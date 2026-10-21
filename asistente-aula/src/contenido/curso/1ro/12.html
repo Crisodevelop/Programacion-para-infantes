@@ -1,0 +1,243 @@
+<div class="prog" id="prog"></div>
+<div class="chrome tl"><a class="volver" href="/presentaciones">&#8592; Presentaciones</a></div>
+<div class="chrome tr" role="group" aria-label="Controles"><nav class="a-cursos" aria-label="Curso"><a class="a-curso" href="/curso/1ro/semana/12" aria-current="page">1ro</a><a class="a-curso" href="/curso/2do/semana/12">2do</a><a class="a-curso" href="/curso/3ro/semana/12">3ro</a></nav><span class="sep"></span><span data-hueco-docente style="display:flex"></span><button type="button" class="a-guion-btn" aria-expanded="false" title="Notas del docente">Guion</button><span class="sep"></span><button class="tembtn" data-tema="oscuro" aria-pressed="false">Oscuro</button><button class="tembtn" data-tema="claro" aria-pressed="false">Claro</button><button class="tembtn" data-tema="pared" aria-pressed="false">Pared</button></div>
+
+<main class="deck">
+  <section class="slide">
+   <div class="inner">
+    <div class="a-portada con-escena">
+     <div>
+      <p class="eyebrow">1RO DE SECUNDARIA · Programar con Python, paso a paso y jugando</p>
+      <div class="cinta"><span class="cinta-num">12</span><span class="cinta-txt">Semana 12 de 12</span></div>
+      <h1 class="mid">Proyecto: mi juego</h1>
+      <p class="a-hoy">Vas a mejorar tu mejor juego del curso, probarlo con un compañero y presentarlo.</p>
+     </div>
+     <div class="a-escena"><svg viewBox="220 55 760 560" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="1200" height="675" fill="none"/><rect x="320" y="147.5" width="560" height="380" rx="22" fill="#FFFFFF" stroke="#14213D" stroke-width="10"/><circle cx="398" cy="221.5" r="36" fill="none" stroke="#14213D" stroke-width="8"/><path d="M378.2 221.5l15.12 18l27 -34.2" fill="none" stroke="#2563EB" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><rect x="460" y="208.5" width="340" height="26" rx="13" fill="#CBD5E1"/><circle cx="398" cy="329.5" r="36" fill="none" stroke="#14213D" stroke-width="8"/><path d="M380 311.5L416 347.5" stroke="#EF4444" stroke-width="16" stroke-linecap="round" fill="none"/><path d="M416 311.5L380 347.5" stroke="#EF4444" stroke-width="16" stroke-linecap="round" fill="none"/><rect x="460" y="316.5" width="340" height="26" rx="13" fill="#CBD5E1"/><circle cx="398" cy="437.5" r="36" fill="none" stroke="#14213D" stroke-width="8"/><path d="M378.2 437.5l15.12 18l27 -34.2" fill="none" stroke="#2563EB" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><rect x="460" y="424.5" width="340" height="26" rx="13" fill="#CBD5E1"/></svg></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · La idea · 1 – 3 min</p>
+    <p class="a-quien">Todos · escuchamos</p><h2 class="a-teo-titulo">¿Qué es probar un programa?</h2><p class="a-teo-texto">Usarlo con casos pensados antes y comparar lo que se esperaba con lo que pasó.</p><div class="a-teo-ejemplo"><p class="a-etq">En la vida real</p><p>Antes de vender un carro lo prueban con frenadas y curvas. Tu juego también necesita su prueba.</p></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · Las partes · 3 – 5 min</p>
+    <h2 class="a-titulo">Las partes de una prueba</h2><div class="a-teo-partes con-escena"><ol class="a-teo-lista"><li><b>Acción</b><span>Lo que haces: tiro el dado, escribo Piedra.</span></li><li><b>Esperado</b><span>Lo que debería pasar.</span></li><li><b>Real</b><span>Lo que pasó de verdad.</span></li><li><b>Arreglo</b><span>Si no coinciden, se corrige y se anota con #.</span></li></ol><div class="a-teo-ejemplos"><p class="a-etq">Así se escriben ✓</p><ol class="a-teo-cod"><li><code>vidas = 3</code></li><li><code>vidas = vidas - 1</code></li><li><code>display(vidas)</code></li><li><code># esperado: 2</code></li></ol></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · ¿Lo entendí? · 5 – 8 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><h2 class="a-titulo">Esperabas «Ganaste» y salió «Perdiste». ¿Qué encontraste?</h2><div class="a-panel a-teo-check" data-nota="teoria" data-pts="5" data-nota-tipo="reto" data-act="opciones"><div class="a-ops"><button type="button" class="a-op" data-txt="Nada importante"><span class="a-letra">A</span><span>Nada importante</span></button><button type="button" class="a-op" data-txt="Un fracaso"><span class="a-letra">B</span><span>Un fracaso</span></button><button type="button" class="a-op" data-txt="Un error para corregir" data-ok><span class="a-letra">C</span><span>Un error para corregir</span></button></div><p class="a-fb" role="status" aria-live="polite"></p><p class="a-explica" hidden>Una prueba que falla es un error encontrado: justo lo que buscabas.</p><div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Calentamiento · 8 – 10 min</p>
+    <p class="a-quien">Todos · a mano alzada</p><h2 class="a-titulo">¿Qué es lo primero que haces si tu juego falla?</h2>
+    <div class="a-vota" data-nota="calent" data-pts="5" data-nota-tipo="reto" data-act="vota">
+      <div class="a-ops"><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">A</span><span>Borrar todo y empezar</span></button><button type="button" class="a-op" aria-pressed="false" data-ok><span class="a-letra">B</span><span>Leer el error: dice la línea</span></button><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">C</span><span>Pedir otra computadora</span></button><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">D</span><span>Cambiar de juego</span></button></div>
+      <div class="a-acc"><button type="button" class="a-btn" data-revelar>Revelar la respuesta</button></div>
+      <p class="a-fb" role="status"></p>
+      <p class="a-porque" hidden>El error es una pista: dice la línea y qué esperaba Python.</p>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Mira cómo funciona · 10 – 13 min</p>
+    <h2 class="a-titulo">La hoja de prueba</h2>
+    <div class="a-ejemplo" data-act="notas">
+      <ol class="a-cod" data-leng="python"><li><span># Acción -&gt; esperado -&gt; real</span></li><li><span># Tiro el dado -&gt; un número del 1 al 6 -&gt; OK</span></li><li><span># Escribo Piedra -&gt; funciona -&gt; FALLA</span></li><li><span></span></li><li><span>jugada = jugada.lower()  # arreglé la prueba 2</span></li></ol>
+      <div><p class="a-etq">Toca una nota y mira su línea</p><ol class="a-notas"><li><button type="button" class="a-nota" data-marca="1" aria-pressed="false"><b>Línea 1</b><span>Cada fila: lo que haces, lo que debería pasar y lo que pasó.</span></button></li><li><button type="button" class="a-nota" data-marca="3" aria-pressed="false"><b>Línea 3</b><span>Una prueba que falla es un error encontrado, no un fracaso.</span></button></li><li><button type="button" class="a-nota" data-marca="5" aria-pressed="false"><b>Línea 5</b><span>El arreglo va con un comentario que dice qué se corrigió.</span></button></li></ol></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Retos 1 y 2 · 13 – 16 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><div class="a-grid2"><div class="a-panel" data-nota="r1" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">¿Qué muestra?</p>
+      <ol class="a-cod" data-leng="python"><li><span>puntos = 0</span></li><li><span>for i in range(4):</span></li><li><span>    puntos += 5</span></li><li><span>if puntos == 20:</span></li><li><span>    display("¡Ganaste!")</span></li><li><span>else:</span></li><li><span>    display("Sigue")</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="Sigue"><span class="a-letra">A</span><span><code>Sigue</code></span></button><button type="button" class="a-op" data-txt="Error"><span class="a-letra">B</span><span><code>Error</code></span></button><button type="button" class="a-op" data-txt="20"><span class="a-letra">C</span><span><code>20</code></span></button><button type="button" class="a-op" data-txt="¡Ganaste!" data-ok><span class="a-letra">D</span><span><code>¡Ganaste!</code></span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>Cuatro vueltas de 5 dan 20, así que el if se cumple.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div><div class="a-panel" data-nota="r2" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">Completa la línea que falta</p>
+      <ol class="a-cod" data-leng="python"><li><span>vidas = 3</span></li><li><span>if vidas <span class="a-hueco">___</span> 0:</span></li><li><span>    display("Game over")</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="==" data-ok><span class="a-letra">A</span><span><code>==</code></span></button><button type="button" class="a-op" data-txt="+="><span class="a-letra">B</span><span><code>+=</code></span></button><button type="button" class="a-op" data-txt="="><span class="a-letra">C</span><span><code>=</code></span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>Para preguntar si vidas es 0 se compara con ==.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Retos 3 y 4 · 16 – 19 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><div class="a-grid2"><div class="a-panel" data-nota="r3" data-pts="10" data-nota-tipo="reto" data-act="ordena" data-orden="[&quot;@when(\&quot;click\&quot;, \&quot;#boton\&quot;)&quot;, &quot;def jugar(evento):&quot;, &quot;    global puntos&quot;, &quot;    puntos += 1&quot;, &quot;    display(puntos)&quot;]">
+      <p class="a-etq">Ordena</p>
+      <h3>Ordena el botón que suma un punto y lo muestra.</h3>
+      <ol class="a-orden" data-leng="python"><li data-txt="    global puntos"><span>    global puntos</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="@when(&quot;click&quot;, &quot;#boton&quot;)"><span>@when("click", "#boton")</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="def jugar(evento):"><span>def jugar(evento):</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="    puntos += 1"><span>    puntos += 1</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="    display(puntos)"><span>    display(puntos)</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li></ol>
+      <div class="a-acc"><button type="button" class="a-btn" data-comprobar>Comprobar</button>
+        <button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+    </div><div class="a-panel" data-nota="r4" data-pts="10" data-nota-tipo="reto" data-act="error">
+      <p class="a-etq">Encuentra el error</p>
+      <h3>Toca la línea que está mal.</h3>
+      <div class="a-lineas" data-leng="python"><button type="button" class="a-linea"><i>1</i><span>premios = ["gorra", "balón"]</span></button><button type="button" class="a-linea"><i>2</i><span>n = len(premios)</span></button><button type="button" class="a-linea" data-mala><i>3</i><span>display(premios[n])</span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <div class="a-explica" hidden><p class="a-etq">Así queda bien</p>
+        <pre class="a-arreglo">display(premios[n - 1])</pre><p>len da 2, pero la última posición es 1: premios[2] da IndexError.</p></div>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Tu primera prueba · 19 – 23 min</p>
+    <p class="a-quien">Primero en grupo · después en tu compu</p><div class="a-taller a-marcador" data-nota="primera" data-pts="10" data-nota-tipo="juego" data-act="taller" data-cfg="{&quot;tipo&quot;: &quot;exacto&quot;, &quot;misiones&quot;: [{&quot;pista&quot;: &quot;Haz tú la resta: 3 menos 1.&quot;, &quot;pide&quot;: &quot;vidas = 3 y después vidas = vidas - 1. ¿Qué muestra display(vidas)?&quot;, &quot;espera&quot;: [&quot;2&quot;], &quot;ayuda&quot;: &quot;Quítale uno a 3.&quot;, &quot;sale&quot;: &quot;un número&quot;}, {&quot;pista&quot;: &quot;El + pega los dos textos tal cual, con su coma y su espacio.&quot;, &quot;pide&quot;: &quot;nombre = \&quot;Ana\&quot;. ¿Qué muestra display(\&quot;Hola, \&quot; + nombre)?&quot;, &quot;espera&quot;: [&quot;Hola, Ana&quot;], &quot;ayuda&quot;: &quot;El + pega los dos textos tal cual.&quot;, &quot;sale&quot;: &quot;un saludo&quot;}, {&quot;pista&quot;: &quot;range(3) empieza en 0 y el 3 no entra.&quot;, &quot;pide&quot;: &quot;for i in range(3): display(i). ¿Qué números salen? Sepáralos con comas.&quot;, &quot;espera&quot;: [&quot;0, 1, 2&quot;, &quot;0,1,2&quot;], &quot;ayuda&quot;: &quot;range(3) empieza en 0 y el 3 no entra.&quot;, &quot;sale&quot;: &quot;tres números&quot;}, {&quot;pista&quot;: &quot;Suma 1 + 2 + 3.&quot;, &quot;pide&quot;: &quot;total = 0 y for n in range(1, 4): total += n. ¿Cuánto vale total al final?&quot;, &quot;espera&quot;: [&quot;6&quot;], &quot;ayuda&quot;: &quot;Suma 1 + 2 + 3.&quot;, &quot;sale&quot;: &quot;un número&quot;}], &quot;unidad&quot;: &quot;respuesta&quot;}">
+      <div class="a-col">
+        <details class="a-mt-din">
+          <summary>Antes, en grupo · Lo esperado y lo real · 3 min</summary>
+          <ol><li>El docente escribe tres líneas en la pizarra y tapa el resultado.</li><li>Cada quien escribe en el cuaderno lo que ESPERA que salga.</li><li>Se destapa: donde no coincide, ahí hay algo que arreglar.</li></ol>
+        </details>
+        <div class="a-mt-mision"><p class="a-etq" data-num></p><p class="a-mt-pide" data-pide></p>
+          <button type="button" class="a-tl-pista" data-pista hidden>💡 Pista</button>
+          <p class="a-tl-dice" data-dice hidden></p></div>
+        <div class="a-mt-escribe"><input class="campo a-mt-in" data-linea autocomplete="off" spellcheck="false" aria-label="Escribe tu respuesta" placeholder="Escribe el resultado"><button type="button" class="a-btn" data-probar>Probar</button></div><p class="a-mt-pista" data-forma></p><div class="a-tl-ayuda"><p class="a-etq">Cómo se contesta</p><span class="a-tl-ay"><code>Escribe solo el resultado</code><i>tal como saldría en pantalla</i></span></div>
+        <p class="a-tl-sale" data-sale aria-live="polite"></p>
+        <p class="a-fb" role="status" aria-live="polite"></p>
+      </div>
+      <div class="a-col">
+        <div class="a-tl-vista" data-vista hidden></div>
+        <p class="a-etq">Lo que llevas</p>
+        <pre class="a-mt-prog" data-prog></pre>
+        <div class="a-tl-barra" aria-hidden="true"><i data-barra></i></div>
+        <div class="a-acc"><button type="button" class="a-btn a-sec" data-reiniciar>Empezar de nuevo</button></div>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Mini juego · 23 – 26 min</p>
+    <p class="a-quien">Tú solo o en parejas</p><h2 class="a-titulo">Carrera de repaso del curso</h2><p class="pista a-pista">60 SEGUNDOS, TODO EL CURSO</p><div class="a-carrera" data-nota="juego" data-pts="10" data-nota-tipo="juego" data-act="carrera" data-cfg="{&quot;segundos&quot;: 60, &quot;preguntas&quot;: [{&quot;pregunta&quot;: &quot;¿Qué hace display(\&quot;Hola\&quot;)?&quot;, &quot;opciones&quot;: [&quot;Escribe Hola en la página&quot;, &quot;Escribe Hola en la consola&quot;, &quot;Guarda Hola&quot;], &quot;correcta&quot;: 0}, {&quot;pregunta&quot;: &quot;puntos = 10 y después puntos -= 3. ¿Cuánto vale?&quot;, &quot;opciones&quot;: [&quot;13&quot;, &quot;7&quot;, &quot;3&quot;], &quot;correcta&quot;: 1}, {&quot;pregunta&quot;: &quot;¿Qué conecta un botón con una función?&quot;, &quot;opciones&quot;: [&quot;@when(\&quot;click\&quot;, \&quot;#boton\&quot;)&quot;, &quot;def boton():&quot;, &quot;display(boton)&quot;], &quot;correcta&quot;: 0}, {&quot;pregunta&quot;: &quot;¿Qué números puede dar random.randint(1, 6)?&quot;, &quot;opciones&quot;: [&quot;Del 1 al 6&quot;, &quot;Del 0 al 6&quot;, &quot;Del 1 al 5&quot;], &quot;correcta&quot;: 0}, {&quot;pregunta&quot;: &quot;¿Qué signo compara si dos cosas son iguales?&quot;, &quot;opciones&quot;: [&quot;==&quot;, &quot;=&quot;, &quot;+=&quot;], &quot;correcta&quot;: 0}, {&quot;pregunta&quot;: &quot;¿Cuántas vueltas da for i in range(5)?&quot;, &quot;opciones&quot;: [&quot;4&quot;, &quot;5&quot;, &quot;6&quot;], &quot;correcta&quot;: 1}, {&quot;pregunta&quot;: &quot;lista = [\&quot;a\&quot;, \&quot;b\&quot;]. ¿Qué es lista[1]?&quot;, &quot;opciones&quot;: [&quot;\&quot;a\&quot;&quot;, &quot;\&quot;b\&quot;&quot;, &quot;Error&quot;], &quot;correcta&quot;: 1}, {&quot;pregunta&quot;: &quot;¿Qué agrega un elemento al final de una lista?&quot;, &quot;opciones&quot;: [&quot;append&quot;, &quot;len&quot;, &quot;pop&quot;], &quot;correcta&quot;: 0}, {&quot;pregunta&quot;: &quot;¿Qué palabra crea una función?&quot;, &quot;opciones&quot;: [&quot;def&quot;, &quot;if&quot;, &quot;for&quot;], &quot;correcta&quot;: 0}, {&quot;pregunta&quot;: &quot;¿Qué convierte el texto \&quot;12\&quot; en el número 12?&quot;, &quot;opciones&quot;: [&quot;int(\&quot;12\&quot;)&quot;, &quot;str(12)&quot;, &quot;display(\&quot;12\&quot;)&quot;], &quot;correcta&quot;: 0}, {&quot;pregunta&quot;: &quot;Si el if no se cumplió, ¿qué se revisa después?&quot;, &quot;opciones&quot;: [&quot;El elif de abajo&quot;, &quot;Nada más&quot;, &quot;El mismo if otra vez&quot;], &quot;correcta&quot;: 0}, {&quot;pregunta&quot;: &quot;¿Para qué sirve global dentro de una función?&quot;, &quot;opciones&quot;: [&quot;Para cambiar una variable de afuera&quot;, &quot;Para borrar la variable&quot;, &quot;Para mostrarla&quot;], &quot;correcta&quot;: 0}]}">
+      <div class="a-car-top"><span>Tiempo <b data-t>60</b></span><span>Aciertos <b data-pts>0</b></span>
+        <span>Racha <b data-racha>0</b></span></div>
+      <button type="button" class="a-btn" data-empezar>▶ Empezar la carrera</button>
+      <div data-zona hidden><p class="a-car-preg" data-preg></p><div class="a-ops" data-ops></div></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Otro juego · 26 – 29 min</p>
+    <p class="a-quien">Tú solo o en parejas</p><h2 class="a-titulo">¿De qué semana es esta línea?</h2><p class="pista a-pista">REPASO DEL CURSO</p><div class="a-clasifica" data-nota="juego2" data-pts="10" data-nota-tipo="juego" data-act="clasifica">
+      <p class="a-explica">Toca una tarjeta y después la caja donde va.</p>
+      <div class="a-fichas" data-fichas><button type="button" class="a-ficha" aria-pressed="false" data-c="2">else:</button><button type="button" class="a-ficha" aria-pressed="false" data-c="3">frutas.append("piña")</button><button type="button" class="a-ficha" aria-pressed="false" data-c="1">total += n</button><button type="button" class="a-ficha" aria-pressed="false" data-c="0">nombre = "Luna"</button><button type="button" class="a-ficha" aria-pressed="false" data-c="0">edad = 12</button><button type="button" class="a-ficha" aria-pressed="false" data-c="1">for i in range(5):</button><button type="button" class="a-ficha" aria-pressed="false" data-c="3">len(frutas)</button><button type="button" class="a-ficha" aria-pressed="false" data-c="3">frutas = ["uva"]</button><button type="button" class="a-ficha" aria-pressed="false" data-c="2">if vidas == 0:</button><button type="button" class="a-ficha" aria-pressed="false" data-c="2">elif nota &gt;= 70:</button></div>
+      <div class="a-cubetas"><div class="a-cubeta"><button type="button" class="a-cub-btn" data-cub="0">Variable</button><div class="a-cub-dentro" data-dentro></div></div><div class="a-cubeta"><button type="button" class="a-cub-btn" data-cub="1">Ciclo</button><div class="a-cub-dentro" data-dentro></div></div><div class="a-cubeta"><button type="button" class="a-cub-btn" data-cub="2">Decisión</button><div class="a-cub-dentro" data-dentro></div></div><div class="a-cubeta"><button type="button" class="a-cub-btn" data-cub="3">Lista</button><div class="a-cub-dentro" data-dentro></div></div></div>
+      <div class="a-acc"><span class="a-marca" data-marca>0 / 10</span>
+        <button type="button" class="a-btn a-sec" data-reintentar>Reintentar</button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Manos a la obra · 29 – 42 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><h2 class="a-titulo">Mi juego mejorado</h2><ol class="a-pasos a-pasos-fila"><li>Elige qué juego vas a mejorar y escribe en una frase qué le vas a agregar.</li><li>Pega tu juego en el editor y programa la mejora.</li><li>A mitad de clase cambia de computadora: tu compañero llena tres filas de la hoja de prueba.</li><li>Corrige al menos un error que encontró y déjalo explicado con #.</li><li>Presenta en 1 minuto: qué juego es, qué le agregaste y qué error arreglaste.</li></ol><div class="a-editor" data-nota="practica" data-pts="15" data-nota-tipo="practica" data-act="editor" data-cfg="{&quot;v&quot;: &quot;2026.7.3&quot;, &quot;html&quot;: &quot;&lt;h1&gt;Mi juego&lt;/h1&gt;\n&lt;button id=\&quot;boton\&quot;&gt;Jugar&lt;/button&gt;\n&lt;p id=\&quot;salida\&quot;&gt;&lt;/p&gt;&quot;, &quot;css&quot;: &quot;body{font-family:system-ui,sans-serif;text-align:center;padding:30px;background:#0f172a;color:#f8fafc}\nbutton{font-size:1.5rem;padding:.7rem 1.5rem;border-radius:12px;border:0;cursor:pointer}\n#salida{font-size:2rem}&quot;, &quot;py&quot;: &quot;import random\nfrom pyscript import when, document\n\n# Pega aquí el juego que vas a mejorar.\n# Requisitos: un botón, una variable que cambia,\n# una decisión con if y algo al azar o una lista.\n\npuntos = 0\n\n@when(\&quot;click\&quot;, \&quot;#boton\&quot;)\ndef jugar(evento):\n    global puntos\n    puntos += random.randint(1, 6)\n    if puntos &gt;= 20:\n        texto = f\&quot;¡Ganaste con {puntos}!\&quot;\n    else:\n        texto = f\&quot;Llevas {puntos}\&quot;\n    document.querySelector(\&quot;#salida\&quot;).innerText = texto\n&quot;, &quot;inicio&quot;: &quot;py&quot;}">
+      <div class="a-ed-col">
+        <div class="a-ed-tabs" role="tablist" aria-label="Qué parte del código"><button type="button" role="tab" class="a-ed-tab" data-tab="py" aria-selected="true">Python</button><button type="button" role="tab" class="a-ed-tab" data-tab="html" aria-selected="false">HTML</button><button type="button" role="tab" class="a-ed-tab" data-tab="css" aria-selected="false">CSS</button></div>
+        <textarea class="a-ed-code" data-codigo spellcheck="false" aria-label="Tu código"></textarea>
+        <div class="a-acc"><button type="button" class="a-btn" data-correr>▶ Ejecutar</button>
+          <button type="button" class="a-btn a-sec" data-completa>Pantalla completa ↗</button>
+          <button type="button" class="a-btn a-sec" data-volver>Volver al código de partida</button></div>
+        <p class="a-explica">Cada vez que pulsas Ejecutar, tu código se guarda con tu nota.</p>
+      </div>
+      <div class="a-ed-col">
+        <p class="a-etq">Lo que se ve</p>
+        <iframe class="a-ed-vista" data-marco title="Resultado de tu código" allow="camera; microphone"
+                sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">El reto de hoy · 29 – 44 min</p>
+    <div class="bloque"><p>Corregir al menos un error encontrado por el compañero y dejar un comentario con # que diga qué se arregló.</p></div><div class="bloque a-sube"><p class="a-etq">Sube de nivel · si terminas antes</p><p>Se amplía el tiempo de presentaciones para cubrir a todo el grupo y se vota el juego más divertido y el mejor probado.</p></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Chuleta de la semana · para llevar</p>
+    <div class="a-chuleta" data-act="imprimir">
+      <p class="a-ch-cab">1RO DE SECUNDARIA · Semana 12</p>
+      <h2 class="a-titulo">Probar un programa</h2>
+      <ul class="a-ch-lista"><li><code>Acción</code><span>Qué hiciste: «puse 0 vidas».</span></li><li><code>Esperado</code><span>Qué tenía que pasar, escrito ANTES de probar.</span></li><li><code>Real</code><span>Qué pasó de verdad, tal cual, sin adornos.</span></li><li><code>Arreglo</code><span>Qué línea cambiaste. Una sola cada vez.</span></li><li><code>Caso raro</code><span>El 0, el vacío, el número enorme: ahí se rompe.</span></li><li><code>Volver a probar</code><span>Después de arreglar, se repite la prueba.</span></li></ul>
+      <div class="a-acc a-ch-acc"><button type="button" class="a-btn" data-imprimir>🖨 Imprimir la chuleta</button></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Sigue practicando · en casa</p>
+    <p class="a-quien">Gratis · sin instalar nada</p><h2 class="a-titulo">Sigue practicando Python en casa</h2><div class="a-recs"><a class="a-rec" href="https://pythontutor.com/python-compiler.html" target="_blank" rel="noopener"><b>Python Tutor</b><span>Corre tu programa línea por línea y mira dónde deja de hacer lo esperado.</span><i>pythontutor.com/python-compiler.html ↗</i></a><a class="a-rec" href="https://es.futurecoder.io/course/" target="_blank" rel="noopener"><b>futurecoder</b><span>Para seguir practicando todo el curso en vacaciones. Gratis y sin cuenta.</span><i>es.futurecoder.io/course ↗</i></a><a class="a-rec" href="https://jupyter.org/try-jupyter/lab/" target="_blank" rel="noopener"><b>JupyterLite</b><span>Python en el navegador para probar tus casos raros sin instalar nada.</span><i>jupyter.org/try-jupyter/lab ↗</i></a></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Ticket de salida · 44 – 45 min</p>
+    <p class="a-quien">Tú solo</p><h2 class="a-titulo">¿Qué error te encontró tu compañero y cómo lo arreglaste?</h2><div data-nota="salida" data-pts="5" data-nota-tipo="salida" data-act="salida"><textarea class="a-ticket" aria-label="Tu respuesta" placeholder="Escribe tu respuesta. No se guarda: es para ti."></textarea><div class="a-acc"><button type="button" class="a-btn a-sec" data-ver>Ver una buena respuesta</button></div><p class="a-resp" hidden>Una buena respuesta dice la línea, qué pasaba, qué debería pasar y el cambio que lo corrigió.</p></div><dl class="dato"><dt>Qué entregas hoy</dt><dd>Tu juego mejorado en el editor de la clase, guardado con tu nota, hoja con tres pruebas hechas por un compañero, un error corregido y presentación oral.</dd></dl>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Tu nota · al final</p>
+    <p class="a-quien">Tú solo · al terminar</p><div class="a-nota" data-act="nota">
+      <div class="a-nota-grande"><b data-total>0</b><span>/ 100</span></div>
+      <ul class="a-nota-lista" data-desglose></ul>
+      <p class="a-explica a-nota-quien" data-quien></p>
+    </div>
+   </div>
+  </section>
+</main>
+
+<aside class="a-guion" hidden aria-label="Guion del docente">
+  <div class="a-g-cab"><h2>Guion de la clase</h2>
+    <button type="button" class="a-btn a-sec" data-cerrar aria-label="Cerrar el guion">✕</button></div>
+  <p class="a-g-obj">Mejorar uno de los juegos del curso hasta hacerlo propio, probarlo con un compañero, corregirlo y presentarlo.</p>
+  <div class="a-g-bloque"><b>0 – 5</b> <em>Enganche</em><p>Cada estudiante elige cuál de sus juegos va a mejorar (dado, adivina el número, piedra papel o tijera, quiz o aventura) y escribe en una frase qué le va a agregar.</p></div><div class="a-g-bloque"><b>5 – 13</b> <em>Concepto</em><p>Repaso de los requisitos mínimos en la pizarra: un botón, una variable que cambia, una decisión, y algo al azar o una lista. Presenta la hoja de prueba: acción → resultado esperado → resultado real.</p></div><div class="a-g-bloque"><b>13 – 38</b> <em>Práctica</em><p>Programar las mejoras. A mitad del bloque intercambian computadoras: el compañero juega, llena tres filas de la hoja de prueba y anota qué falla.</p></div><div class="a-g-bloque"><b>13 – 38</b> <em>Reto</em><p>Corregir al menos un error encontrado por el compañero y dejar un comentario con # que diga qué se arregló.</p></div><div class="a-g-bloque"><b>38 – 45</b> <em>Cierre</em><p>Presentaciones de 1 minuto: qué juego es, qué le agregó, un error encontrado y cómo lo resolvió.</p></div>
+  <div class="a-g-bloque"><em>Sube de nivel</em><p>Se amplía el tiempo de presentaciones para cubrir a todo el grupo y se vota el juego más divertido y el mejor probado.</p></div>
+  <div class="a-g-bloque"><em>Recursos</em><p>Editor de Python de la clase, hoja de pruebas impresa, rúbrica de proyecto, proyector.</p></div>
+  <div class="a-g-bloque"><em>Evidencia</em><p>Tu juego mejorado en el editor de la clase, guardado con tu nota, hoja con tres pruebas hechas por un compañero, un error corregido y presentación oral.</p></div>
+</aside>
+
+<div class="chrome bl"><span class="count" id="cnt">01 / 17</span></div>
+<div class="chrome br">
+  <button class="navb" id="prev" aria-label="Diapositiva anterior">&#8592;</button>
+  <button class="navb" id="next" aria-label="Diapositiva siguiente">&#8594;</button>
+</div>
+<div class="paginacion"><div class="caps" id="caps"></div><div class="pass" id="pass"></div></div>

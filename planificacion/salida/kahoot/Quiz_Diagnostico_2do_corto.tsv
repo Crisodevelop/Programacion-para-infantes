@@ -1,0 +1,13 @@
+Question - max 120 characters	Answer 1 - max 75 characters	Answer 2 - max 75 characters	Answer 3 - max 75 characters	Answer 4 - max 75 characters	Time limit (sec)	Correct answer(s)
+¿Qué hace print("Hola")?	Muestra el texto Hola	Crea un botón que dice Hola	Guarda Hola en una variable	Le pide al usuario que escriba Hola	20	1
+En programación, una variable es…	Un número que nunca cambia	Un nombre que guarda un dato que puede cambiar	Un error del programa	Una instrucción que se repite	20	2
+¿Para qué sirve un if?	Para que el programa elija un camino según una condición	Para guardar información	Para mostrar un texto en la página	Para repetir instrucciones	20	1
+¿Para qué sirve un bucle for?	Para esperar a que alguien pulse un botón	Para repetir instrucciones sin escribirlas muchas veces	Para guardar un dato	Para tomar decisiones	20	2
+¿Qué es una lista en Python?	Una variable que solo guarda texto	Una función que muestra números	Varios valores guardados en orden bajo un solo nombre	Un bucle que se repite	20	3
+¿Para qué sirve crear una función con def?	Para guardar una lista de datos	Para darle color a la página	Para repetir algo un número fijo de veces	Para agrupar pasos con un nombre y usarlos cuando haga falta	20	4
+Alguien escribe 15 en una caja y tu programa tiene que sumarle 1. ¿Qué hace falta?	Convertirlo con int() antes de sumar	Usar display() en vez de print()	Ponerlo entre comillas	Nada, Python ya sabe que es un número	20	1
+¿Qué diferencia hay entre = y == ?	== solo sirve para texto	= guarda un valor; == compara dos valores	= compara; == guarda	Son lo mismo, == es más elegante	20	2
+Nota de 90 o más: «excelente»; de 70 o más: «bien»; si no, «en proceso». ¿Qué usas?	Un solo if, sin nada más	Un for que cuente hasta 100	if, elif y else	Una lista con las tres palabras	20	3
+Quieres simular un dado de 6 caras. ¿Qué escribes?	random.randint(1, 7)	random(6)	random.randint(1, 6)	random.randint(0, 6)	20	3
+print("15" + "15")   ¿Qué muestra?	30	"30"	Un error	1515	30	4
+Mira el bucle for de la imagen. ¿Qué muestra, en orden?	0, 1 y 2	0, 1, 2 y 3	Solo el 3	1, 2 y 3	30	1

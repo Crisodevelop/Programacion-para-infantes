@@ -1,0 +1,42 @@
+:root {
+  --fondo: #070d18;
+  --fondo-2: #0d1830;
+  --panel: #132444;
+  --linea: #1e3562;
+  --tx: #e9f1fb;
+  --tx-2: #a8bfda;
+  --mut: #6d87a8;
+  --aqua: #4fc9e8;
+  --verde: #57d99a;
+  --ambar: #f2b45c;
+  --azul: #5fa8f5;
+  --rosa: #e86aa8;
+  --rojo: #ef7d7d;
+  --lila: #b79bff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--fondo);
+  color: var(--tx);
+  font-family: ui-sans-serif, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+/* El fondo de la app es oscuro, y al imprimir una página generada asomaba por
+   debajo del contenido como una mancha negra a página completa. Lo que se
+   imprime son las guías de Makers Space, que van en blanco. */
+@media print {
+  html, body { background: #fff; color: #000; height: auto; }
+}
+
+button { font: inherit; color: inherit; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

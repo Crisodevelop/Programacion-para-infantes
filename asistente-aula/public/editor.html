@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prueba tu codigo</title>
+<style>
+  body{margin:0;font-family:system-ui,-apple-system,sans-serif}
+  #aviso{margin:0;padding:14px 16px;font-size:14px;color:#475569}
+</style>
+</head>
+<body>
+<p id="aviso">Cargando Python...</p>
+<script>
+(function(){
+  var aviso = document.getElementById('aviso');
+  function leer(h){
+    try{ return JSON.parse(decodeURIComponent(escape(atob(h)))); }catch(e){ return null; }
+  }
+  var h = location.hash.slice(1);
+  var inicial = h ? leer(h) : null;
+  if(h && !inicial){ aviso.textContent = 'No pude leer el codigo.'; return; }
+  var q = location.search.match(/[?&]v=([^&]*)/);
+  var v = (inicial && inicial.v) || (q && decodeURIComponent(q[1])) || '2026.7.3';
+
+  // El sitio del programa del estudiante. Python se arranca UNA vez por
+  // pagina: cada Ejecutar solo vacia esto y vuelve a llenarlo, asi la clase
+  // no paga el arranque del interprete en cada tirada.
+  var hoja = document.createElement('style');
+  document.head.appendChild(hoja);
+  var caja = document.createElement('div');
+  document.body.appendChild(caja);
+  var puestos = [];
+
+  // Lo que definio el programa anterior se olvida, para que una linea borrada
+  // deje de funcionar de verdad. Va en su propio script: asi los numeros de
+  // linea de los errores siguen siendo los que el estudiante ve.
+  var BASE = 'import builtins as _b\n'
+    + '_b._base = set(globals()) | {"_b", "_n"}\n'
+    + 'try:\n'
+    + '    import js as _js\n'
+    + '    _js.pyListo()\n'
+    + 'except Exception:\n'
+    + '    pass\n';
+  var OLVIDA = 'import builtins as _b\n'
+    + 'for _n in [k for k in list(globals()) if not k.startswith("_") and k not in _b._base]:\n'
+    + '    del globals()[_n]\n';
+  // Esto corre DESPUES del programa del estudiante: le dice a la clase que
+  // Python acabo. Si su programa se queda en un ciclo infinito nunca llega,
+  // y entonces la clase sabe que el siguiente Ejecutar tiene que recargar.
+  var FIN = 'try:\n'
+    + '    import js as _js\n'
+    + '    _js.parent.postMessage(_js.JSON.parse(\'{"editor":"listo"}\'), _js.location.origin)\n'
+    + 'except Exception:\n'
+    + '    pass\n';
+
+  function py(txt){
+    var s = document.createElement('script');
+    s.type = 'py';
+    s.textContent = txt;
+    document.body.appendChild(s);
+    puestos.push(s);
+  }
+  function pintar(d){
+    // Fuera el programa anterior: sus <script type="py"> y la salida que
+    // PyScript dejo colgada del body (<script-py>), que si no se acumula.
+    puestos.forEach(function(s){ s.remove(); });
+    puestos = [];
+    [].forEach.call(document.querySelectorAll('script-py'), function(n){ n.remove(); });
+    hoja.textContent = d.css || '';
+    caja.innerHTML = d.html || '';
+    // innerHTML no ejecuta scripts: se rehacen, en orden (la camara de la IA).
+    [].forEach.call(caja.querySelectorAll('script'), function(v){
+      var nuevo = document.createElement('script');
+      [].forEach.call(v.attributes, function(a){ nuevo.setAttribute(a.name, a.value); });
+      nuevo.text = v.text;
+      nuevo.async = false;
+      v.replaceWith(nuevo);
+    });
+    py(OLVIDA);
+    py(d.py || '');
+    py(FIN);
+  }
+
+  // La clase manda el programa por aqui; el marco contesta para que sepa que
+  // esta vivo (si no contesta, la clase recarga la pagina entera).
+  window.addEventListener('message', function(e){
+    if(e.origin !== location.origin || !e.data) return;
+    if(e.data.editor === 'corre'){
+      var d = leer(e.data.codigo);
+      if(!d) return;
+      if(aviso){ aviso.remove(); aviso = null; }
+      pintar(d);
+    }else if(e.data.editor === 'limpia'){
+      pintar({ css: '', html: '', py: '' });
+    }
+  });
+
+  py(BASE);
+  if(inicial) pintar(inicial);
+  // La clase necesita saber que este marco entiende mensajes: si no lo dice,
+  // cada Ejecutar vuelve al camino viejo (recargar la pagina).
+  try{ parent.postMessage({ editor: 'aqui' }, location.origin); }catch(e){}
+  var css = document.createElement('link');
+  css.rel = 'stylesheet';
+  css.href = 'https://pyscript.net/releases/' + v + '/core.css';
+  document.head.appendChild(css);
+  var core = document.createElement('script');
+  core.type = 'module';
+  core.src = 'https://pyscript.net/releases/' + v + '/core.js';
+  // Lo llama Python en cuanto arranca de verdad (core.js cargado no es lo
+  // mismo que el interprete listo: entre uno y otro hay varios megas).
+  window.pyListo = function(){
+    if(!aviso) return;
+    if(inicial){ aviso.remove(); aviso = null; }
+    else aviso.textContent = 'Python listo. Escribe tu codigo en la clase y pulsa Ejecutar.';
+  };
+  core.onerror = function(){ if(aviso) aviso.textContent = 'No se pudo cargar Python: revisa la conexion.'; };
+  document.head.appendChild(core);
+})();
+</script>
+</body>
+</html>

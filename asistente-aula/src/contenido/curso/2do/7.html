@@ -1,0 +1,264 @@
+<div class="prog" id="prog"></div>
+<div class="chrome tl"><a class="volver" href="/presentaciones">&#8592; Presentaciones</a></div>
+<div class="chrome tr" role="group" aria-label="Controles"><nav class="a-cursos" aria-label="Curso"><a class="a-curso" href="/curso/1ro/semana/7">1ro</a><a class="a-curso" href="/curso/2do/semana/7" aria-current="page">2do</a><a class="a-curso" href="/curso/3ro/semana/7">3ro</a></nav><span class="sep"></span><span data-hueco-docente style="display:flex"></span><button type="button" class="a-guion-btn" aria-expanded="false" title="Notas del docente">Guion</button><span class="sep"></span><button class="tembtn" data-tema="oscuro" aria-pressed="false">Oscuro</button><button class="tembtn" data-tema="claro" aria-pressed="false">Claro</button><button class="tembtn" data-tema="pared" aria-pressed="false">Pared</button></div>
+
+<main class="deck">
+  <section class="slide">
+   <div class="inner">
+    <div class="a-portada con-escena">
+     <div>
+      <p class="eyebrow">2DO DE SECUNDARIA · Programar con Python, con retos de más</p>
+      <div class="cinta"><span class="cinta-num">07</span><span class="cinta-txt">Semana 7 de 12</span></div>
+      <h1 class="mid">Botones que hacen algo: el clicker</h1>
+      <p class="a-hoy">Vas a hacer un clicker: un botón que suma puntos cada vez que lo tocas.</p>
+     </div>
+     <div class="a-escena"><svg viewBox="220 55 760 560" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="1200" height="675" fill="none"/><rect x="370" y="247.5" width="460" height="150" rx="34" fill="#16A34A" stroke="#14213D" stroke-width="10"/><rect x="450" y="313.5" width="300" height="22" rx="11" fill="#FFFFFF"/><path d="M660 377.5l0 190l52 -54l38 78l44 -22l-40 -78l74 -6z" fill="#FFFFFF" stroke="#14213D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · La idea · 1 – 3 min</p>
+    <p class="a-quien">Todos · escuchamos</p><h2 class="a-teo-titulo">¿Qué es un evento?</h2><p class="a-teo-texto">Algo que pasa en la página, como un clic, y que hace que se ejecute una función.</p><div class="a-teo-ejemplo"><p class="a-etq">En la vida real</p><p>Tocas el timbre (el evento) y suena la campana (la función). Si nadie lo toca, no suena.</p></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · Las partes · 3 – 5 min</p>
+    <h2 class="a-titulo">Las partes de un evento</h2><div class="a-teo-partes con-escena"><ol class="a-teo-lista"><li><b>El botón</b><span>Está en el HTML y tiene un nombre único: su id.</span></li><li><b>@when</b><span>Conecta el clic de ese botón con la función de abajo.</span></li><li><b>def</b><span>La función: los pasos que se ejecutan en cada clic.</span></li><li><b>global y +=</b><span>global deja cambiar la variable de afuera; puntos += 1 es puntos = puntos + 1.</span></li></ol><div class="a-teo-ejemplos"><p class="a-etq">Así se escriben ✓</p><ol class="a-teo-cod"><li><code>from pyscript import when, display</code></li><li><code>@when("click", "#boton")</code></li><li><code>def sumar(evento):</code></li><li><code>    display("¡Clic!")</code></li></ol></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · ¿Lo entendí? · 5 – 8 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><h2 class="a-titulo">Si nadie toca el botón, ¿se ejecuta su función?</h2><div class="a-panel a-teo-check" data-nota="teoria" data-pts="5" data-nota-tipo="reto" data-act="opciones"><div class="a-ops"><button type="button" class="a-op" data-txt="No, espera el clic" data-ok><span class="a-letra">A</span><span>No, espera el clic</span></button><button type="button" class="a-op" data-txt="Sí, siempre"><span class="a-letra">B</span><span>Sí, siempre</span></button><button type="button" class="a-op" data-txt="Solo una vez al abrir"><span class="a-letra">C</span><span>Solo una vez al abrir</span></button></div><p class="a-fb" role="status" aria-live="polite"></p><p class="a-explica" hidden>La función del @when solo corre cuando pasa el evento: el clic.</p><div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Calentamiento · 8 – 10 min</p>
+    <p class="a-quien">Todos · a mano alzada</p><h2 class="a-titulo">Empieza en 0 y cada toque suma 1. Tocas 3 veces. ¿Cuánto marca?</h2>
+    <div class="a-vota" data-nota="calent" data-pts="5" data-nota-tipo="reto" data-act="vota">
+      <div class="a-ops"><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">A</span><span>1</span></button><button type="button" class="a-op" aria-pressed="false" data-ok><span class="a-letra">B</span><span>3</span></button><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">C</span><span>0</span></button><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">D</span><span>30</span></button></div>
+      <div class="a-acc"><button type="button" class="a-btn" data-revelar>Revelar la respuesta</button></div>
+      <p class="a-fb" role="status"></p>
+      <p class="a-porque" hidden>Cada clic ejecuta la función una vez: 0 + 1 + 1 + 1 = 3.</p>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Mira cómo funciona · 10 – 13 min</p>
+    <h2 class="a-titulo">Un botón que suma</h2>
+    <div class="a-ejemplo" data-act="notas">
+      <ol class="a-cod" data-leng="python"><li><span>from pyscript import when, document</span></li><li><span></span></li><li><span>puntos = 0</span></li><li><span></span></li><li><span>@when("click", "#boton")</span></li><li><span>def jugar(evento):</span></li><li><span>    global puntos</span></li><li><span>    puntos += 1</span></li><li><span>    salida = document.querySelector("#salida")</span></li><li><span>    salida.innerText = f"Puntos: {puntos}"</span></li></ol>
+      <div><p class="a-etq">Toca una nota y mira su línea</p><ol class="a-notas"><li><button type="button" class="a-nota" data-marca="5" aria-pressed="false"><b>Línea 5</b><span>Conecta el botón #boton con la función de abajo.</span></button></li><li><button type="button" class="a-nota" data-marca="8" aria-pressed="false"><b>Línea 8</b><span>+= suma 1 a lo que ya había: es lo mismo que puntos = puntos + 1.</span></button></li><li><button type="button" class="a-nota" data-marca="10" aria-pressed="false"><b>Línea 10</b><span>La f mete la variable dentro del texto del marcador.</span></button></li></ol></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Retos 1 y 2 · 13 – 16 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><div class="a-grid2"><div class="a-panel" data-nota="r1" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">¿Qué muestra?</p>
+      <ol class="a-cod" data-leng="python"><li><span>puntos = 5</span></li><li><span>puntos += 1</span></li><li><span>puntos += 1</span></li><li><span>display(puntos)</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="5"><span class="a-letra">A</span><span><code>5</code></span></button><button type="button" class="a-op" data-txt="7" data-ok><span class="a-letra">B</span><span><code>7</code></span></button><button type="button" class="a-op" data-txt="6"><span class="a-letra">C</span><span><code>6</code></span></button><button type="button" class="a-op" data-txt="51"><span class="a-letra">D</span><span><code>51</code></span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>Cada línea es como un clic: 5 + 1 + 1 = 7.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div><div class="a-panel" data-nota="r2" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">Completa la línea que falta</p>
+      <ol class="a-cod" data-leng="python"><li><span>@when("click", "#boton")</span></li><li><span>def jugar(evento):</span></li><li><span>    <span class="a-hueco">___</span></span></li><li><span>    puntos += 1</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="global puntos" data-ok><span class="a-letra">A</span><span><code>global puntos</code></span></button><button type="button" class="a-op" data-txt="puntos = 0"><span class="a-letra">B</span><span><code>puntos = 0</code></span></button><button type="button" class="a-op" data-txt="return puntos"><span class="a-letra">C</span><span><code>return puntos</code></span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>Sin global, la función no puede cambiar la variable puntos de afuera.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Retos 3 y 4 · 16 – 19 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><div class="a-grid2"><div class="a-panel" data-nota="r3" data-pts="10" data-nota-tipo="reto" data-act="ordena" data-orden="[&quot;@when(\&quot;click\&quot;, \&quot;#boton\&quot;)&quot;, &quot;def jugar(evento):&quot;, &quot;    global puntos&quot;, &quot;    puntos += 1&quot;]">
+      <p class="a-etq">Ordena</p>
+      <h3>Ordena el clicker.</h3>
+      <ol class="a-orden" data-leng="python"><li data-txt="def jugar(evento):"><span>def jugar(evento):</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="    global puntos"><span>    global puntos</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="@when(&quot;click&quot;, &quot;#boton&quot;)"><span>@when("click", "#boton")</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="    puntos += 1"><span>    puntos += 1</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li></ol>
+      <div class="a-acc"><button type="button" class="a-btn" data-comprobar>Comprobar</button>
+        <button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+    </div><div class="a-panel" data-nota="r4" data-pts="10" data-nota-tipo="reto" data-act="error">
+      <p class="a-etq">Encuentra el error</p>
+      <h3>Toca la línea que está mal.</h3>
+      <div class="a-lineas" data-leng="python"><button type="button" class="a-linea" data-mala><i>1</i><span>@when("click", "boton")</span></button><button type="button" class="a-linea"><i>2</i><span>def jugar(evento):</span></button><button type="button" class="a-linea"><i>3</i><span>    global puntos</span></button><button type="button" class="a-linea"><i>4</i><span>    puntos += 1</span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <div class="a-explica" hidden><p class="a-etq">Así queda bien</p>
+        <pre class="a-arreglo">@when("click", "#boton")</pre><p>Sin el # no busca el id boton: busca una etiqueta llamada boton, que no existe.</p></div>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Sube de nivel · 19 – 22 min</p>
+    <p class="a-quien">Para los que quieren más</p><div class="a-grid2"><div class="a-panel" data-nota="x1" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">¿Qué muestra?</p>
+      <ol class="a-cod" data-leng="python"><li><span>a = "7"</span></li><li><span>b = "3"</span></li><li><span>display(a + b)</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="a + b"><span class="a-letra">A</span><span><code>a + b</code></span></button><button type="button" class="a-op" data-txt="73" data-ok><span class="a-letra">B</span><span><code>73</code></span></button><button type="button" class="a-op" data-txt="10"><span class="a-letra">C</span><span><code>10</code></span></button><button type="button" class="a-op" data-txt="Error"><span class="a-letra">D</span><span><code>Error</code></span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>Son textos: .value también llega así, y + los pega.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Tu primer botón · 22 – 26 min</p>
+    <p class="a-quien">Primero en grupo · después en tu compu</p><div class="a-taller a-marcador" data-nota="primera" data-pts="10" data-nota-tipo="juego" data-act="taller" data-cfg="{&quot;tipo&quot;: &quot;evento&quot;, &quot;misiones&quot;: [{&quot;pista&quot;: &quot;Dentro van dos cosas entre comillas: el evento y el botón, con su #.&quot;, &quot;pide&quot;: &quot;Engancha tu función al botón de sumar puntos, que se llama #sumar.&quot;, &quot;id&quot;: &quot;sumar&quot;, &quot;sale&quot;: &quot;click en #sumar&quot;}, {&quot;pista&quot;: &quot;Igual que la anterior: solo cambia el nombre del botón.&quot;, &quot;pide&quot;: &quot;Ahora al de volver a empezar: #reiniciar.&quot;, &quot;id&quot;: &quot;reiniciar&quot;, &quot;sale&quot;: &quot;click en #reiniciar&quot;}, {&quot;pista&quot;: &quot;El # va pegado al nombre, dentro de las comillas.&quot;, &quot;pide&quot;: &quot;Al botón que apaga la música: #apagar.&quot;, &quot;id&quot;: &quot;apagar&quot;, &quot;sale&quot;: &quot;click en #apagar&quot;}, {&quot;pista&quot;: &quot;La última: cuidado con no dejarte ninguna comilla.&quot;, &quot;pide&quot;: &quot;Y al último, el que enseña la ayuda: #ayuda.&quot;, &quot;id&quot;: &quot;ayuda&quot;, &quot;sale&quot;: &quot;click en #ayuda&quot;}], &quot;unidad&quot;: &quot;línea&quot;}">
+      <div class="a-col">
+        <details class="a-mt-din">
+          <summary>Antes, en grupo · El timbre de la clase · 3 min</summary>
+          <ol><li>El docente dibuja tres botones en la pizarra y les pone nombre: #sumar, #reiniciar, #apagar.</li><li>Toca uno y pregunta: ¿qué función tendría que dispararse?</li><li>Todos escriben en el cuaderno la línea que las engancha: @when("click", "#sumar")</li></ol>
+        </details>
+        <div class="a-mt-mision"><p class="a-etq" data-num></p><p class="a-mt-pide" data-pide></p>
+          <button type="button" class="a-tl-pista" data-pista hidden>💡 Pista</button>
+          <p class="a-tl-dice" data-dice hidden></p></div>
+        <div class="a-mt-escribe"><input class="campo a-mt-in" data-linea autocomplete="off" spellcheck="false" aria-label="Escribe tu línea" placeholder="@when("click", "#boton")"><button type="button" class="a-btn" data-probar>Probar</button></div><p class="a-mt-pista" data-forma></p><div class="a-tl-ayuda"><p class="a-etq">La forma de un evento</p><span class="a-tl-ay"><code>@when("click", "#id")</code><i>engancha el botón</i></span></div>
+        <p class="a-tl-sale" data-sale aria-live="polite"></p>
+        <p class="a-fb" role="status" aria-live="polite"></p>
+      </div>
+      <div class="a-col">
+        <div class="a-tl-vista" data-vista hidden></div>
+        <p class="a-etq">Lo que llevas</p>
+        <pre class="a-mt-prog" data-prog></pre>
+        <div class="a-tl-barra" aria-hidden="true"><i data-barra></i></div>
+        <div class="a-acc"><button type="button" class="a-btn a-sec" data-reiniciar>Empezar de nuevo</button></div>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Mini juego · 26 – 29 min</p>
+    <p class="a-quien">Tú solo o en parejas</p><h2 class="a-titulo">30 puntos en 10 segundos</h2><p class="pista a-pista">TOCA Y MIRA LA VARIABLE</p><div class="a-marcador" data-nota="juego" data-pts="10" data-nota-tipo="juego" data-act="marcador" data-cfg="{&quot;variables&quot;: {&quot;puntos&quot;: [&quot;int&quot;, 0], &quot;valor&quot;: [&quot;str&quot;, &quot;1&quot;]}, &quot;meta&quot;: {&quot;var&quot;: &quot;puntos&quot;, &quot;valor&quot;: 30, &quot;segundos&quot;: 10}}">
+      <div class="a-col">
+        <div class="a-cajas"><label class="a-caja-e"><code>valor = caja.value</code><input class="campo" data-caja="valor" value="1"></label></div>
+        <p class="a-etq">Toca un botón: cada uno ejecuta su línea</p>
+        <div class="a-mbs"><button type="button" class="a-mb" data-b="{&quot;var&quot;: &quot;puntos&quot;, &quot;op&quot;: &quot;+=&quot;, &quot;valor&quot;: [&quot;int&quot;, 1]}"><b>¡Toca!</b><code>puntos += 1</code></button><button type="button" class="a-mb" data-b="{&quot;calc&quot;: {&quot;izq&quot;: &quot;puntos&quot;, &quot;op&quot;: &quot;+&quot;, &quot;der&quot;: &quot;valor&quot;, &quot;convertir&quot;: &quot;int&quot;, &quot;destino&quot;: &quot;puntos&quot;}}"><b>¡Toca con la caja!</b><code>puntos = puntos + int(valor)</code></button><button type="button" class="a-mb" data-b="{&quot;var&quot;: &quot;puntos&quot;, &quot;op&quot;: &quot;=&quot;, &quot;valor&quot;: [&quot;int&quot;, 0]}"><b>Reiniciar</b><code>puntos = 0</code></button></div>
+        <div class="a-meta"><span>Meta: <code>puntos</code> llega a 30 en 10 s</span><button type="button" class="a-btn" data-meta>▶ Empezar el reto</button><span data-crono></span></div>
+      </div>
+      <div class="a-col">
+        <p class="a-etq">Variables</p><div class="a-vars" data-vars></div>
+        <pre class="a-salida" data-salida>&gt;&gt;&gt; </pre>
+        
+        <p class="a-fb" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Otro juego · 29 – 32 min</p>
+    <p class="a-quien">Tú solo o en parejas</p><h2 class="a-titulo">¿De qué tipo es?</h2><p class="pista a-pista">TOCA Y CLASIFICA</p><div class="a-clasifica" data-nota="juego2" data-pts="10" data-nota-tipo="juego" data-act="clasifica">
+      <p class="a-explica">Toca una tarjeta y después la caja donde va.</p>
+      <div class="a-fichas" data-fichas><button type="button" class="a-ficha" aria-pressed="false" data-c="0">"True"</button><button type="button" class="a-ficha" aria-pressed="false" data-c="3">True</button><button type="button" class="a-ficha" aria-pressed="false" data-c="1">-7</button><button type="button" class="a-ficha" aria-pressed="false" data-c="1">18</button><button type="button" class="a-ficha" aria-pressed="false" data-c="0">"Hola"</button><button type="button" class="a-ficha" aria-pressed="false" data-c="3">False</button><button type="button" class="a-ficha" aria-pressed="false" data-c="1">0</button><button type="button" class="a-ficha" aria-pressed="false" data-c="2">3.0</button><button type="button" class="a-ficha" aria-pressed="false" data-c="0">"18"</button><button type="button" class="a-ficha" aria-pressed="false" data-c="2">1.62</button></div>
+      <div class="a-cubetas"><div class="a-cubeta"><button type="button" class="a-cub-btn" data-cub="0">str</button><div class="a-cub-dentro" data-dentro></div></div><div class="a-cubeta"><button type="button" class="a-cub-btn" data-cub="1">int</button><div class="a-cub-dentro" data-dentro></div></div><div class="a-cubeta"><button type="button" class="a-cub-btn" data-cub="2">float</button><div class="a-cub-dentro" data-dentro></div></div><div class="a-cubeta"><button type="button" class="a-cub-btn" data-cub="3">bool</button><div class="a-cub-dentro" data-dentro></div></div></div>
+      <div class="a-acc"><span class="a-marca" data-marca>0 / 10</span>
+        <button type="button" class="a-btn a-sec" data-reintentar>Reintentar</button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Manos a la obra · 32 – 42 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><h2 class="a-titulo">Mi clicker</h2><ol class="a-pasos a-pasos-fila"><li>Pulsa Ejecutar y toca el botón.</li><li>Cambia el tema: galletas, goles o monedas, en el título y en el botón.</li><li>Programa el botón Reiniciar con su propio @when y global.</li><li>Reto: agrega una caja con id valor y suma int() de lo que escriban.</li><li>Escribe una palabra en la caja, anota el error y pulsa Ejecutar: tu código se guarda con tu nota.</li></ol><div class="a-editor" data-nota="practica" data-pts="15" data-nota-tipo="practica" data-act="editor" data-cfg="{&quot;v&quot;: &quot;2026.7.3&quot;, &quot;html&quot;: &quot;&lt;h1&gt;Mi clicker&lt;/h1&gt;\n&lt;button id=\&quot;boton\&quot;&gt;¡Toca!&lt;/button&gt;\n&lt;button id=\&quot;reiniciar\&quot;&gt;Reiniciar&lt;/button&gt;\n&lt;p id=\&quot;salida\&quot;&gt;Puntos: 0&lt;/p&gt;&quot;, &quot;css&quot;: &quot;body{font-family:system-ui,sans-serif;text-align:center;padding:30px;background:#0f172a;color:#f8fafc}\nbutton{font-size:1.6rem;padding:.8rem 1.6rem;margin:.4rem;border-radius:12px;border:0;cursor:pointer}\n#salida{font-size:2rem}&quot;, &quot;py&quot;: &quot;from pyscript import when, document\n\npuntos = 0\n\n@when(\&quot;click\&quot;, \&quot;#boton\&quot;)\ndef jugar(evento):\n    global puntos\n    puntos += 1\n    document.querySelector(\&quot;#salida\&quot;).innerText = f\&quot;Puntos: {puntos}\&quot;\n\n# Tu turno: haz que #reiniciar ponga puntos en 0\n&quot;, &quot;inicio&quot;: &quot;py&quot;}">
+      <div class="a-ed-col">
+        <div class="a-ed-tabs" role="tablist" aria-label="Qué parte del código"><button type="button" role="tab" class="a-ed-tab" data-tab="py" aria-selected="true">Python</button><button type="button" role="tab" class="a-ed-tab" data-tab="html" aria-selected="false">HTML</button><button type="button" role="tab" class="a-ed-tab" data-tab="css" aria-selected="false">CSS</button></div>
+        <textarea class="a-ed-code" data-codigo spellcheck="false" aria-label="Tu código"></textarea>
+        <div class="a-acc"><button type="button" class="a-btn" data-correr>▶ Ejecutar</button>
+          <button type="button" class="a-btn a-sec" data-completa>Pantalla completa ↗</button>
+          <button type="button" class="a-btn a-sec" data-volver>Volver al código de partida</button></div>
+        <p class="a-explica">Cada vez que pulsas Ejecutar, tu código se guarda con tu nota.</p>
+      </div>
+      <div class="a-ed-col">
+        <p class="a-etq">Lo que se ve</p>
+        <iframe class="a-ed-vista" data-marco title="Resultado de tu código" allow="camera; microphone"
+                sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">El reto de hoy · 32 – 44 min</p>
+    <div class="bloque"><p>Agregar una caja de texto donde el jugador escribe cuánto vale cada clic, leída con int(document.querySelector("#valor").value). Probar qué pasa si escriben una palabra y anotar el error.</p></div><div class="bloque a-sube"><p class="a-etq">Sube de nivel · si terminas antes</p><p>Leer con int() lo que escriben en una caja y sumarlo al marcador.</p></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Chuleta de la semana · para llevar</p>
+    <div class="a-chuleta" data-act="imprimir">
+      <p class="a-ch-cab">2DO DE SECUNDARIA · Semana 7</p>
+      <h2 class="a-titulo">Botones y eventos</h2>
+      <ul class="a-ch-lista"><li><code>&lt;button id="sumar"&gt;+1&lt;/button&gt;</code><span>En el HTML: el botón y su id.</span></li><li><code>from pyscript import when, display</code><span>Se trae when, que es quien escucha.</span></li><li><code>@when("click", "#sumar")</code><span>Engancha la función de abajo a ese botón.</span></li><li><code>def sumar(evento):</code><span>La función del clic recibe el evento.</span></li><li><code>    global puntos</code><span>Para cambiar una variable de afuera.</span></li><li><code>    puntos += 1</code><span>Y ahí se suma.</span></li></ul>
+      <div class="a-acc a-ch-acc"><button type="button" class="a-btn" data-imprimir>🖨 Imprimir la chuleta</button></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Sigue practicando · en casa</p>
+    <p class="a-quien">Gratis · sin instalar nada</p><h2 class="a-titulo">Sigue practicando Python en casa</h2><div class="a-recs"><a class="a-rec" href="https://pyscript.com/@examples" target="_blank" rel="noopener"><b>PyScript · ejemplos</b><span>Ejemplos oficiales con botones y eventos, listos para tocar y cambiar.</span><i>pyscript.com/@examples ↗</i></a><a class="a-rec" href="https://es.futurecoder.io/course/" target="_blank" rel="noopener"><b>futurecoder</b><span>Para seguir con funciones y variables, que es lo que un botón dispara.</span><i>es.futurecoder.io/course ↗</i></a><a class="a-rec" href="https://jupyter.org/try-jupyter/lab/" target="_blank" rel="noopener"><b>JupyterLite</b><span>Python en el navegador para probar la función antes de engancharla.</span><i>jupyter.org/try-jupyter/lab ↗</i></a></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Ticket de salida · 44 – 45 min</p>
+    <p class="a-quien">Tú solo</p><h2 class="a-titulo">¿Qué línea conecta el botón con tu función?</h2><div data-nota="salida" data-pts="5" data-nota-tipo="salida" data-act="salida"><textarea class="a-ticket" aria-label="Tu respuesta" placeholder="Escribe tu respuesta. No se guarda: es para ti."></textarea><div class="a-acc"><button type="button" class="a-btn a-sec" data-ver>Ver una buena respuesta</button></div><p class="a-resp" hidden>@when("click", "#boton"), justo encima de def jugar(evento):</p></div><dl class="dato"><dt>Qué entregas hoy</dt><dd>Tu código en el editor de la clase, guardado con tu nota: clicker funcional: botón que suma, botón de reinicio y marcador que se actualiza en la página.</dd></dl>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Tu nota · al final</p>
+    <p class="a-quien">Tú solo · al terminar</p><div class="a-nota" data-act="nota">
+      <div class="a-nota-grande"><b data-total>0</b><span>/ 100</span></div>
+      <ul class="a-nota-lista" data-desglose></ul>
+      <p class="a-explica a-nota-quien" data-quien></p>
+    </div>
+   </div>
+  </section>
+</main>
+
+<aside class="a-guion" hidden aria-label="Guion del docente">
+  <div class="a-g-cab"><h2>Guion de la clase</h2>
+    <button type="button" class="a-btn a-sec" data-cerrar aria-label="Cerrar el guion">✕</button></div>
+  <p class="a-g-obj">Hacer que el programa responda a un clic y lea lo que el jugador escribe en una caja de texto.</p>
+  <div class="a-g-bloque"><b>0 – 5</b> <em>Enganche</em><p>Proyecta un clicker: un botón «¡Toca!» que suma un punto por clic. Reta a un voluntario a llegar a 30 en diez segundos. «Hoy hacen el suyo.»</p></div><div class="a-g-bloque"><b>5 – 13</b> <em>Concepto</em><p>En la plantilla, señala el botón con id boton y el párrafo con id salida. Modela @when("click", "#boton") sobre def jugar(evento):, con global puntos como primera línea para que la función pueda cambiar el marcador. Dentro: puntos += 1 y document.querySelector("#salida").innerText = f"Puntos: {puntos}". Explica += : puntos += 1 es lo mismo que puntos = puntos + 1. Y la f del f-string, que mete la variable dentro del texto. Explica la sangría: lo que pertenece a la función va corrido a la derecha.</p></div><div class="a-g-bloque"><b>13 – 38</b> <em>Práctica</em><p>Construir un clicker con tema propio (galletas, goles, monedas): un botón que suma, el marcador en la página y un segundo botón que reinicia a 0.</p></div><div class="a-g-bloque"><b>13 – 38</b> <em>Reto</em><p>Agregar una caja de texto donde el jugador escribe cuánto vale cada clic, leída con int(document.querySelector("#valor").value). Probar qué pasa si escriben una palabra y anotar el error.</p></div><div class="a-g-bloque"><b>38 – 45</b> <em>Cierre</em><p>«¿Qué pasa primero, el clic o la función?». Un estudiante señala en su editor la línea que conecta el botón con el código.</p></div>
+  <div class="a-g-bloque"><em>Sube de nivel</em><p>Leer con int() lo que escriben en una caja y sumarlo al marcador.</p></div>
+  <div class="a-g-bloque"><em>Recursos</em><p>Editor de Python de la clase, proyector.</p></div>
+  <div class="a-g-bloque"><em>Evidencia</em><p>Tu código en el editor de la clase, guardado con tu nota: clicker funcional: botón que suma, botón de reinicio y marcador que se actualiza en la página.</p></div>
+</aside>
+
+<div class="chrome bl"><span class="count" id="cnt">01 / 18</span></div>
+<div class="chrome br">
+  <button class="navb" id="prev" aria-label="Diapositiva anterior">&#8592;</button>
+  <button class="navb" id="next" aria-label="Diapositiva siguiente">&#8594;</button>
+</div>
+<div class="paginacion"><div class="caps" id="caps"></div><div class="pass" id="pass"></div></div>

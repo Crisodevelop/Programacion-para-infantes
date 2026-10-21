@@ -1,0 +1,25 @@
+# Secretos. Nunca al repositorio.
+.env
+.env.local
+.env.*.local
+
+# Dependencias y compilados
+node_modules/
+.next/
+.next-verificar/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Python
+__pycache__/
+*.pyc
+
+# Audio temporal del asistente
+.audio/
+
+.DS_Store
+
+# Notas de trabajo internas: citan el centro y la base del aula.
+docs/encargo.md
+docs/subir-a-github.md

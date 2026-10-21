@@ -1,0 +1,241 @@
+<div class="prog" id="prog"></div>
+<div class="chrome tl"><a class="volver" href="/presentaciones">&#8592; Presentaciones</a></div>
+<div class="chrome tr" role="group" aria-label="Controles"><nav class="a-cursos" aria-label="Curso"><a class="a-curso" href="/curso/1ro/semana/10">1ro</a><a class="a-curso" href="/curso/2do/semana/10">2do</a><a class="a-curso" href="/curso/3ro/semana/10" aria-current="page">3ro</a></nav><span class="sep"></span><span data-hueco-docente style="display:flex"></span><button type="button" class="a-guion-btn" aria-expanded="false" title="Notas del docente">Guion</button><span class="sep"></span><button class="tembtn" data-tema="oscuro" aria-pressed="false">Oscuro</button><button class="tembtn" data-tema="claro" aria-pressed="false">Claro</button><button class="tembtn" data-tema="pared" aria-pressed="false">Pared</button></div>
+
+<main class="deck">
+  <section class="slide">
+   <div class="inner">
+    <div class="a-portada con-escena">
+     <div>
+      <p class="eyebrow">3RO DE SECUNDARIA · Programar con Python para resolver problemas reales</p>
+      <div class="cinta"><span class="cinta-num">10</span><span class="cinta-txt">Semana 10 de 12</span></div>
+      <h1 class="mid">IA sin código: entreno mi modelo con Teachable Machine</h1>
+      <p class="a-hoy">Vas a entrenar tu propio modelo de inteligencia artificial, sin escribir código.</p>
+     </div>
+     <div class="a-escena"><svg viewBox="220 55 760 560" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="1200" height="675" fill="none"/><rect x="270" y="117.5" width="660" height="440" rx="20" fill="#CBD5E1" stroke="#14213D" stroke-width="10"/><rect x="355" y="177.5" width="490" height="320" rx="16" fill="#FFFFFF" stroke="#14213D" stroke-width="9"/><rect x="440" y="237.5" width="320" height="200" rx="12" fill="#7C3AED" stroke="#14213D" stroke-width="8"/></svg></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · La idea · 1 – 3 min</p>
+    <p class="a-quien">Todos · escuchamos</p><h2 class="a-teo-titulo">¿Cómo aprende una IA?</h2><p class="a-teo-texto">Un modelo de IA aprende a reconocer patrones a partir de muchos ejemplos, no de reglas escritas.</p><div class="a-teo-ejemplo"><p class="a-etq">En la vida real</p><p>Nadie le explica a un bebé qué es un perro: ve muchos perros y aprende a reconocerlos.</p></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · Las partes · 3 – 5 min</p>
+    <h2 class="a-titulo">Las partes de un modelo</h2><div class="a-teo-partes con-escena"><ol class="a-teo-lista"><li><b>Clases</b><span>Las respuestas posibles: pulgar arriba o pulgar abajo.</span></li><li><b>Ejemplos</b><span>Fotos o sonidos de cada clase: de ellos aprende.</span></li><li><b>Entrenar</b><span>El modelo busca qué tienen en común los ejemplos.</span></li><li><b>Confianza</b><span>Qué tan seguro está de su respuesta, de 0 a 100 %.</span></li></ol><div class="a-escena"><svg viewBox="220 55 760 560" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="1200" height="675" fill="none"/><rect x="270" y="117.5" width="660" height="440" rx="20" fill="#CBD5E1" stroke="#14213D" stroke-width="10"/><rect x="355" y="177.5" width="490" height="320" rx="16" fill="#FFFFFF" stroke="#14213D" stroke-width="9"/><rect x="440" y="237.5" width="320" height="200" rx="12" fill="#7C3AED" stroke="#14213D" stroke-width="8"/></svg></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · ¿Lo entendí? · 5 – 8 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><h2 class="a-titulo">Si todas las fotos son de la misma persona, el modelo…</h2><div class="a-panel a-teo-check" data-nota="teoria" data-pts="5" data-nota-tipo="reto" data-act="opciones"><div class="a-ops"><button type="button" class="a-op" data-txt="Aprende de todos igual"><span class="a-letra">A</span><span>Aprende de todos igual</span></button><button type="button" class="a-op" data-txt="Se niega a entrenar"><span class="a-letra">B</span><span>Se niega a entrenar</span></button><button type="button" class="a-op" data-txt="Puede fallar con otras personas" data-ok><span class="a-letra">C</span><span>Puede fallar con otras personas</span></button></div><p class="a-fb" role="status" aria-live="polite"></p><p class="a-explica" hidden>Aprende solo de lo que ve: con una sola persona, eso es lo único que conoce. Eso es sesgo.</p><div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Calentamiento · 8 – 10 min</p>
+    <p class="a-quien">Todos · a mano alzada</p><h2 class="a-titulo">Entrenas un modelo solo con fotos tuyas. ¿Qué pasa si lo prueba otra persona?</h2>
+    <div class="a-vota" data-nota="calent" data-pts="5" data-nota-tipo="reto" data-act="vota">
+      <div class="a-ops"><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">A</span><span>Acierta igual</span></button><button type="button" class="a-op" aria-pressed="false" data-ok><span class="a-letra">B</span><span>Puede equivocarse: nunca la vio</span></button><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">C</span><span>Se apaga</span></button><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">D</span><span>Pide más fotos</span></button></div>
+      <div class="a-acc"><button type="button" class="a-btn" data-revelar>Revelar la respuesta</button></div>
+      <p class="a-fb" role="status"></p>
+      <p class="a-porque" hidden>El modelo solo aprende de los ejemplos que le das. Si todos son tuyos, otra cara lo confunde.</p>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Mira cómo funciona · 10 – 13 min</p>
+    <h2 class="a-titulo">Cómo aprende un modelo</h2>
+    <div class="a-ejemplo" data-act="notas">
+      <ol class="a-cod" data-leng="tarjetas"><li><span>CLASES: pulgar arriba, pulgar abajo</span></li><li><span>EJEMPLOS: 30 fotos de cada clase</span></li><li><span>ENTRENAR: el modelo busca patrones</span></li><li><span>PROBAR: con una mano que nunca vio</span></li><li><span>CONFIANZA: qué tan seguro está, de 0 a 100 %</span></li></ol>
+      <div><p class="a-etq">Toca una nota y mira su tarjeta</p><ol class="a-notas"><li><button type="button" class="a-nota" data-marca="1" aria-pressed="false"><b>Tarjeta 1</b><span>Una clase es una respuesta posible.</span></button></li><li><button type="button" class="a-nota" data-marca="2" aria-pressed="false"><b>Tarjeta 2</b><span>Los ejemplos son lo único de lo que aprende.</span></button></li><li><button type="button" class="a-nota" data-marca="4" aria-pressed="false"><b>Tarjeta 4</b><span>Se prueba con casos que no vio.</span></button></li></ol></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Retos 1 y 2 · 13 – 16 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><div class="a-grid2"><div class="a-panel" data-nota="r1" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">¿Qué pasa?</p>
+      <ol class="a-cod" data-leng="tarjetas"><li><span>Clase A: 30 fotos variadas</span></li><li><span>Clase B: 5 fotos, todas iguales</span></li><li><span>Pruebas la clase B con otra luz</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="Probablemente se equivoca" data-ok><span class="a-letra">A</span><span>Probablemente se equivoca</span></button><button type="button" class="a-op" data-txt="Acierta seguro"><span class="a-letra">B</span><span>Acierta seguro</span></button><button type="button" class="a-op" data-txt="Crea una clase C"><span class="a-letra">C</span><span>Crea una clase C</span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>Con pocos ejemplos iguales el modelo no aprendió la variedad del mundo real.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div><div class="a-panel" data-nota="r2" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">Completa la tarjeta que falta</p>
+      <ol class="a-cod" data-leng="tarjetas"><li><span>Quieres que diga «nada» si no hay nadie</span></li><li><span>Agregas una clase con: <span class="a-hueco">___</span></span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="más fotos tuyas"><span class="a-letra">A</span><span>más fotos tuyas</span></button><button type="button" class="a-op" data-txt="fotos del fondo vacío" data-ok><span class="a-letra">B</span><span>fotos del fondo vacío</span></button><button type="button" class="a-op" data-txt="una foto borrosa"><span class="a-letra">C</span><span>una foto borrosa</span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>Para que aprenda «nada» necesita ejemplos de nada: el fondo vacío.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Retos 3 y 4 · 16 – 19 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><div class="a-grid2"><div class="a-panel" data-nota="r3" data-pts="10" data-nota-tipo="reto" data-act="ordena" data-orden="[&quot;Crear un proyecto de imagen&quot;, &quot;Nombrar las clases&quot;, &quot;Grabar ejemplos de cada clase&quot;, &quot;Entrenar el modelo&quot;, &quot;Probar con casos nuevos&quot;]">
+      <p class="a-etq">Ordena</p>
+      <h3>Ordena los pasos en Teachable Machine.</h3>
+      <ol class="a-orden" data-leng="tarjetas"><li data-txt="Crear un proyecto de imagen"><span>Crear un proyecto de imagen</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="Entrenar el modelo"><span>Entrenar el modelo</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="Probar con casos nuevos"><span>Probar con casos nuevos</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="Nombrar las clases"><span>Nombrar las clases</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="Grabar ejemplos de cada clase"><span>Grabar ejemplos de cada clase</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li></ol>
+      <div class="a-acc"><button type="button" class="a-btn" data-comprobar>Comprobar</button>
+        <button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+    </div><div class="a-panel" data-nota="r4" data-pts="10" data-nota-tipo="reto" data-act="error">
+      <p class="a-etq">Encuentra el error</p>
+      <h3>Toca la tarjeta que está mal.</h3>
+      <div class="a-lineas" data-leng="tarjetas"><button type="button" class="a-linea"><i>1</i><span>Clase gato: 30 fotos de gatos</span></button><button type="button" class="a-linea"><i>2</i><span>Clase perro: 30 fotos de perros</span></button><button type="button" class="a-linea" data-mala><i>3</i><span>Pruebo con las mismas fotos</span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <div class="a-explica" hidden><p class="a-etq">Así queda bien</p>
+        <pre class="a-arreglo">Pruebo con fotos nuevas que no vio</pre><p>Probar con las mismas fotos no mide nada: esas ya las conoce.</p></div>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Sube de nivel · 19 – 22 min</p>
+    <p class="a-quien">Para los que quieren más</p><div class="a-grid2"><div class="a-panel" data-nota="x1" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">¿Qué muestra?</p>
+      <ol class="a-cod" data-leng="tarjetas"><li><span>Versión A: 10 fotos, una persona, un fondo</span></li><li><span>Versión B: 30 fotos, tres personas, dos fondos</span></li><li><span>Las dos se prueban con un fondo nuevo</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="A acierta más"><span class="a-letra">A</span><span>A acierta más</span></button><button type="button" class="a-op" data-txt="Aciertan igual"><span class="a-letra">B</span><span>Aciertan igual</span></button><button type="button" class="a-op" data-txt="B acierta más" data-ok><span class="a-letra">C</span><span>B acierta más</span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>B vio más variedad: le cuesta menos reconocer el objeto en un fondo que no conocía.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Tu primer entrenamiento · 22 – 26 min</p>
+    <p class="a-quien">Primero en grupo · después en tu compu</p><div class="a-taller a-marcador" data-nota="primera" data-pts="10" data-nota-tipo="juego" data-act="taller" data-cfg="{&quot;tipo&quot;: &quot;clasificar&quot;, &quot;misiones&quot;: [{&quot;pista&quot;: &quot;Mira los ejemplos con los que lo entrenaste: ¿a cuál se parece este?&quot;, &quot;pide&quot;: &quot;Entrenas un modelo con «mano abierta» y «puño». Llega una foto con los cinco dedos estirados. ¿A qué clase va?&quot;, &quot;grupos&quot;: [&quot;Mano abierta&quot;, &quot;Puño&quot;], &quot;correcto&quot;: 0, &quot;porque&quot;: &quot;Los dedos estirados son justo los ejemplos de mano abierta.&quot;}, {&quot;pista&quot;: &quot;Cuenta los ejemplos de cada clase: ¿están parejos?&quot;, &quot;pide&quot;: &quot;Tienes 50 fotos de mano abierta y 3 de puño. ¿Qué le falta a tu modelo?&quot;, &quot;grupos&quot;: [&quot;Más ejemplos de puño&quot;, &quot;Más clases&quot;, &quot;Nada: ya está listo&quot;], &quot;correcto&quot;: 0, &quot;porque&quot;: &quot;Con 3 ejemplos de puño casi siempre va a responder «mano abierta».&quot;}, {&quot;pista&quot;: &quot;51 % es casi una moneda al aire.&quot;, &quot;pide&quot;: &quot;El modelo responde «puño» con 51 % de confianza. ¿Qué conviene hacer?&quot;, &quot;grupos&quot;: [&quot;Creerle sin más&quot;, &quot;Pedir más ejemplos y volver a entrenar&quot;], &quot;correcto&quot;: 1, &quot;porque&quot;: &quot;51 % es casi una moneda al aire: el modelo está dudando.&quot;}, {&quot;pista&quot;: &quot;Un modelo solo reconoce lo que se parece a lo que vio.&quot;, &quot;pide&quot;: &quot;Entrenaste solo con fotos de tu cara. Llega la de un compañero. ¿Qué esperas?&quot;, &quot;grupos&quot;: [&quot;Que acierte igual&quot;, &quot;Que falle o dude&quot;], &quot;correcto&quot;: 1, &quot;porque&quot;: &quot;Un modelo solo reconoce lo que se parece a sus ejemplos.&quot;}], &quot;unidad&quot;: &quot;línea&quot;}">
+      <div class="a-col">
+        <details class="a-mt-din">
+          <summary>Antes, en grupo · Entrenar a la clase · 3 min</summary>
+          <ol><li>El docente enseña cinco fotos de perros y cinco de gatos y dice de cuál es cada una.</li><li>Enseña una nueva y la clase decide: eso es entrenar y después predecir.</li><li>¿Y si solo hubiéramos visto perros negros? Ahí aparece el problema de los ejemplos.</li></ol>
+        </details>
+        <div class="a-mt-mision"><p class="a-etq" data-num></p><p class="a-mt-pide" data-pide></p>
+          <button type="button" class="a-tl-pista" data-pista hidden>💡 Pista</button>
+          <p class="a-tl-dice" data-dice hidden></p></div>
+        <div class="a-tl-ops" data-ops></div>
+        <p class="a-tl-sale" data-sale aria-live="polite"></p>
+        <p class="a-fb" role="status" aria-live="polite"></p>
+      </div>
+      <div class="a-col">
+        <div class="a-tl-vista" data-vista hidden></div>
+        <p class="a-etq">Lo que llevas</p>
+        <pre class="a-mt-prog" data-prog></pre>
+        <div class="a-tl-barra" aria-hidden="true"><i data-barra></i></div>
+        <div class="a-acc"><button type="button" class="a-btn a-sec" data-reiniciar>Empezar de nuevo</button></div>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Mini juego · 26 – 29 min</p>
+    <p class="a-quien">Tú solo o en parejas</p><h2 class="a-titulo">Así responde un modelo</h2><p class="pista a-pista">TOCA UN EJEMPLO Y MIRA LA CONFIANZA</p><div data-nota="juego" data-pts="10" data-nota-tipo="demo" class="a-nota-caja"><div class="tarj a-demo"><div class="demo" data-demo="ia"><p class="pista">AS&#205; RESPONDE UN MODELO &#183; TOCA UNO</p><div class="ia-ejs"><button class="ia-ej" type="button" data-ej="0" aria-pressed="false" aria-label="Ejemplo: manzana">&#127822;</button><button class="ia-ej" type="button" data-ej="1" aria-pressed="false" aria-label="Ejemplo: guineo">&#127820;</button><button class="ia-ej" type="button" data-ej="2" aria-pressed="false" aria-label="Ejemplo: mano">&#9995;</button></div><div class="ia-res"><div class="ia-fila"><span>manzana</span><span class="ia-pista"><span class="ia-lleno"></span></span><span class="ia-pc">&#8211;</span></div><div class="ia-fila"><span>guineo</span><span class="ia-pista"><span class="ia-lleno"></span></span><span class="ia-pc">&#8211;</span></div><div class="ia-fila"><span>mano</span><span class="ia-pista"><span class="ia-lleno"></span></span><span class="ia-pc">&#8211;</span></div><p class="cd-out">clase &#8594; <b data-clase>?</b></p></div><div class="cd-caja"><span class="k">if</span> clase == <span class="v">"manzana"</span>:<br>&#160;&#160;&#160;&#160;<span class="k">display</span>(<span class="v">"&#161;Es una manzana!"</span>)</div><p class="ok" data-ok role="status"></p></div></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Otro juego · 29 – 32 min</p>
+    <p class="a-quien">Tú solo o en parejas</p><h2 class="a-titulo">¿Este dato ayuda o confunde al modelo?</h2><p class="pista a-pista">PIENSA EN LA VARIEDAD</p><div class="a-clasifica" data-nota="juego2" data-pts="10" data-nota-tipo="juego" data-act="clasifica">
+      <p class="a-explica">Toca una tarjeta y después la caja donde va.</p>
+      <div class="a-fichas" data-fichas><button type="button" class="a-ficha" aria-pressed="false" data-c="1">Todas las fotos con el mismo fondo</button><button type="button" class="a-ficha" aria-pressed="false" data-c="0">Fotos de tres personas distintas</button><button type="button" class="a-ficha" aria-pressed="false" data-c="1">Fotos de otro objeto metidas en una clase</button><button type="button" class="a-ficha" aria-pressed="false" data-c="0">Luz de día y luz de tarde</button><button type="button" class="a-ficha" aria-pressed="false" data-c="1">Una clase con 50 fotos y otra con 5</button><button type="button" class="a-ficha" aria-pressed="false" data-c="1">Solo 5 fotos por clase</button><button type="button" class="a-ficha" aria-pressed="false" data-c="0">Dos fondos diferentes</button><button type="button" class="a-ficha" aria-pressed="false" data-c="0">30 fotos por clase</button></div>
+      <div class="a-cubetas"><div class="a-cubeta"><button type="button" class="a-cub-btn" data-cub="0">Ayuda</button><div class="a-cub-dentro" data-dentro></div></div><div class="a-cubeta"><button type="button" class="a-cub-btn" data-cub="1">Confunde</button><div class="a-cub-dentro" data-dentro></div></div></div>
+      <div class="a-acc"><span class="a-marca" data-marca>0 / 8</span>
+        <button type="button" class="a-btn a-sec" data-reintentar>Reintentar</button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Manos a la obra · 32 – 42 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><h2 class="a-titulo">Entreno mi modelo</h2>
+    <div class="a-practica"><ol class="a-pasos"><li>En parejas elijan un tema con dos o tres clases: gestos, objetos del estuche o sonidos.</li><li>Graben al menos 30 ejemplos por clase, con variedad.</li><li>Entrenen y prueben con casos nuevos: otra mano, otro fondo, otra luz.</li><li>Exporten el modelo, súbanlo y copien el enlace que les da.</li><li>Peguen el enlace y una captura en la sección Mi IA de su sitio.</li></ol><div class="a-panel"><p class="a-etq">Herramienta</p>
+        <a class="a-btn" href="https://teachablemachine.withgoogle.com/train" target="_blank" rel="noopener">Abrir Teachable Machine ↗</a></div></div>
+    <div class="a-acc" data-nota="practica" data-pts="15" data-nota-tipo="practica" data-act="hecho">
+      <button type="button" class="a-btn" data-hecho>La terminé</button></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">El reto de hoy · 32 – 44 min</p>
+    <div class="bloque"><p>Sesgo a propósito: entrenar una clase con solo 5 ejemplos, todos con el mismo fondo y la misma persona, probarla con alguien distinto y anotar qué falla. Después añadir ejemplos variados y comparar la confianza.</p></div><div class="bloque a-sube"><p class="a-etq">Sube de nivel · si terminas antes</p><p>Medir el modelo con una tabla de diez casos y calcular su porcentaje de acierto.</p></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Chuleta de la semana · para llevar</p>
+    <div class="a-chuleta" data-act="imprimir">
+      <p class="a-ch-cab">3RO DE SECUNDARIA · Semana 10</p>
+      <h2 class="a-titulo">Entrenar un modelo</h2>
+      <ul class="a-ch-lista"><li><code>Clase</code><span>Cada cosa que quieres que reconozca: mano abierta, puño.</span></li><li><code>Ejemplos</code><span>Las fotos de cada clase. Muchas y variadas.</span></li><li><code>Equilibrio</code><span>Más o menos la misma cantidad en cada clase.</span></li><li><code>Entrenar</code><span>El modelo busca el patrón. Dura unos segundos.</span></li><li><code>Confianza</code><span>Con cuánta seguridad responde. 51 % es dudar.</span></li><li><code>Probar</code><span>Enseñarle algo que NO estaba en los ejemplos.</span></li></ul>
+      <div class="a-acc a-ch-acc"><button type="button" class="a-btn" data-imprimir>🖨 Imprimir la chuleta</button></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Sigue practicando · en casa</p>
+    <p class="a-quien">Gratis · sin instalar nada</p><h2 class="a-titulo">Sigue practicando Python en casa</h2><div class="a-recs"><a class="a-rec" href="https://teachablemachine.withgoogle.com/" target="_blank" rel="noopener"><b>Teachable Machine</b><span>Entrena tu propio modelo con la cámara. Gratis y sin instalar nada.</span><i>teachablemachine.withgoogle.com ↗</i></a><a class="a-rec" href="https://machinelearningforkids.co.uk/?lang=es" target="_blank" rel="noopener"><b>Machine Learning for Kids</b><span>Proyectos guiados de IA en español. Se puede probar sin cuenta.</span><i>machinelearningforkids.co.uk/?lang=es ↗</i></a><a class="a-rec" href="https://quickdraw.withgoogle.com/" target="_blank" rel="noopener"><b>Quick, Draw!</b><span>Dibuja y mira a una IA adivinar: 50 millones de ejemplos detrás.</span><i>quickdraw.withgoogle.com ↗</i></a></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Ticket de salida · 44 – 45 min</p>
+    <p class="a-quien">Tú solo</p><h2 class="a-titulo">¿El modelo es tonto o aprendió exactamente lo que le enseñamos?</h2><div data-nota="salida" data-pts="5" data-nota-tipo="salida" data-act="salida"><textarea class="a-ticket" aria-label="Tu respuesta" placeholder="Escribe tu respuesta. No se guarda: es para ti."></textarea><div class="a-acc"><button type="button" class="a-btn a-sec" data-ver>Ver una buena respuesta</button></div><p class="a-resp" hidden>Aprendió lo que le enseñamos: si los ejemplos son pocos o iguales, sus errores vienen de ahí.</p></div><dl class="dato"><dt>Qué entregas hoy</dt><dd>Enlace del modelo y captura en la sección «Mi IA» del sitio + dos líneas escritas: un caso en que falló y qué ejemplos lo corrigieron.</dd></dl>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Tu nota · al final</p>
+    <p class="a-quien">Tú solo · al terminar</p><div class="a-nota" data-act="nota">
+      <div class="a-nota-grande"><b data-total>0</b><span>/ 100</span></div>
+      <ul class="a-nota-lista" data-desglose></ul>
+      <p class="a-explica a-nota-quien" data-quien></p>
+    </div>
+   </div>
+  </section>
+</main>
+
+<aside class="a-guion" hidden aria-label="Guion del docente">
+  <div class="a-g-cab"><h2>Guion de la clase</h2>
+    <button type="button" class="a-btn a-sec" data-cerrar aria-label="Cerrar el guion">✕</button></div>
+  <p class="a-g-obj">Entrenar un modelo de clasificación con Teachable Machine y comprobar que una IA aprende de los ejemplos que recibe, con sus aciertos, sus errores y sus sesgos.</p>
+  <div class="a-g-bloque"><b>0 – 5</b> <em>Enganche</em><p>Proyecta un modelo ya entrenado con dos clases, «pulgar arriba» y «pulgar abajo», y deja que tres estudiantes lo prueben frente a la cámara. Luego pide a alguien que enseñe la mano abierta: «¿qué dijo? ¿por qué no dijo que no sabe?».</p></div><div class="a-g-bloque"><b>5 – 13</b> <em>Concepto</em><p>En teachablemachine.withgoogle.com, proyecto de imagen, sin cuenta; menciona que también hay de audio y de pose. Tres ideas: una clase es una respuesta posible, los ejemplos son lo único que aprende y se prueba con casos que no vio. Entrena en vivo con 10 fotos por clase y enseña la barra de confianza.</p></div><div class="a-g-bloque"><b>13 – 38</b> <em>Práctica</em><p>En parejas eligen un tema con dos o tres clases (gestos, objetos del estuche, sonidos con el micrófono o posturas), graban al menos 30 ejemplos por clase, entrenan y prueban con casos nuevos: otra mano, otro fondo, otra luz. Al terminar exportan con Export Model → Upload my model, copian el enlace y lo pegan con una captura en la sección «Mi IA» de su sitio.</p></div><div class="a-g-bloque"><b>13 – 38</b> <em>Reto</em><p>Sesgo a propósito: entrenar una clase con solo 5 ejemplos, todos con el mismo fondo y la misma persona, probarla con alguien distinto y anotar qué falla. Después añadir ejemplos variados y comparar la confianza.</p></div><div class="a-g-bloque"><b>38 – 45</b> <em>Cierre</em><p>Dos parejas enseñan un caso en el que su modelo se equivocó. Pregunta: «¿el modelo es tonto, o aprendió exactamente lo que le enseñamos?».</p></div>
+  <div class="a-g-bloque"><em>Sube de nivel</em><p>Medir el modelo con una tabla de diez casos y calcular su porcentaje de acierto.</p></div>
+  <div class="a-g-bloque"><em>Recursos</em><p>Teachable Machine, cámara web o micrófono, objetos del aula, modelo de demostración ya entrenado, editor de la clase, proyector.</p></div>
+  <div class="a-g-bloque"><em>Evidencia</em><p>Enlace del modelo y captura en la sección «Mi IA» del sitio + dos líneas escritas: un caso en que falló y qué ejemplos lo corrigieron.</p></div>
+</aside>
+
+<div class="chrome bl"><span class="count" id="cnt">01 / 18</span></div>
+<div class="chrome br">
+  <button class="navb" id="prev" aria-label="Diapositiva anterior">&#8592;</button>
+  <button class="navb" id="next" aria-label="Diapositiva siguiente">&#8594;</button>
+</div>
+<div class="paginacion"><div class="caps" id="caps"></div><div class="pass" id="pass"></div></div>

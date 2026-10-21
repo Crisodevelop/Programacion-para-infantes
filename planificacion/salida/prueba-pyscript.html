@@ -1,0 +1,99 @@
+<!--
+  Prueba de laboratorio · antes de la clase 1
+  ───────────────────────────────────────────
+  1. En una computadora del laboratorio, abre cualquier clase del curso
+     (/curso/1ro/semana/2 en la app) y ve a «Manos a la obra».
+  2. En el editor de la clase, pega la parte de Python de este archivo en la
+     pestaña Python y el resto en la pestaña HTML, y pulsa Ejecutar.
+
+  Qué tiene que pasar:
+  · Parte 1: al rato aparece «Python listo». Anota cuántos segundos tarda.
+    El botón «Tirar el dado» escribe tu nombre y un número del 1 al 6.
+  · Parte 2: pega en URL_MODELO el enlace de un modelo tuyo de Teachable
+    Machine (Export model → Upload → copia el enlace). «Encender cámara» debe
+    pedir permiso; «¿Qué ves?» responde desde Python.
+    Si la cámara no arranca dentro de la clase, pulsa «Pantalla completa».
+
+  Si la parte 1 tarda demasiado: cambia type="py" por type="mpy" (MicroPython).
+  Si el editor de la clase no carga: el mismo código funciona en pyscript.com.
+-->
+<link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+<script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 520px; margin: 32px auto; padding: 0 16px; }
+  section { border: 1px solid #ccd; border-radius: 10px; padding: 16px; margin-bottom: 18px; }
+  button { padding: 8px 14px; margin: 4px 4px 4px 0; cursor: pointer; }
+  #estado { color: #777; }
+</style>
+
+<p id="estado">Cargando Python…</p>
+
+<section>
+  <h2>Parte 1 · Python en la página</h2>
+  <input id="nombre" placeholder="Tu nombre">
+  <button id="tirar">Tirar el dado</button>
+  <p id="salida"></p>
+</section>
+
+<section>
+  <h2>Parte 2 · Teachable Machine</h2>
+  <button id="encender">Encender cámara</button>
+  <button id="que-ves">¿Qué ves?</button>
+  <div id="camara"></div>
+  <p id="respuesta"></p>
+</section>
+
+<!-- La pieza de Teachable Machine: la única en JavaScript. Se pega sin tocar;
+     solo deja lo que ve en window.clase y window.confianza. -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+<script>
+  const URL_MODELO = "PEGA_AQUI_TU_ENLACE/";
+  window.clase = "";
+  window.confianza = 0;
+  let modelo, camara;
+
+  async function encender() {
+    modelo = await tmImage.load(URL_MODELO + "model.json", URL_MODELO + "metadata.json");
+    camara = new tmImage.Webcam(220, 220, true);
+    await camara.setup();
+    await camara.play();
+    document.getElementById("camara").appendChild(camara.canvas);
+    requestAnimationFrame(mirar);
+  }
+
+  async function mirar() {
+    camara.update();
+    const predicciones = await modelo.predict(camara.canvas);
+    let mejor = predicciones[0];
+    for (const p of predicciones) if (p.probability > mejor.probability) mejor = p;
+    window.clase = mejor.className;
+    window.confianza = mejor.probability;
+    requestAnimationFrame(mirar);
+  }
+
+  document.getElementById("encender").addEventListener("click", encender);
+</script>
+
+<!-- Nuestro código: Python. -->
+<script type="py">
+import random
+from pyscript import when, document, window
+
+document.querySelector("#estado").innerText = "Python listo"
+
+@when("click", "#tirar")
+def tirar(evento):
+    nombre = document.querySelector("#nombre").value
+    dado = random.randint(1, 6)
+    document.querySelector("#salida").innerText = f"{nombre} sacó un {dado}"
+
+@when("click", "#que-ves")
+def que_ves(evento):
+    if window.clase == "":
+        texto = "Primero enciende la cámara."
+    else:
+        texto = f"Veo «{window.clase}» con {round(window.confianza * 100)} % de seguridad."
+    document.querySelector("#respuesta").innerText = texto
+</script>

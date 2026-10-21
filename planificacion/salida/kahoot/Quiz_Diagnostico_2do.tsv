@@ -1,0 +1,21 @@
+Question - max 120 characters	Answer 1 - max 75 characters	Answer 2 - max 75 characters	Answer 3 - max 75 characters	Answer 4 - max 75 characters	Time limit (sec)	Correct answer(s)
+¿Qué hace print("Hola")?	Muestra el texto Hola	Crea un botón que dice Hola	Guarda Hola en una variable	Le pide al usuario que escriba Hola	20	1
+En programación, una variable es…	Un número que nunca cambia	Un nombre que guarda un dato que puede cambiar	Un error del programa	Una instrucción que se repite	20	2
+¿Para qué sirve un if?	Para que el programa elija un camino según una condición	Para guardar información	Para mostrar un texto en la página	Para repetir instrucciones	20	1
+¿Para qué sirve un bucle for?	Para esperar a que alguien pulse un botón	Para repetir instrucciones sin escribirlas muchas veces	Para guardar un dato	Para tomar decisiones	20	2
+¿Qué es una lista en Python?	Una variable que solo guarda texto	Una función que muestra números	Varios valores guardados en orden bajo un solo nombre	Un bucle que se repite	20	3
+¿Para qué sirve crear una función con def?	Para guardar una lista de datos	Para darle color a la página	Para repetir algo un número fijo de veces	Para agrupar pasos con un nombre y usarlos cuando haga falta	20	4
+En un if con else, ¿cuándo se ejecuta lo que va dentro del else?	Siempre, después del if	Nunca, el else es opcional	Solo cuando la condición del if no se cumple	Antes de revisar el if	20	3
+Python marca un error y el programa se detiene. ¿Qué conviene hacer primero?	Borrar todo y empezar de nuevo	Leer el mensaje: dice qué pasó y en qué línea	Recargar la página hasta que funcione	Cambiar líneas al azar hasta que desaparezca	20	2
+¿Qué hace @when("click", "#boton") puesto encima de una función?	Hace que la función se ejecute al pulsar ese botón	Cambia el color del botón	Crea el botón en la página	Repite la función sin parar	20	1
+Alguien escribe 15 en una caja y tu programa tiene que sumarle 1. ¿Qué hace falta?	Convertirlo con int() antes de sumar	Usar display() en vez de print()	Ponerlo entre comillas	Nada, Python ya sabe que es un número	20	1
+¿Qué diferencia hay entre = y == ?	== solo sirve para texto	= guarda un valor; == compara dos valores	= compara; == guarda	Son lo mismo, == es más elegante	20	2
+Nota de 90 o más: «excelente»; de 70 o más: «bien»; si no, «en proceso». ¿Qué usas?	Un solo if, sin nada más	Un for que cuente hasta 100	if, elif y else	Una lista con las tres palabras	20	3
+Quieres simular un dado de 6 caras. ¿Qué escribes?	random.randint(1, 7)	random(6)	random.randint(1, 6)	random.randint(0, 6)	20	3
+Tienes que guardar los nombres de 20 jugadores. ¿Qué usas?	Una función por cada jugador	Un texto largo separado por comas	20 variables, una por nombre	Una lista con los 20 nombres	20	4
+Copiaste el mismo bloque de código en tres partes distintas del juego. ¿Qué conviene?	Copiarlo una cuarta vez por si acaso	Dejarlo así, funciona igual	Borrar dos de las copias	Convertirlo en una función y llamarla en las tres partes	20	4
+Tienes nombre = "Ana". ¿Qué línea muestra Hola, Ana?	print(Hola, nombre)	print(f"Hola, nombre")	print("Hola, {nombre}")	print(f"Hola, {nombre}")	20	4
+print("15" + "15")   ¿Qué muestra?	30	"30"	Un error	1515	30	4
+Mira el bucle for de la imagen. ¿Qué muestra, en orden?	0, 1 y 2	0, 1, 2 y 3	Solo el 3	1, 2 y 3	30	1
+puntos = [10, 20, 30]  ·  puntos.append(40)  ·  print(len(puntos))   ¿Qué muestra?	40	4	[10, 20, 30, 40]	3	30	2
+edad = "18"  ·  print(edad + 1)   ¿Qué pasa?	Muestra 19	Muestra 181	Da error: no se puede sumar texto y número	Muestra 18	30	3

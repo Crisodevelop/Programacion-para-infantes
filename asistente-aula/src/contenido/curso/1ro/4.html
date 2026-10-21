@@ -1,0 +1,252 @@
+<div class="prog" id="prog"></div>
+<div class="chrome tl"><a class="volver" href="/presentaciones">&#8592; Presentaciones</a></div>
+<div class="chrome tr" role="group" aria-label="Controles"><nav class="a-cursos" aria-label="Curso"><a class="a-curso" href="/curso/1ro/semana/4" aria-current="page">1ro</a><a class="a-curso" href="/curso/2do/semana/4">2do</a><a class="a-curso" href="/curso/3ro/semana/4">3ro</a></nav><span class="sep"></span><span data-hueco-docente style="display:flex"></span><button type="button" class="a-guion-btn" aria-expanded="false" title="Notas del docente">Guion</button><span class="sep"></span><button class="tembtn" data-tema="oscuro" aria-pressed="false">Oscuro</button><button class="tembtn" data-tema="claro" aria-pressed="false">Claro</button><button class="tembtn" data-tema="pared" aria-pressed="false">Pared</button></div>
+
+<main class="deck">
+  <section class="slide">
+   <div class="inner">
+    <div class="a-portada con-escena">
+     <div>
+      <p class="eyebrow">1RO DE SECUNDARIA · Programar con Python, paso a paso y jugando</p>
+      <div class="cinta"><span class="cinta-num">04</span><span class="cinta-txt">Semana 4 de 12</span></div>
+      <h1 class="mid">Decisiones: if / elif / else</h1>
+      <p class="a-hoy">Vas a decidir con if, elif y else: acertaste, más alto o más bajo.</p>
+     </div>
+     <div class="a-escena"><svg viewBox="220 55 760 560" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="1200" height="675" fill="none"/><path d="M600 137.5L600 517.5" stroke="#14213D" stroke-width="10" stroke-linecap="round" fill="none"/><path d="M340 157.5L860 157.5" stroke="#14213D" stroke-width="10" stroke-linecap="round" fill="none"/><rect x="490" y="517.5" width="220" height="34" rx="17" fill="#14213D"/><path d="M340 157.5L340 247.5" stroke="#14213D" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M230 247.5h220l-52 118h-116z" fill="#2563EB" stroke="#14213D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M860 157.5L860 247.5" stroke="#14213D" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M750 247.5h220l-52 118h-116z" fill="#2563EB" stroke="#14213D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · La idea · 1 – 3 min</p>
+    <p class="a-quien">Todos · escuchamos</p><h2 class="a-teo-titulo">¿Qué es una decisión?</h2><p class="a-teo-texto">Un if revisa una condición: si es verdadera hace una cosa; si no, el else hace otra.</p><div class="a-teo-ejemplo"><p class="a-etq">En la vida real</p><p>Si llueve, llevo paraguas; si no, llevo gorra. En el juego: si acertaste, ganas; si no, sigues.</p></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · Las partes · 3 – 5 min</p>
+    <h2 class="a-titulo">Las partes de una decisión</h2><div class="a-teo-partes con-escena"><ol class="a-teo-lista"><li><b>if condición:</b><span>Pregunta algo que solo puede ser verdadero o falso.</span></li><li><b>==</b><span>Compara si dos valores son iguales. Un solo = guarda.</span></li><li><b>Dos puntos y sangría</b><span>Lo que va dentro del if se corre a la derecha.</span></li><li><b>else:</b><span>Lo que pasa cuando la condición es falsa.</span></li></ol><div class="a-teo-ejemplos"><p class="a-etq">Así se escriben ✓</p><ol class="a-teo-cod"><li><code>edad = 15</code></li><li><code>if edad &gt;= 18:</code></li><li><code>    display("Entras")</code></li><li><code>else:</code></li><li><code>    display("Todavía no")</code></li></ol></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · ¿Lo entendí? · 5 – 8 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><h2 class="a-titulo">Te quedan 3 vidas. Con if vidas == 0: display("Game Over"), ¿sale Game Over?</h2><div class="a-panel a-teo-check" data-nota="teoria" data-pts="5" data-nota-tipo="reto" data-act="opciones"><div class="a-ops"><button type="button" class="a-op" data-txt="No: 3 no es igual a 0" data-ok><span class="a-letra">A</span><span>No: 3 no es igual a 0</span></button><button type="button" class="a-op" data-txt="Sí: porque todavía tienes vidas"><span class="a-letra">B</span><span>Sí: porque todavía tienes vidas</span></button><button type="button" class="a-op" data-txt="Sí: siempre se muestra"><span class="a-letra">C</span><span>Sí: siempre se muestra</span></button></div><p class="a-fb" role="status" aria-live="polite"></p><p class="a-explica" hidden>El if solo entra cuando vidas vale 0. Con 3 la condición es falsa y se la salta.</p><div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Calentamiento · 8 – 10 min</p>
+    <p class="a-quien">Todos · a mano alzada</p><h2 class="a-titulo">¿Qué hace == en Python?</h2>
+    <div class="a-vota" data-nota="calent" data-pts="5" data-nota-tipo="reto" data-act="vota">
+      <div class="a-ops"><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">A</span><span>Guarda un valor</span></button><button type="button" class="a-op" aria-pressed="false" data-ok><span class="a-letra">B</span><span>Compara si dos cosas son iguales</span></button><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">C</span><span>Suma dos números</span></button><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">D</span><span>Muestra un texto</span></button></div>
+      <div class="a-acc"><button type="button" class="a-btn" data-revelar>Revelar la respuesta</button></div>
+      <p class="a-fb" role="status"></p>
+      <p class="a-porque" hidden>= guarda y == compara. if intento == secreto: pregunta si los dos son iguales.</p>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Mira cómo funciona · 10 – 13 min</p>
+    <h2 class="a-titulo">Adivina el número</h2>
+    <div class="a-ejemplo" data-act="notas">
+      <ol class="a-cod" data-leng="python"><li><span>from pyscript import display</span></li><li><span></span></li><li><span>secreto = 13</span></li><li><span>intento = 8</span></li><li><span></span></li><li><span>if intento == secreto:</span></li><li><span>    display("¡Acertaste!")</span></li><li><span>elif intento &lt; secreto:</span></li><li><span>    display("Más alto")</span></li><li><span>else:</span></li><li><span>    display("Más bajo")</span></li></ol>
+      <div><p class="a-etq">Toca una nota y mira su línea</p><ol class="a-notas"><li><button type="button" class="a-nota" data-marca="4" aria-pressed="false"><b>Línea 4</b><span>Cambia este número y vuelve a ejecutar: pasas por las tres ramas.</span></button></li><li><button type="button" class="a-nota" data-marca="6" aria-pressed="false"><b>Línea 6</b><span>== compara. Un solo = guardaría, no compararía.</span></button></li><li><button type="button" class="a-nota" data-marca="8" aria-pressed="false"><b>Línea 8</b><span>elif es «si no, prueba esto otro».</span></button></li></ol></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Retos 1 y 2 · 13 – 16 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><div class="a-grid2"><div class="a-panel" data-nota="r1" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">¿Qué muestra?</p>
+      <ol class="a-cod" data-leng="python"><li><span>intento = 7</span></li><li><span>secreto = 12</span></li><li><span>if intento == secreto:</span></li><li><span>    display("¡Acertaste!")</span></li><li><span>else:</span></li><li><span>    display("No es ese")</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="¡Acertaste!"><span class="a-letra">A</span><span><code>¡Acertaste!</code></span></button><button type="button" class="a-op" data-txt="No es ese" data-ok><span class="a-letra">B</span><span><code>No es ese</code></span></button><button type="button" class="a-op" data-txt="¡Acertaste! · No es ese"><span class="a-letra">C</span><span><code>¡Acertaste! · No es ese</code></span></button><button type="button" class="a-op" data-txt="Error"><span class="a-letra">D</span><span><code>Error</code></span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>7 no es igual a 12, así que se salta el if y entra al else.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div><div class="a-panel" data-nota="r2" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">Completa la línea que falta</p>
+      <ol class="a-cod" data-leng="python"><li><span>if intento <span class="a-hueco">___</span> secreto:</span></li><li><span>    display("¡Acertaste!")</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="==" data-ok><span class="a-letra">A</span><span><code>==</code></span></button><button type="button" class="a-op" data-txt="!="><span class="a-letra">B</span><span><code>!=</code></span></button><button type="button" class="a-op" data-txt="="><span class="a-letra">C</span><span><code>=</code></span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>== pregunta si son iguales. Un solo = guarda y aquí da error; != es justo lo contrario.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Retos 3 y 4 · 16 – 19 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><div class="a-grid2"><div class="a-panel" data-nota="r3" data-pts="10" data-nota-tipo="reto" data-act="ordena" data-orden="[&quot;if intento == secreto:&quot;, &quot;    display(\&quot;¡Acertaste!\&quot;)&quot;, &quot;else:&quot;, &quot;    display(\&quot;No es ese\&quot;)&quot;]">
+      <p class="a-etq">Ordena</p>
+      <h3>Ordena el if / else.</h3>
+      <ol class="a-orden" data-leng="python"><li data-txt="    display(&quot;¡Acertaste!&quot;)"><span>    display("¡Acertaste!")</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="    display(&quot;No es ese&quot;)"><span>    display("No es ese")</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="if intento == secreto:"><span>if intento == secreto:</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="else:"><span>else:</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li></ol>
+      <div class="a-acc"><button type="button" class="a-btn" data-comprobar>Comprobar</button>
+        <button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+    </div><div class="a-panel" data-nota="r4" data-pts="10" data-nota-tipo="reto" data-act="error">
+      <p class="a-etq">Encuentra el error</p>
+      <h3>Toca la línea que está mal.</h3>
+      <div class="a-lineas" data-leng="python"><button type="button" class="a-linea"><i>1</i><span>secreto = 5</span></button><button type="button" class="a-linea"><i>2</i><span>intento = 5</span></button><button type="button" class="a-linea" data-mala><i>3</i><span>if intento == secreto</span></button><button type="button" class="a-linea"><i>4</i><span>    display("¡Acertaste!")</span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <div class="a-explica" hidden><p class="a-etq">Así queda bien</p>
+        <pre class="a-arreglo">if intento == secreto:</pre><p>Al if le faltan los dos puntos: Python da un SyntaxError en esa línea.</p></div>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Tu primera decisión · 19 – 23 min</p>
+    <p class="a-quien">Primero en grupo · después en tu compu</p><div class="a-taller a-marcador" data-nota="primera" data-pts="10" data-nota-tipo="juego" data-act="taller" data-cfg="{&quot;tipo&quot;: &quot;condicion&quot;, &quot;misiones&quot;: [{&quot;pista&quot;: &quot;«O más» incluye el 18: hay un comparador que dice «mayor o igual».&quot;, &quot;pide&quot;: &quot;Que pase solo quien tenga 18 años o más.&quot;, &quot;variable&quot;: &quot;edad&quot;, &quot;casos&quot;: [15, 18, 20], &quot;espera&quot;: [false, true, true], &quot;sale&quot;: &quot;pasan 18 y 20&quot;}, {&quot;pista&quot;: &quot;«No es igual» tiene su propio comparador: míralo en Los comparadores.&quot;, &quot;pide&quot;: &quot;Que pase cualquiera menos el que tenga 13.&quot;, &quot;variable&quot;: &quot;edad&quot;, &quot;casos&quot;: [12, 13, 14], &quot;espera&quot;: [true, false, true], &quot;sale&quot;: &quot;pasan 12 y 14&quot;}, {&quot;pista&quot;: &quot;Aquí la variable ya no es edad, es nota. Y «más de» deja fuera al 70.&quot;, &quot;pide&quot;: &quot;Ahora la variable es nota: que pase quien saque más de 70.&quot;, &quot;variable&quot;: &quot;nota&quot;, &quot;casos&quot;: [65, 70, 85], &quot;espera&quot;: [false, false, true], &quot;sale&quot;: &quot;pasa solo 85&quot;}, {&quot;pista&quot;: &quot;Es texto: va entre comillas. Y «Ana» no es lo mismo que «ana».&quot;, &quot;pide&quot;: &quot;Con nombre: que salude solo si es exactamente Ana.&quot;, &quot;variable&quot;: &quot;nombre&quot;, &quot;casos&quot;: [&quot;\&quot;Ana\&quot;&quot;, &quot;\&quot;ana\&quot;&quot;, &quot;\&quot;Luis\&quot;&quot;], &quot;espera&quot;: [true, false, false], &quot;sale&quot;: &quot;pasa solo Ana&quot;}, {&quot;pista&quot;: &quot;«Menos de 5» deja fuera al 5.&quot;, &quot;pide&quot;: &quot;La última, con vidas: que pase quien tenga menos de 5.&quot;, &quot;variable&quot;: &quot;vidas&quot;, &quot;casos&quot;: [2, 5, 7], &quot;espera&quot;: [true, false, false], &quot;sale&quot;: &quot;pasa solo 2&quot;}], &quot;unidad&quot;: &quot;línea&quot;}">
+      <div class="a-col">
+        <details class="a-mt-din">
+          <summary>Antes, en grupo · El portero · 3 min</summary>
+          <ol><li>El docente hace de portero y dice en voz alta una edad: 15, 18, 21.</li><li>La clase canta «pasa» o «no pasa» y dice por qué.</li><li>Todos escriben en el cuaderno la línea del portero: if edad &gt;= 18:</li></ol>
+        </details>
+        <div class="a-mt-mision"><p class="a-etq" data-num></p><p class="a-mt-pide" data-pide></p>
+          <button type="button" class="a-tl-pista" data-pista hidden>💡 Pista</button>
+          <p class="a-tl-dice" data-dice hidden></p></div>
+        <div class="a-mt-escribe"><input class="campo a-mt-in" data-linea autocomplete="off" spellcheck="false" aria-label="Escribe tu línea" placeholder="if edad &gt;= 18:"><button type="button" class="a-btn" data-probar>Probar</button></div><p class="a-mt-pista" data-forma></p><div class="a-tl-ayuda"><p class="a-etq">Los comparadores</p><span class="a-tl-ay"><code>==</code><i>igual a</i></span><span class="a-tl-ay"><code>!=</code><i>distinto de</i></span><span class="a-tl-ay"><code>&gt;</code><i>mayor que</i></span><span class="a-tl-ay"><code>&lt;</code><i>menor que</i></span><span class="a-tl-ay"><code>&gt;=</code><i>mayor o igual</i></span><span class="a-tl-ay"><code>&lt;=</code><i>menor o igual</i></span></div>
+        <p class="a-tl-sale" data-sale aria-live="polite"></p>
+        <p class="a-fb" role="status" aria-live="polite"></p>
+      </div>
+      <div class="a-col">
+        <div class="a-tl-vista" data-vista hidden></div>
+        <p class="a-etq">Lo que llevas</p>
+        <pre class="a-mt-prog" data-prog></pre>
+        <div class="a-tl-barra" aria-hidden="true"><i data-barra></i></div>
+        <div class="a-acc"><button type="button" class="a-btn a-sec" data-reiniciar>Empezar de nuevo</button></div>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Mini juego · 23 – 26 min</p>
+    <p class="a-quien">Tú solo o en parejas</p><h2 class="a-titulo">Piedra, papel o tijera</h2><p class="pista a-pista">MIRA QUÉ RAMA DECIDIÓ</p><div class="a-ramas" data-nota="juego" data-pts="10" data-nota-tipo="juego" data-act="ppt">
+      <ol class="a-cod" data-leng="python"><li><span>opciones = [<span data-op="piedra">&quot;piedra&quot;</span>, <span data-op="papel">&quot;papel&quot;</span>, <span data-op="tijera">&quot;tijera&quot;</span>]</span></li><li data-yo><span>yo = "…"</span></li><li data-pc><span>pc = random.choice(opciones)</span></li><li data-rama="0"><span>if yo == pc:</span></li><li data-rama="0"><span>    display("Empate")</span></li><li data-rama="1"><span>elif yo == "piedra" and pc == "tijera":</span></li><li data-rama="1"><span>    display("¡Ganaste!")</span></li><li data-rama="2"><span>elif yo == "papel" and pc == "piedra":</span></li><li data-rama="2"><span>    display("¡Ganaste!")</span></li><li data-rama="3"><span>elif yo == "tijera" and pc == "papel":</span></li><li data-rama="3"><span>    display("¡Ganaste!")</span></li><li data-rama="4"><span>else:</span></li><li data-rama="4"><span>    display("Gana la computadora")</span></li></ol>
+      <div class="a-control">
+        <p class="a-etq">Elige tu jugada</p>
+        <div class="a-ppt-btns"><button type="button" data-jugada="piedra">✊<span>piedra</span></button><button type="button" data-jugada="papel">✋<span>papel</span></button><button type="button" data-jugada="tijera">✌<span>tijera</span></button></div>
+        <div class="a-duelo">
+          <div class="a-duelo-lado"><p class="a-etq">Tú</p>
+            <span class="a-mano" data-mano="yo">·</span><b data-nom="yo">elige</b></div>
+          <span class="a-vs">VS</span>
+          <div class="a-duelo-lado" data-lado="pc"><p class="a-etq">La compu</p>
+            <span class="a-mano" data-mano="pc">?</span><b data-nom="pc">esperando</b></div>
+        </div>
+        <p class="a-res" data-res aria-live="polite"></p>
+        <div class="a-ppt-marcador"><span>Tú <b data-m="yo">0</b></span><span>Compu <b data-m="pc">0</b></span><span>Empates <b data-m="emp">0</b></span></div>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Otro juego · 26 – 29 min</p>
+    <p class="a-quien">Tú solo o en parejas</p><h2 class="a-titulo">¿Se cumple o no se cumple?</h2><p class="pista a-pista">LEE EL VALOR Y DECIDE</p><div class="a-clasifica" data-nota="juego2" data-pts="10" data-nota-tipo="juego" data-act="clasifica">
+      <p class="a-explica">Toca una tarjeta y después la caja donde va.</p>
+      <div class="a-fichas" data-fichas><button type="button" class="a-ficha" aria-pressed="false" data-c="1">nombre = "Ana" · if nombre == "ana":</button><button type="button" class="a-ficha" aria-pressed="false" data-c="0">temp = 30 · if temp &gt;= 30:</button><button type="button" class="a-ficha" aria-pressed="false" data-c="1">puntos = 10 · if puntos != 10:</button><button type="button" class="a-ficha" aria-pressed="false" data-c="0">hora = 7 · if hora &lt; 8:</button><button type="button" class="a-ficha" aria-pressed="false" data-c="0">vidas = 0 · if vidas == 0:</button><button type="button" class="a-ficha" aria-pressed="false" data-c="1">monedas = 5 · if monedas &gt; 5:</button><button type="button" class="a-ficha" aria-pressed="false" data-c="0">nota = 85 · if nota &gt; 70:</button><button type="button" class="a-ficha" aria-pressed="false" data-c="0">clase = "gato" · if clase == "gato":</button><button type="button" class="a-ficha" aria-pressed="false" data-c="1">vidas = 3 · if vidas == 0:</button><button type="button" class="a-ficha" aria-pressed="false" data-c="1">edad = 12 · if edad &gt;= 18:</button></div>
+      <div class="a-cubetas"><div class="a-cubeta"><button type="button" class="a-cub-btn" data-cub="0">Se cumple · entra al if</button><div class="a-cub-dentro" data-dentro></div></div><div class="a-cubeta"><button type="button" class="a-cub-btn" data-cub="1">No se cumple · va al else</button><div class="a-cub-dentro" data-dentro></div></div></div>
+      <div class="a-acc"><span class="a-marca" data-marca>0 / 10</span>
+        <button type="button" class="a-btn a-sec" data-reintentar>Reintentar</button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Manos a la obra · 29 – 42 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><h2 class="a-titulo">Mi adivina el número</h2><ol class="a-pasos a-pasos-fila"><li>Pulsa Ejecutar y mira qué mensaje sale.</li><li>Cambia intento hasta ver los tres mensajes.</li><li>Quita los dos puntos de un if a propósito, lee el error y arréglalo.</li><li>Agrega una rama más con elif para cuando te pasas por más de cinco.</li><li>Pulsa Ejecutar una última vez: tu código se guarda con tu nota.</li></ol><div class="a-editor" data-nota="practica" data-pts="15" data-nota-tipo="practica" data-act="editor" data-cfg="{&quot;v&quot;: &quot;2026.7.3&quot;, &quot;html&quot;: &quot;&lt;h1&gt;Adivina el número&lt;/h1&gt;&quot;, &quot;css&quot;: &quot;body{font-family:system-ui,sans-serif;background:#0f172a;color:#f8fafc;padding:24px;font-size:1.3rem}&quot;, &quot;py&quot;: &quot;from pyscript import display\n\nsecreto = 13\nintento = 8\n\nif intento == secreto:\n    display(\&quot;¡Acertaste!\&quot;)\nelif intento &lt; secreto:\n    display(\&quot;Más alto\&quot;)\nelse:\n    display(\&quot;Más bajo\&quot;)\n\n# Tu turno: cambia intento hasta ver los tres mensajes\n# Tu turno: una rama más para cuando te pasas por más de cinco\n&quot;, &quot;inicio&quot;: &quot;py&quot;}">
+      <div class="a-ed-col">
+        <div class="a-ed-tabs" role="tablist" aria-label="Qué parte del código"><button type="button" role="tab" class="a-ed-tab" data-tab="py" aria-selected="true">Python</button><button type="button" role="tab" class="a-ed-tab" data-tab="html" aria-selected="false">HTML</button><button type="button" role="tab" class="a-ed-tab" data-tab="css" aria-selected="false">CSS</button></div>
+        <textarea class="a-ed-code" data-codigo spellcheck="false" aria-label="Tu código"></textarea>
+        <div class="a-acc"><button type="button" class="a-btn" data-correr>▶ Ejecutar</button>
+          <button type="button" class="a-btn a-sec" data-completa>Pantalla completa ↗</button>
+          <button type="button" class="a-btn a-sec" data-volver>Volver al código de partida</button></div>
+        <p class="a-explica">Cada vez que pulsas Ejecutar, tu código se guarda con tu nota.</p>
+      </div>
+      <div class="a-ed-col">
+        <p class="a-etq">Lo que se ve</p>
+        <iframe class="a-ed-vista" data-marco title="Resultado de tu código" allow="camera; microphone"
+                sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">El reto de hoy · 29 – 44 min</p>
+    <div class="bloque"><p>Agregar una rama más: si el intento se pasa por más de cinco, que diga «te pasaste por mucho».</p></div><div class="bloque a-sube"><p class="a-etq">Sube de nivel · si terminas antes</p><p>Contar en una variable cuántos intentos hicieron falta y mostrarlo al acertar.</p></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Chuleta de la semana · para llevar</p>
+    <div class="a-chuleta" data-act="imprimir">
+      <p class="a-ch-cab">1RO DE SECUNDARIA · Semana 4</p>
+      <h2 class="a-titulo">Decisiones en Python</h2>
+      <ul class="a-ch-lista"><li><code>if edad &gt;= 18:</code><span>Pregunta algo que solo puede ser verdadero o falso.</span></li><li><code>    display("Entras")</code><span>La sangría dice qué pasa si se cumple.</span></li><li><code>else:</code><span>Lo que pasa cuando NO se cumple.</span></li><li><code>elif nota &gt;= 70:</code><span>Otra pregunta, solo si la de arriba falló.</span></li><li><code>==   !=</code><span>Igual a… y distinto de…</span></li><li><code>=</code><span>Un solo igual GUARDA. No compara.</span></li></ul>
+      <div class="a-acc a-ch-acc"><button type="button" class="a-btn" data-imprimir>🖨 Imprimir la chuleta</button></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Sigue practicando · en casa</p>
+    <p class="a-quien">Gratis · sin instalar nada</p><h2 class="a-titulo">Sigue practicando Python en casa</h2><div class="a-recs"><a class="a-rec" href="https://pythontutor.com/python-compiler.html" target="_blank" rel="noopener"><b>Python Tutor</b><span>Pega tu if y mira qué rama se enciende con cada valor.</span><i>pythontutor.com/python-compiler.html ↗</i></a><a class="a-rec" href="https://es.futurecoder.io/course/" target="_blank" rel="noopener"><b>futurecoder</b><span>Curso de Python desde cero con ejercicios que se corrigen solos. Gratis y sin cuenta.</span><i>es.futurecoder.io/course ↗</i></a><a class="a-rec" href="https://jupyter.org/try-jupyter/lab/" target="_blank" rel="noopener"><b>JupyterLite</b><span>Python en el navegador para probar tus condiciones sin instalar nada.</span><i>jupyter.org/try-jupyter/lab ↗</i></a></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Ticket de salida · 44 – 45 min</p>
+    <p class="a-quien">Tú solo</p><h2 class="a-titulo">¿Qué diferencia hay entre = y ==?</h2><div data-nota="salida" data-pts="5" data-nota-tipo="salida" data-act="salida"><textarea class="a-ticket" aria-label="Tu respuesta" placeholder="Escribe tu respuesta. No se guarda: es para ti."></textarea><div class="a-acc"><button type="button" class="a-btn a-sec" data-ver>Ver una buena respuesta</button></div><p class="a-resp" hidden>= guarda un valor en una variable; == compara si dos valores son iguales.</p></div><dl class="dato"><dt>Qué entregas hoy</dt><dd>Tu código en el editor de la clase, guardado con tu nota: if / elif / else y tres pruebas anotadas: acierto, más alto y más bajo.</dd></dl>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Tu nota · al final</p>
+    <p class="a-quien">Tú solo · al terminar</p><div class="a-nota" data-act="nota">
+      <div class="a-nota-grande"><b data-total>0</b><span>/ 100</span></div>
+      <ul class="a-nota-lista" data-desglose></ul>
+      <p class="a-explica a-nota-quien" data-quien></p>
+    </div>
+   </div>
+  </section>
+</main>
+
+<aside class="a-guion" hidden aria-label="Guion del docente">
+  <div class="a-g-cab"><h2>Guion de la clase</h2>
+    <button type="button" class="a-btn a-sec" data-cerrar aria-label="Cerrar el guion">✕</button></div>
+  <p class="a-g-obj">Tomar decisiones comparando valores con if, elif y else, y distinguir = de ==.</p>
+  <div class="a-g-bloque"><b>0 – 5</b> <em>Enganche</em><p>Juega «Adivina mi número» con la clase: piensas un número del 1 al 20 y solo respondes «más alto» o «más bajo». Pregunta: «¿qué regla sigo cada vez que contesto?».</p></div><div class="a-g-bloque"><b>5 – 13</b> <em>Concepto</em><p>Modela secreto = 13 e intento = 8, y después if intento == secreto:, elif intento &lt; secreto: y else:, con los dos puntos y la sangría. Insiste en que = guarda y == compara. Quita los dos puntos a propósito y lee el error con la clase.</p></div><div class="a-g-bloque"><b>13 – 38</b> <em>Práctica</em><p>Cada estudiante escribe su «adivina el número»: cambia el valor de intento, vuelve a ejecutar y comprueba que salen los tres mensajes.</p></div><div class="a-g-bloque"><b>13 – 38</b> <em>Reto</em><p>Agregar una rama más: si el intento se pasa por más de cinco, que diga «te pasaste por mucho».</p></div><div class="a-g-bloque"><b>38 – 45</b> <em>Cierre</em><p>El editor proyectado: la clase dicta valores de intento y predice qué mensaje saldrá antes de ejecutar.</p></div>
+  <div class="a-g-bloque"><em>Sube de nivel</em><p>Contar en una variable cuántos intentos hicieron falta y mostrarlo al acertar.</p></div>
+  <div class="a-g-bloque"><em>Recursos</em><p>Editor de Python de la clase, proyector.</p></div>
+  <div class="a-g-bloque"><em>Evidencia</em><p>Tu código en el editor de la clase, guardado con tu nota: if / elif / else y tres pruebas anotadas: acierto, más alto y más bajo.</p></div>
+</aside>
+
+<div class="chrome bl"><span class="count" id="cnt">01 / 17</span></div>
+<div class="chrome br">
+  <button class="navb" id="prev" aria-label="Diapositiva anterior">&#8592;</button>
+  <button class="navb" id="next" aria-label="Diapositiva siguiente">&#8594;</button>
+</div>
+<div class="paginacion"><div class="caps" id="caps"></div><div class="pass" id="pass"></div></div>

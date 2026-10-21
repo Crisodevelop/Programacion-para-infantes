@@ -1,0 +1,238 @@
+<div class="prog" id="prog"></div>
+<div class="chrome tl"><a class="volver" href="/presentaciones">&#8592; Presentaciones</a></div>
+<div class="chrome tr" role="group" aria-label="Controles"><nav class="a-cursos" aria-label="Curso"><a class="a-curso" href="/curso/1ro/semana/11" aria-current="page">1ro</a><a class="a-curso" href="/curso/2do/semana/11">2do</a><a class="a-curso" href="/curso/3ro/semana/11">3ro</a></nav><span class="sep"></span><span data-hueco-docente style="display:flex"></span><button type="button" class="a-guion-btn" aria-expanded="false" title="Notas del docente">Guion</button><span class="sep"></span><button class="tembtn" data-tema="oscuro" aria-pressed="false">Oscuro</button><button class="tembtn" data-tema="claro" aria-pressed="false">Claro</button><button class="tembtn" data-tema="pared" aria-pressed="false">Pared</button></div>
+
+<main class="deck">
+  <section class="slide">
+   <div class="inner">
+    <div class="a-portada con-escena">
+     <div>
+      <p class="eyebrow">1RO DE SECUNDARIA · Programar con Python, paso a paso y jugando</p>
+      <div class="cinta"><span class="cinta-num">11</span><span class="cinta-txt">Semana 11 de 12</span></div>
+      <h1 class="mid">Mi IA dentro de mi sitio</h1>
+      <p class="a-hoy">Vas a conectar tu modelo de IA a tu sitio y decidir en Python qué hacer con lo que ve.</p>
+     </div>
+     <div class="a-escena"><svg viewBox="220 55 760 560" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="1200" height="675" fill="none"/><rect x="270" y="117.5" width="660" height="440" rx="20" fill="#CBD5E1" stroke="#14213D" stroke-width="10"/><rect x="355" y="177.5" width="490" height="320" rx="16" fill="#FFFFFF" stroke="#14213D" stroke-width="9"/><rect x="440" y="237.5" width="320" height="200" rx="12" fill="#2563EB" stroke="#14213D" stroke-width="8"/></svg></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · La idea · 1 – 3 min</p>
+    <p class="a-quien">Todos · escuchamos</p><h2 class="a-teo-titulo">¿Quién decide, la IA o tú?</h2><p class="a-teo-texto">El modelo dice qué cree ver y con cuánta confianza; tu Python decide qué hacer con eso.</p><div class="a-teo-ejemplo"><p class="a-etq">En la vida real</p><p>Un radar detecta algo y dice «80 % seguro de que es un avión»; la persona decide si actúa.</p></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · Las partes · 3 – 5 min</p>
+    <h2 class="a-titulo">Las partes de la conexión</h2><div class="a-teo-partes con-escena"><ol class="a-teo-lista"><li><b>La pieza del modelo</b><span>Es JavaScript y se pega sin tocar; solo cambia el enlace.</span></li><li><b>window.clase</b><span>Lo que el modelo cree que ve.</span></li><li><b>window.confianza</b><span>Qué tan seguro está, de 0 a 1.</span></li><li><b>Tu if / elif</b><span>Una respuesta distinta para cada clase.</span></li></ol><div class="a-teo-ejemplos"><p class="a-etq">Así se escriben ✓</p><ol class="a-teo-cod"><li><code>clase = window.clase</code></li><li><code>if clase == "mano abierta":</code></li><li><code>    display("¡Hola!")</code></li><li><code>else:</code></li><li><code>    display("Esperando…")</code></li></ol></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Teoría · ¿Lo entendí? · 5 – 8 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><h2 class="a-titulo">El modelo dice «gato» con 0.4 de confianza. ¿Qué debería hacer tu sitio?</h2><div class="a-panel a-teo-check" data-nota="teoria" data-pts="5" data-nota-tipo="reto" data-act="opciones"><div class="a-ops"><button type="button" class="a-op" data-txt="Apagar la cámara"><span class="a-letra">A</span><span>Apagar la cámara</span></button><button type="button" class="a-op" data-txt="Decir «No estoy seguro»" data-ok><span class="a-letra">B</span><span>Decir «No estoy seguro»</span></button><button type="button" class="a-op" data-txt="Decir «Miau» seguro"><span class="a-letra">C</span><span>Decir «Miau» seguro</span></button></div><p class="a-fb" role="status" aria-live="polite"></p><p class="a-explica" hidden>Con poca confianza es mejor no adivinar, y eso lo decide tu código.</p><div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Calentamiento · 8 – 10 min</p>
+    <p class="a-quien">Todos · a mano alzada</p><h2 class="a-titulo">El modelo dice «pulgar arriba» con 55 % de confianza. ¿Qué debería hacer tu sitio?</h2>
+    <div class="a-vota" data-nota="calent" data-pts="5" data-nota-tipo="reto" data-act="vota">
+      <div class="a-ops"><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">A</span><span>Obedecer siempre</span></button><button type="button" class="a-op" aria-pressed="false" data-ok><span class="a-letra">B</span><span>Decir que no está seguro</span></button><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">C</span><span>Borrar el modelo</span></button><button type="button" class="a-op" aria-pressed="false"><span class="a-letra">D</span><span>Pedir otra foto</span></button></div>
+      <div class="a-acc"><button type="button" class="a-btn" data-revelar>Revelar la respuesta</button></div>
+      <p class="a-fb" role="status"></p>
+      <p class="a-porque" hidden>Con poca confianza es mejor no adivinar. Eso no lo decide la IA: lo decide tu Python.</p>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Mira cómo funciona · 10 – 13 min</p>
+    <h2 class="a-titulo">Python decide qué hacer</h2>
+    <div class="a-ejemplo" data-act="notas">
+      <ol class="a-cod" data-leng="python"><li><span>from pyscript import when, document, window</span></li><li><span></span></li><li><span>@when("click", "#que-ves")</span></li><li><span>def que_ves(evento):</span></li><li><span>    clase = window.clase</span></li><li><span>    salida = document.querySelector("#respuesta")</span></li><li><span>    if clase == "pulgar arriba":</span></li><li><span>        salida.innerText = "¡Me alegra!"</span></li><li><span>    elif clase == "pulgar abajo":</span></li><li><span>        salida.innerText = "Ánimo, mañana mejora"</span></li><li><span>    else:</span></li><li><span>        salida.innerText = "No reconozco eso"</span></li></ol>
+      <div><p class="a-etq">Toca una nota y mira su línea</p><ol class="a-notas"><li><button type="button" class="a-nota" data-marca="1" aria-pressed="false"><b>Línea 1</b><span>window trae los datos que deja la pieza del modelo.</span></button></li><li><button type="button" class="a-nota" data-marca="5" aria-pressed="false"><b>Línea 5</b><span>window.clase: lo que el modelo cree que ve.</span></button></li><li><button type="button" class="a-nota" data-marca="7" aria-pressed="false"><b>Línea 7</b><span>Tu Python decide qué responder a cada clase.</span></button></li></ol></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Retos 1 y 2 · 13 – 16 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><div class="a-grid2"><div class="a-panel" data-nota="r1" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">¿Qué muestra?</p>
+      <ol class="a-cod" data-leng="python"><li><span>clase = "pulgar abajo"</span></li><li><span>if clase == "pulgar arriba":</span></li><li><span>    display("¡Bien!")</span></li><li><span>else:</span></li><li><span>    display("Ánimo")</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="pulgar abajo"><span class="a-letra">A</span><span><code>pulgar abajo</code></span></button><button type="button" class="a-op" data-txt="Ánimo" data-ok><span class="a-letra">B</span><span><code>Ánimo</code></span></button><button type="button" class="a-op" data-txt="¡Bien!"><span class="a-letra">C</span><span><code>¡Bien!</code></span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>La clase no es pulgar arriba, así que entra al else.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div><div class="a-panel" data-nota="r2" data-pts="10" data-nota-tipo="reto" data-act="opciones">
+      <p class="a-etq">Completa la línea que falta</p>
+      <ol class="a-cod" data-leng="python"><li><span>if confianza <span class="a-hueco">___</span> 0.8:</span></li><li><span>    display("No estoy seguro")</span></li></ol>
+      <div class="a-ops"><button type="button" class="a-op" data-txt="&lt;" data-ok><span class="a-letra">A</span><span><code>&lt;</code></span></button><button type="button" class="a-op" data-txt="="><span class="a-letra">B</span><span><code>=</code></span></button><button type="button" class="a-op" data-txt="&gt;="><span class="a-letra">C</span><span><code>&gt;=</code></span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <p class="a-explica" hidden>Si la confianza es menor que 0.8, mejor no adivinar.</p>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Retos 3 y 4 · 16 – 19 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><div class="a-grid2"><div class="a-panel" data-nota="r3" data-pts="10" data-nota-tipo="reto" data-act="ordena" data-orden="[&quot;clase = window.clase&quot;, &quot;if clase == \&quot;gato\&quot;:&quot;, &quot;    display(\&quot;Miau\&quot;)&quot;, &quot;else:&quot;, &quot;    display(\&quot;No es un gato\&quot;)&quot;]">
+      <p class="a-etq">Ordena</p>
+      <h3>Ordena la respuesta del sitio.</h3>
+      <ol class="a-orden" data-leng="python"><li data-txt="clase = window.clase"><span>clase = window.clase</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="else:"><span>else:</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="    display(&quot;Miau&quot;)"><span>    display("Miau")</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="if clase == &quot;gato&quot;:"><span>if clase == "gato":</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li><li data-txt="    display(&quot;No es un gato&quot;)"><span>    display("No es un gato")</span><button type="button" class="a-mover" data-sube aria-label="Subir">↑</button><button type="button" class="a-mover" data-baja aria-label="Bajar">↓</button></li></ol>
+      <div class="a-acc"><button type="button" class="a-btn" data-comprobar>Comprobar</button>
+        <button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+    </div><div class="a-panel" data-nota="r4" data-pts="10" data-nota-tipo="reto" data-act="error">
+      <p class="a-etq">Encuentra el error</p>
+      <h3>Toca la línea que está mal.</h3>
+      <div class="a-lineas" data-leng="python"><button type="button" class="a-linea"><i>1</i><span>clase = window.clase</span></button><button type="button" class="a-linea" data-mala><i>2</i><span>if clase == "Gato":</span></button><button type="button" class="a-linea"><i>3</i><span>    display("Miau")</span></button></div>
+      <p class="a-fb" role="status" aria-live="polite"></p>
+      <div class="a-explica" hidden><p class="a-etq">Así queda bien</p>
+        <pre class="a-arreglo">if clase == "gato":</pre><p>La clase se escribe igual que en Teachable Machine: «Gato» no es «gato» y nunca coincide.</p></div>
+      <div class="a-acc"><button type="button" class="a-btn a-sec" data-reintentar hidden>Reintentar</button></div>
+    </div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Tu primera decisión con IA · 19 – 23 min</p>
+    <p class="a-quien">Primero en grupo · después en tu compu</p><div class="a-taller a-marcador" data-nota="primera" data-pts="10" data-nota-tipo="juego" data-act="taller" data-cfg="{&quot;tipo&quot;: &quot;condicion&quot;, &quot;misiones&quot;: [{&quot;pista&quot;: &quot;clase es texto: va entre comillas, igual que sale en la pantalla del modelo.&quot;, &quot;pide&quot;: &quot;Que salude solo cuando el modelo diga mano abierta.&quot;, &quot;variable&quot;: &quot;clase&quot;, &quot;casos&quot;: [&quot;\&quot;mano abierta\&quot;&quot;, &quot;\&quot;puño\&quot;&quot;, &quot;\&quot;nada\&quot;&quot;], &quot;espera&quot;: [true, false, false], &quot;sale&quot;: &quot;solo con mano abierta&quot;}, {&quot;pista&quot;: &quot;«Todo menos» es «distinto de».&quot;, &quot;pide&quot;: &quot;Ahora que avise cuando el modelo diga cualquier cosa MENOS puño.&quot;, &quot;variable&quot;: &quot;clase&quot;, &quot;casos&quot;: [&quot;\&quot;puño\&quot;&quot;, &quot;\&quot;mano abierta\&quot;&quot;, &quot;\&quot;nada\&quot;&quot;], &quot;espera&quot;: [false, true, true], &quot;sale&quot;: &quot;con todo menos puño&quot;}, {&quot;pista&quot;: &quot;Aquí la variable es confianza, y es un número: sin comillas.&quot;, &quot;pide&quot;: &quot;Que actúe solo si la confianza pasa de 80.&quot;, &quot;variable&quot;: &quot;confianza&quot;, &quot;casos&quot;: [50, 80, 95], &quot;espera&quot;: [false, false, true], &quot;sale&quot;: &quot;solo con 95&quot;}, {&quot;pista&quot;: &quot;«Por debajo de» es menor que.&quot;, &quot;pide&quot;: &quot;La última: que avise cuando la confianza esté por debajo de 60.&quot;, &quot;variable&quot;: &quot;confianza&quot;, &quot;casos&quot;: [40, 60, 90], &quot;espera&quot;: [true, false, false], &quot;sale&quot;: &quot;solo con 40&quot;}], &quot;unidad&quot;: &quot;línea&quot;}">
+      <div class="a-col">
+        <details class="a-mt-din">
+          <summary>Antes, en grupo · El modelo dice, Python decide · 3 min</summary>
+          <ol><li>Un voluntario hace de modelo: solo puede decir una clase y un porcentaje.</li><li>Otro hace de Python: con eso decide qué pasa en la página.</li><li>Todos escriben en el cuaderno la línea que decide: if clase == "mano abierta":</li></ol>
+        </details>
+        <div class="a-mt-mision"><p class="a-etq" data-num></p><p class="a-mt-pide" data-pide></p>
+          <button type="button" class="a-tl-pista" data-pista hidden>💡 Pista</button>
+          <p class="a-tl-dice" data-dice hidden></p></div>
+        <div class="a-mt-escribe"><input class="campo a-mt-in" data-linea autocomplete="off" spellcheck="false" aria-label="Escribe tu línea" placeholder="if clase == "mano abierta":"><button type="button" class="a-btn" data-probar>Probar</button></div><p class="a-mt-pista" data-forma></p><div class="a-tl-ayuda"><p class="a-etq">Los comparadores</p><span class="a-tl-ay"><code>==</code><i>igual a</i></span><span class="a-tl-ay"><code>!=</code><i>distinto de</i></span><span class="a-tl-ay"><code>&gt;</code><i>mayor que</i></span><span class="a-tl-ay"><code>&lt;</code><i>menor que</i></span><span class="a-tl-ay"><code>&gt;=</code><i>mayor o igual</i></span><span class="a-tl-ay"><code>&lt;=</code><i>menor o igual</i></span></div>
+        <p class="a-tl-sale" data-sale aria-live="polite"></p>
+        <p class="a-fb" role="status" aria-live="polite"></p>
+      </div>
+      <div class="a-col">
+        <div class="a-tl-vista" data-vista hidden></div>
+        <p class="a-etq">Lo que llevas</p>
+        <pre class="a-mt-prog" data-prog></pre>
+        <div class="a-tl-barra" aria-hidden="true"><i data-barra></i></div>
+        <div class="a-acc"><button type="button" class="a-btn a-sec" data-reiniciar>Empezar de nuevo</button></div>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Mini juego · 23 – 26 min</p>
+    <p class="a-quien">Tú solo o en parejas</p><h2 class="a-titulo">¿Qué ve el modelo y qué decide Python?</h2><p class="pista a-pista">TOCA UN EJEMPLO</p><div data-nota="juego" data-pts="10" data-nota-tipo="demo" class="a-nota-caja"><div class="tarj a-demo"><div class="demo" data-demo="ia"><p class="pista">AS&#205; RESPONDE UN MODELO &#183; TOCA UNO</p><div class="ia-ejs"><button class="ia-ej" type="button" data-ej="0" aria-pressed="false" aria-label="Ejemplo: manzana">&#127822;</button><button class="ia-ej" type="button" data-ej="1" aria-pressed="false" aria-label="Ejemplo: guineo">&#127820;</button><button class="ia-ej" type="button" data-ej="2" aria-pressed="false" aria-label="Ejemplo: mano">&#9995;</button></div><div class="ia-res"><div class="ia-fila"><span>manzana</span><span class="ia-pista"><span class="ia-lleno"></span></span><span class="ia-pc">&#8211;</span></div><div class="ia-fila"><span>guineo</span><span class="ia-pista"><span class="ia-lleno"></span></span><span class="ia-pc">&#8211;</span></div><div class="ia-fila"><span>mano</span><span class="ia-pista"><span class="ia-lleno"></span></span><span class="ia-pc">&#8211;</span></div><p class="cd-out">clase &#8594; <b data-clase>?</b></p></div><div class="cd-caja"><span class="k">if</span> clase == <span class="v">"manzana"</span>:<br>&#160;&#160;&#160;&#160;<span class="k">display</span>(<span class="v">"&#161;Es una manzana!"</span>)</div><p class="ok" data-ok role="status"></p></div></div></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Otro juego · 26 – 29 min</p>
+    <p class="a-quien">Tú solo o en parejas</p><h2 class="a-titulo">Mueve la confianza y mira qué decide Python</h2><p class="pista a-pista">EL UMBRAL ES 0.8</p><div class="a-ramas" data-nota="juego2" data-pts="10" data-nota-tipo="juego" data-act="ramas" data-cfg="{&quot;min&quot;: 0, &quot;max&quot;: 1, &quot;paso&quot;: 0.05, &quot;secreto&quot;: false, &quot;ramas&quot;: [{&quot;op&quot;: &quot;&gt;=&quot;, &quot;valor&quot;: 0.8, &quot;mensaje&quot;: &quot;Marcar como prestada&quot;}, {&quot;op&quot;: &quot;&gt;=&quot;, &quot;valor&quot;: 0.5, &quot;mensaje&quot;: &quot;No estoy seguro: no hago nada&quot;}, {&quot;op&quot;: &quot;else&quot;, &quot;mensaje&quot;: &quot;No reconozco ningún objeto&quot;}], &quot;variable&quot;: &quot;confianza&quot;}">
+      <ol class="a-cod" data-leng="python"><li data-var>confianza = 0</li><li data-rama="0"><span>if confianza &gt;= 0.8:</span></li><li data-rama="0"><span>    display("Marcar como prestada")</span></li><li data-rama="1"><span>elif confianza &gt;= 0.5:</span></li><li data-rama="1"><span>    display("No estoy seguro: no hago nada")</span></li><li data-rama="2"><span>else:</span></li><li data-rama="2"><span>    display("No reconozco ningún objeto")</span></li></ol>
+      <div class="a-control">
+        <p class="a-etq">Cambia <code>confianza</code> y mira qué rama se ejecuta</p>
+        <input type="range" data-entrada min="0" max="1" step="0.05" value="0" aria-label="confianza">
+        <p class="a-res" data-res aria-live="polite"></p>
+        <p class="a-fb" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Manos a la obra · 29 – 42 min</p>
+    <p class="a-quien">Tú solo · en tu compu</p><h2 class="a-titulo">Mi IA dentro de mi sitio</h2><ol class="a-pasos a-pasos-fila"><li>Pega el enlace de tu modelo de la semana 10 en URL_MODELO.</li><li>Pulsa Ejecutar y enciende la cámara; si no arranca, abre el editor en pantalla completa.</li><li>Cambia «Clase 1» por los nombres exactos de tus clases y escribe un mensaje para cada una.</li><li>Reto: si window.confianza no llega a 0.8, responde «No estoy seguro».</li><li>Prueba con un caso que el modelo no conoce y pulsa Ejecutar: tu código se guarda con tu nota.</li></ol><div class="a-editor" data-nota="practica" data-pts="15" data-nota-tipo="practica" data-act="editor" data-cfg="{&quot;v&quot;: &quot;2026.7.3&quot;, &quot;html&quot;: &quot;&lt;h2&gt;Mi IA&lt;/h2&gt;\n&lt;button id=\&quot;encender\&quot;&gt;Encender cámara&lt;/button&gt;\n&lt;button id=\&quot;que-ves\&quot;&gt;¿Qué ves?&lt;/button&gt;\n&lt;div id=\&quot;camara\&quot;&gt;&lt;/div&gt;\n&lt;p id=\&quot;respuesta\&quot;&gt;&lt;/p&gt;\n\n&lt;script src=\&quot;https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js\&quot;&gt;&lt;/script&gt;\n&lt;script src=\&quot;https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js\&quot;&gt;&lt;/script&gt;\n&lt;script&gt;\n  // La pieza de Teachable Machine: se pega sin tocar. Solo cambia el enlace.\n  const URL_MODELO = \&quot;PEGA_AQUI_TU_ENLACE/\&quot;;\n  window.clase = \&quot;\&quot;; window.confianza = 0;\n  let modelo, camara;\n  async function encender() {\n    modelo = await tmImage.load(URL_MODELO + \&quot;model.json\&quot;, URL_MODELO + \&quot;metadata.json\&quot;);\n    camara = new tmImage.Webcam(220, 220, true);\n    await camara.setup(); await camara.play();\n    document.getElementById(\&quot;camara\&quot;).appendChild(camara.canvas);\n    requestAnimationFrame(mirar);\n  }\n  async function mirar() {\n    camara.update();\n    const p = await modelo.predict(camara.canvas);\n    let mejor = p[0];\n    for (const x of p) if (x.probability &gt; mejor.probability) mejor = x;\n    window.clase = mejor.className; window.confianza = mejor.probability;\n    requestAnimationFrame(mirar);\n  }\n  document.getElementById(\&quot;encender\&quot;).addEventListener(\&quot;click\&quot;, encender);\n&lt;/script&gt;&quot;, &quot;css&quot;: &quot;body{font-family:system-ui,sans-serif;padding:24px}\nbutton{font-size:1.2rem;padding:.5rem 1rem;border-radius:10px}\n#respuesta{font-size:1.8rem}&quot;, &quot;py&quot;: &quot;from pyscript import when, document, window\n\n@when(\&quot;click\&quot;, \&quot;#que-ves\&quot;)\ndef que_ves(evento):\n    clase = window.clase\n    salida = document.querySelector(\&quot;#respuesta\&quot;)\n    if clase == \&quot;\&quot;:\n        salida.innerText = \&quot;Primero enciende la cámara\&quot;\n    elif clase == \&quot;Clase 1\&quot;:\n        salida.innerText = \&quot;Mensaje para la clase 1\&quot;\n    else:\n        salida.innerText = \&quot;Mensaje para otra clase\&quot;\n    # Tu turno: si window.confianza no llega a 0.8, responde «No estoy seguro»\n&quot;, &quot;inicio&quot;: &quot;py&quot;}">
+      <div class="a-ed-col">
+        <div class="a-ed-tabs" role="tablist" aria-label="Qué parte del código"><button type="button" role="tab" class="a-ed-tab" data-tab="py" aria-selected="true">Python</button><button type="button" role="tab" class="a-ed-tab" data-tab="html" aria-selected="false">HTML</button><button type="button" role="tab" class="a-ed-tab" data-tab="css" aria-selected="false">CSS</button></div>
+        <textarea class="a-ed-code" data-codigo spellcheck="false" aria-label="Tu código"></textarea>
+        <div class="a-acc"><button type="button" class="a-btn" data-correr>▶ Ejecutar</button>
+          <button type="button" class="a-btn a-sec" data-completa>Pantalla completa ↗</button>
+          <button type="button" class="a-btn a-sec" data-volver>Volver al código de partida</button></div>
+        <p class="a-explica">Cada vez que pulsas Ejecutar, tu código se guarda con tu nota.</p>
+      </div>
+      <div class="a-ed-col">
+        <p class="a-etq">Lo que se ve</p>
+        <iframe class="a-ed-vista" data-marco title="Resultado de tu código" allow="camera; microphone"
+                sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">El reto de hoy · 29 – 44 min</p>
+    <div class="bloque"><p>Usar window.confianza: si no llega a 0.8, responder «No estoy seguro» en lugar de adivinar.</p></div><div class="bloque a-sube"><p class="a-etq">Sube de nivel · si terminas antes</p><p>Llevar la cuenta de cuántas veces ha visto cada clase y mostrar el marcador, o que la respuesta cambie además el titular del sitio.</p></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Chuleta de la semana · para llevar</p>
+    <div class="a-chuleta" data-act="imprimir">
+      <p class="a-ch-cab">1RO DE SECUNDARIA · Semana 11</p>
+      <h2 class="a-titulo">IA y Python juntos</h2>
+      <ul class="a-ch-lista"><li><code>window.clase</code><span>Lo que el modelo cree ver, en texto.</span></li><li><code>window.confianza</code><span>Con cuánta seguridad lo dice: 0 a 100.</span></li><li><code>clase = window.clase</code><span>Se guarda en una variable tuya.</span></li><li><code>if clase == "puño":</code><span>Y ahí decides tú, no el modelo.</span></li><li><code>if confianza &gt; 80:</code><span>Actuar solo cuando está seguro.</span></li><li><code>else:</code><span>Y qué hacer cuando duda.</span></li></ul>
+      <div class="a-acc a-ch-acc"><button type="button" class="a-btn" data-imprimir>🖨 Imprimir la chuleta</button></div>
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Sigue practicando · en casa</p>
+    <p class="a-quien">Gratis · sin instalar nada</p><h2 class="a-titulo">Sigue practicando Python en casa</h2><div class="a-recs"><a class="a-rec" href="https://teachablemachine.withgoogle.com/" target="_blank" rel="noopener"><b>Teachable Machine</b><span>Vuelve a entrenar tu modelo y copia el enlace para usarlo en tu página.</span><i>teachablemachine.withgoogle.com ↗</i></a><a class="a-rec" href="https://pyscript.com/@examples" target="_blank" rel="noopener"><b>PyScript · ejemplos</b><span>Ejemplos de Python dentro de una página, para ver cómo se conectan las piezas.</span><i>pyscript.com/@examples ↗</i></a><a class="a-rec" href="https://pythontutor.com/python-compiler.html" target="_blank" rel="noopener"><b>Python Tutor</b><span>Prueba tus if con valores a mano antes de enchufarlos al modelo.</span><i>pythontutor.com/python-compiler.html ↗</i></a></div>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Ticket de salida · 44 – 45 min</p>
+    <p class="a-quien">Tú solo</p><h2 class="a-titulo">¿Quién decidió qué responder, la IA o tu Python?</h2><div data-nota="salida" data-pts="5" data-nota-tipo="salida" data-act="salida"><textarea class="a-ticket" aria-label="Tu respuesta" placeholder="Escribe tu respuesta. No se guarda: es para ti."></textarea><div class="a-acc"><button type="button" class="a-btn a-sec" data-ver>Ver una buena respuesta</button></div><p class="a-resp" hidden>La IA solo dice qué cree ver y con cuánta confianza; qué hacer con eso lo decide mi Python.</p></div><dl class="dato"><dt>Qué entregas hoy</dt><dd>Sitio con el modelo propio funcionando y un if / elif / else en Python que responde distinto a cada clase + captura de un caso con poca confianza.</dd></dl>
+   </div>
+  </section>
+
+  <section class="slide">
+   <div class="inner">
+    <p class="eyebrow">Tu nota · al final</p>
+    <p class="a-quien">Tú solo · al terminar</p><div class="a-nota" data-act="nota">
+      <div class="a-nota-grande"><b data-total>0</b><span>/ 100</span></div>
+      <ul class="a-nota-lista" data-desglose></ul>
+      <p class="a-explica a-nota-quien" data-quien></p>
+    </div>
+   </div>
+  </section>
+</main>
+
+<aside class="a-guion" hidden aria-label="Guion del docente">
+  <div class="a-g-cab"><h2>Guion de la clase</h2>
+    <button type="button" class="a-btn a-sec" data-cerrar aria-label="Cerrar el guion">✕</button></div>
+  <p class="a-g-obj">Conectar el modelo de Teachable Machine al sitio y escribir en Python la lógica que decide qué hacer con lo que el modelo ve.</p>
+  <div class="a-g-bloque"><b>0 – 5</b> <em>Enganche</em><p>Proyecta el sitio de demostración: enciendes la cámara, haces un gesto, pulsas «¿Qué ves?» y el sitio responde con un mensaje distinto para cada clase. «Hoy su modelo de la semana 10 entra en su sitio.»</p></div><div class="a-g-bloque"><b>5 – 13</b> <em>Concepto</em><p>Dilo tal cual: «el modelo trae su pieza en JavaScript, que se pega sin tocar; nuestro código es el Python que decide qué hacer». Se pega la pieza de Teachable Machine de la plantilla con el enlace del modelo de la semana 10. Esa pieza deja dos datos: window.clase y window.confianza. Modela el botón «¿Qué ves?» con @when y un if / elif / else que lee window.clase.</p></div><div class="a-g-bloque"><b>13 – 38</b> <em>Práctica</em><p>Cada uno pega la pieza con el enlace de su modelo, comprueba que la cámara enciende (si no arranca dentro de la clase, abrir el editor en pantalla completa) y escribe la función del botón «¿Qué ves?»: un mensaje para cada clase de su modelo, escrito en la página con .innerText.</p></div><div class="a-g-bloque"><b>13 – 38</b> <em>Reto</em><p>Usar window.confianza: si no llega a 0.8, responder «No estoy seguro» en lugar de adivinar.</p></div><div class="a-g-bloque"><b>38 – 45</b> <em>Cierre</em><p>Dos estudiantes prueban el sitio de otro con un caso que el modelo no conoce. Pregunta: «¿quién decidió qué responder, la IA o tu Python?».</p></div>
+  <div class="a-g-bloque"><em>Sube de nivel</em><p>Llevar la cuenta de cuántas veces ha visto cada clase y mostrar el marcador, o que la respuesta cambie además el titular del sitio.</p></div>
+  <div class="a-g-bloque"><em>Recursos</em><p>Editor de Python de la clase con la pieza de Teachable Machine, modelo de la semana 10, cámara web, proyector.</p></div>
+  <div class="a-g-bloque"><em>Evidencia</em><p>Sitio con el modelo propio funcionando y un if / elif / else en Python que responde distinto a cada clase + captura de un caso con poca confianza.</p></div>
+</aside>
+
+<div class="chrome bl"><span class="count" id="cnt">01 / 17</span></div>
+<div class="chrome br">
+  <button class="navb" id="prev" aria-label="Diapositiva anterior">&#8592;</button>
+  <button class="navb" id="next" aria-label="Diapositiva siguiente">&#8594;</button>
+</div>
+<div class="paginacion"><div class="caps" id="caps"></div><div class="pass" id="pass"></div></div>

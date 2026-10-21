@@ -1,0 +1,13 @@
+Question - max 120 characters	Answer 1 - max 75 characters	Answer 2 - max 75 characters	Answer 3 - max 75 characters	Answer 4 - max 75 characters	Time limit (sec)	Correct answer(s)
+Un algoritmo es…	Una lista de pasos ordenados para lograr algo	Un programa de computadora muy complicado	Una fórmula matemática	Un idioma que hablan las computadoras	20	1
+Un robot hace exactamente lo que le dices, ni más ni menos. Le dices «pon el pan». ¿Qué hace?	No hace nada porque no entiende	Pone el paquete entero sobre la mesa	Saca dos rebanadas y las pone	Pregunta cuántas rebanadas	20	2
+¿Por qué importa el orden de los pasos?	Solo importa en el primer paso	No importa, la computadora los reordena sola	Importa solo si son más de diez pasos	Porque cambiar el orden cambia el resultado	20	4
+¿Una computadora adivina lo que uno quiere?	Sí, si la pregunta está bien hecha	Solo cuando está conectada a internet	Sí, las modernas sí	No: solo hace lo que se le dice	20	4
+Una caja rotulada PUNTOS donde el número va cambiando durante el juego. En programación eso es…	Una variable	Un algoritmo	Una condición	Un programa	20	1
+Hay que repetir la misma instrucción diez veces. ¿Qué conviene?	Escribirla diez veces, es más seguro	Usar una repetición y escribirla una sola vez	Dividirla en diez programas	Escribirla una vez y esperar	20	2
+En «preparar un jugo de naranja», ¿cuál es la ENTRADA?	La receta	Las naranjas	Exprimirlas	El jugo servido en el vaso	20	2
+Buscas un video: escribes el nombre y aparecen resultados. ¿Cuál es la SALIDA?	La búsqueda que hace el sistema	La lista de resultados	Lo que escribiste	El teclado	20	2
+¿Cuál de estas instrucciones NO sirve para un robot?	Camina un rato	Repite dos veces: avanza	Avanza tres pasos	Gira a la derecha	20	1
+Dos algoritmos resuelven la misma tarea. ¿Cuál es mejor?	El que tiene más pasos	El que tiene menos pasos siempre	El que escribió el más rápido	El que otra persona puede seguir sin preguntar nada	20	4
+Pasos: 1 enjuagar · 2 poner pasta · 3 cepillar · 4 mojar el cepillo. ¿Cuál está fuera de lugar?	Ninguno, el orden está bien	El 3: cepillar va primero	El 4: mojar el cepillo va antes de poner la pasta	El 1: enjuagar debería ir al final	30	3
+El robot mira al norte. Ejecuta: AVANZA · GIRA DERECHA · AVANZA. ¿Hacia dónde mira al final?	Al sur	Al norte	Al oeste	Al este	30	4

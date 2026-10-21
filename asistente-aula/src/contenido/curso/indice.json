@@ -1,0 +1,254 @@
+[
+  {
+    "nivel": "1ro",
+    "nivelNombre": "Programar con Python, paso a paso y jugando",
+    "n": 1,
+    "tema": "Presentación del curso + «Programa a un humano»",
+    "objetivo": "Conocer la dinámica de la clase y comprender qué es un algoritmo y por qué las instrucciones deben ser exactas y ordenadas."
+  },
+  {
+    "nivel": "1ro",
+    "nivelNombre": "Programar con Python, paso a paso y jugando",
+    "n": 2,
+    "tema": "Variables: guardar mi nombre y mis números",
+    "objetivo": "Guardar un texto y un número en variables, distinguir los dos tipos y hacer una suma sencilla."
+  },
+  {
+    "nivel": "1ro",
+    "nivelNombre": "Programar con Python, paso a paso y jugando",
+    "n": 3,
+    "tema": "Ciclos: repetir con for",
+    "objetivo": "Repetir líneas con for y range sin copiarlas, y acumular un total dentro del ciclo."
+  },
+  {
+    "nivel": "1ro",
+    "nivelNombre": "Programar con Python, paso a paso y jugando",
+    "n": 4,
+    "tema": "Decisiones: if / elif / else",
+    "objetivo": "Tomar decisiones comparando valores con if, elif y else, y distinguir = de ==."
+  },
+  {
+    "nivel": "1ro",
+    "nivelNombre": "Programar con Python, paso a paso y jugando",
+    "n": 5,
+    "tema": "Listas: muchos datos en una sola caja",
+    "objetivo": "Guardar varios datos en una lista, agregarles elementos, contarlos y recorrerlos con un ciclo."
+  },
+  {
+    "nivel": "1ro",
+    "nivelNombre": "Programar con Python, paso a paso y jugando",
+    "n": 6,
+    "tema": "Funciones: mis propias órdenes",
+    "objetivo": "Guardar pasos con un nombre y volver a usarlos, con parámetros para cambiar lo que hacen."
+  },
+  {
+    "nivel": "1ro",
+    "nivelNombre": "Programar con Python, paso a paso y jugando",
+    "n": 7,
+    "tema": "Botones que hacen algo: el clicker",
+    "objetivo": "Hacer que el programa responda a un clic y lea lo que el jugador escribe en una caja de texto."
+  },
+  {
+    "nivel": "1ro",
+    "nivelNombre": "Programar con Python, paso a paso y jugando",
+    "n": 8,
+    "tema": "El azar: dados y moneda",
+    "objetivo": "Usar números y elecciones al azar para que el juego no sea igual cada vez."
+  },
+  {
+    "nivel": "1ro",
+    "nivelNombre": "Programar con Python, paso a paso y jugando",
+    "n": 9,
+    "tema": "Mi página a mi gusto: HTML y CSS",
+    "objetivo": "Dar estructura a una página con etiquetas que dicen qué es cada parte, y darle estilo con CSS."
+  },
+  {
+    "nivel": "1ro",
+    "nivelNombre": "Programar con Python, paso a paso y jugando",
+    "n": 10,
+    "tema": "IA sin código: entreno mi modelo con Teachable Machine",
+    "objetivo": "Entrenar un modelo de clasificación con Teachable Machine y comprobar que una IA aprende de los ejemplos que recibe, con sus aciertos, sus errores y sus sesgos."
+  },
+  {
+    "nivel": "1ro",
+    "nivelNombre": "Programar con Python, paso a paso y jugando",
+    "n": 11,
+    "tema": "Mi IA dentro de mi sitio",
+    "objetivo": "Conectar el modelo de Teachable Machine al sitio y escribir en Python la lógica que decide qué hacer con lo que el modelo ve."
+  },
+  {
+    "nivel": "1ro",
+    "nivelNombre": "Programar con Python, paso a paso y jugando",
+    "n": 12,
+    "tema": "Proyecto: mi juego",
+    "objetivo": "Mejorar uno de los juegos del curso hasta hacerlo propio, probarlo con un compañero, corregirlo y presentarlo."
+  },
+  {
+    "nivel": "2do",
+    "nivelNombre": "Programar con Python, con retos de más",
+    "n": 1,
+    "tema": "Presentación del curso + «Programa a un humano»",
+    "objetivo": "Conocer la dinámica de la clase y comprender qué es un algoritmo y por qué las instrucciones deben ser exactas y ordenadas."
+  },
+  {
+    "nivel": "2do",
+    "nivelNombre": "Programar con Python, con retos de más",
+    "n": 2,
+    "tema": "Variables: guardar mi nombre y mis números",
+    "objetivo": "Guardar un texto y un número en variables, distinguir los dos tipos y hacer una suma sencilla."
+  },
+  {
+    "nivel": "2do",
+    "nivelNombre": "Programar con Python, con retos de más",
+    "n": 3,
+    "tema": "Ciclos: repetir con for",
+    "objetivo": "Repetir líneas con for y range sin copiarlas, y acumular un total dentro del ciclo."
+  },
+  {
+    "nivel": "2do",
+    "nivelNombre": "Programar con Python, con retos de más",
+    "n": 4,
+    "tema": "Decisiones: if / elif / else",
+    "objetivo": "Tomar decisiones comparando valores con if, elif y else, y distinguir = de ==."
+  },
+  {
+    "nivel": "2do",
+    "nivelNombre": "Programar con Python, con retos de más",
+    "n": 5,
+    "tema": "Listas: muchos datos en una sola caja",
+    "objetivo": "Guardar varios datos en una lista, agregarles elementos, contarlos y recorrerlos con un ciclo."
+  },
+  {
+    "nivel": "2do",
+    "nivelNombre": "Programar con Python, con retos de más",
+    "n": 6,
+    "tema": "Funciones: mis propias órdenes",
+    "objetivo": "Guardar pasos con un nombre y volver a usarlos, con parámetros para cambiar lo que hacen."
+  },
+  {
+    "nivel": "2do",
+    "nivelNombre": "Programar con Python, con retos de más",
+    "n": 7,
+    "tema": "Botones que hacen algo: el clicker",
+    "objetivo": "Hacer que el programa responda a un clic y lea lo que el jugador escribe en una caja de texto."
+  },
+  {
+    "nivel": "2do",
+    "nivelNombre": "Programar con Python, con retos de más",
+    "n": 8,
+    "tema": "El azar: dados y moneda",
+    "objetivo": "Usar números y elecciones al azar para que el juego no sea igual cada vez."
+  },
+  {
+    "nivel": "2do",
+    "nivelNombre": "Programar con Python, con retos de más",
+    "n": 9,
+    "tema": "Mi página a mi gusto: HTML y CSS",
+    "objetivo": "Dar estructura a una página con etiquetas que dicen qué es cada parte, y darle estilo con CSS."
+  },
+  {
+    "nivel": "2do",
+    "nivelNombre": "Programar con Python, con retos de más",
+    "n": 10,
+    "tema": "IA sin código: entreno mi modelo con Teachable Machine",
+    "objetivo": "Entrenar un modelo de clasificación con Teachable Machine y comprobar que una IA aprende de los ejemplos que recibe, con sus aciertos, sus errores y sus sesgos."
+  },
+  {
+    "nivel": "2do",
+    "nivelNombre": "Programar con Python, con retos de más",
+    "n": 11,
+    "tema": "Mi IA dentro de mi sitio",
+    "objetivo": "Conectar el modelo de Teachable Machine al sitio y escribir en Python la lógica que decide qué hacer con lo que el modelo ve."
+  },
+  {
+    "nivel": "2do",
+    "nivelNombre": "Programar con Python, con retos de más",
+    "n": 12,
+    "tema": "Proyecto: mi juego",
+    "objetivo": "Mejorar uno de los juegos del curso hasta hacerlo propio, probarlo con un compañero, corregirlo y presentarlo."
+  },
+  {
+    "nivel": "3ro",
+    "nivelNombre": "Programar con Python para resolver problemas reales",
+    "n": 1,
+    "tema": "Presentación del curso + «Programa a un humano»",
+    "objetivo": "Conocer la dinámica de la clase y comprender qué es un algoritmo y por qué las instrucciones deben ser exactas y ordenadas."
+  },
+  {
+    "nivel": "3ro",
+    "nivelNombre": "Programar con Python para resolver problemas reales",
+    "n": 2,
+    "tema": "Variables: guardar mi nombre y mis números",
+    "objetivo": "Guardar un texto y un número en variables, distinguir los dos tipos y hacer una suma sencilla."
+  },
+  {
+    "nivel": "3ro",
+    "nivelNombre": "Programar con Python para resolver problemas reales",
+    "n": 3,
+    "tema": "Ciclos: repetir con for",
+    "objetivo": "Repetir líneas con for y range sin copiarlas, y acumular un total dentro del ciclo."
+  },
+  {
+    "nivel": "3ro",
+    "nivelNombre": "Programar con Python para resolver problemas reales",
+    "n": 4,
+    "tema": "Decisiones: if / elif / else",
+    "objetivo": "Tomar decisiones comparando valores con if, elif y else, y distinguir = de ==."
+  },
+  {
+    "nivel": "3ro",
+    "nivelNombre": "Programar con Python para resolver problemas reales",
+    "n": 5,
+    "tema": "Listas: muchos datos en una sola caja",
+    "objetivo": "Guardar varios datos en una lista, agregarles elementos, contarlos y recorrerlos con un ciclo."
+  },
+  {
+    "nivel": "3ro",
+    "nivelNombre": "Programar con Python para resolver problemas reales",
+    "n": 6,
+    "tema": "Funciones: mis propias órdenes",
+    "objetivo": "Guardar pasos con un nombre y volver a usarlos, con parámetros para cambiar lo que hacen."
+  },
+  {
+    "nivel": "3ro",
+    "nivelNombre": "Programar con Python para resolver problemas reales",
+    "n": 7,
+    "tema": "Botones que hacen algo: el clicker",
+    "objetivo": "Hacer que el programa responda a un clic y lea lo que el jugador escribe en una caja de texto."
+  },
+  {
+    "nivel": "3ro",
+    "nivelNombre": "Programar con Python para resolver problemas reales",
+    "n": 8,
+    "tema": "El azar: dados y moneda",
+    "objetivo": "Usar números y elecciones al azar para que el juego no sea igual cada vez."
+  },
+  {
+    "nivel": "3ro",
+    "nivelNombre": "Programar con Python para resolver problemas reales",
+    "n": 9,
+    "tema": "Mi página a mi gusto: HTML y CSS",
+    "objetivo": "Dar estructura a una página con etiquetas que dicen qué es cada parte, y darle estilo con CSS."
+  },
+  {
+    "nivel": "3ro",
+    "nivelNombre": "Programar con Python para resolver problemas reales",
+    "n": 10,
+    "tema": "IA sin código: entreno mi modelo con Teachable Machine",
+    "objetivo": "Entrenar un modelo de clasificación con Teachable Machine y comprobar que una IA aprende de los ejemplos que recibe, con sus aciertos, sus errores y sus sesgos."
+  },
+  {
+    "nivel": "3ro",
+    "nivelNombre": "Programar con Python para resolver problemas reales",
+    "n": 11,
+    "tema": "Mi IA dentro de mi sitio",
+    "objetivo": "Conectar el modelo de Teachable Machine al sitio y escribir en Python la lógica que decide qué hacer con lo que el modelo ve."
+  },
+  {
+    "nivel": "3ro",
+    "nivelNombre": "Programar con Python para resolver problemas reales",
+    "n": 12,
+    "tema": "Proyecto: mi juego",
+    "objetivo": "Mejorar uno de los juegos del curso hasta hacerlo propio, probarlo con un compañero, corregirlo y presentarlo."
+  }
+]

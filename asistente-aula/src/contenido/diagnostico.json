@@ -1,0 +1,196 @@
+{
+  "intro": "Quince preguntas, cuatro minutos. No es un examen y no lleva nota: sirve para saber de dónde parte el grupo y no explicar lo que ya saben ni dar por sabido lo que no.",
+  "cierre": "Ya está. Con esto sé de dónde partimos y puedo armar las próximas semanas para este grupo y no para un grupo imaginario. Gracias.",
+  "secciones": [
+    "1ro A",
+    "1ro B",
+    "1ro C",
+    "2do A",
+    "2do B",
+    "2do C",
+    "3ro A",
+    "3ro B",
+    "3ro C"
+  ],
+  "preguntas": [
+    {
+      "id": "aparatos",
+      "texto": "¿Qué aparatos tienes en casa que puedas usar?",
+      "tipo": "varias",
+      "opciones": [
+        "Celular propio",
+        "Celular de alguien de la casa",
+        "Tablet",
+        "Computadora portátil",
+        "Computadora de mesa",
+        "Consola de videojuegos",
+        "Ninguno todavía"
+      ]
+    },
+    {
+      "id": "mas_usa",
+      "texto": "¿Cuál usas más?",
+      "tipo": "una",
+      "opciones": [
+        "El celular",
+        "La tablet",
+        "La computadora",
+        "La consola",
+        "Ninguno, casi no uso"
+      ]
+    },
+    {
+      "id": "para_que",
+      "texto": "¿Para qué lo usas más?",
+      "tipo": "una",
+      "opciones": [
+        "Jugar",
+        "Ver videos o redes",
+        "Hablar con gente",
+        "Tareas y cosas de la escuela",
+        "Buscar y aprender cosas"
+      ]
+    },
+    {
+      "id": "internet",
+      "texto": "En tu casa, ¿cómo te conectas a internet?",
+      "tipo": "una",
+      "opciones": [
+        "Wifi de la casa",
+        "Con los datos del celular",
+        "En casa de un familiar o vecino",
+        "Solo en la escuela",
+        "Casi nunca me conecto"
+      ]
+    },
+    {
+      "id": "sabe_hacer",
+      "texto": "¿Cuáles de estas cosas ya sabes hacer solo?",
+      "tipo": "varias",
+      "opciones": [
+        "Escribir un documento",
+        "Hacer una presentación",
+        "Usar una hoja de cálculo",
+        "Buscar algo en internet",
+        "Mandar un correo con un archivo adjunto",
+        "Guardar un archivo y volver a encontrarlo",
+        "Ninguna todavía"
+      ]
+    },
+    {
+      "id": "teclado",
+      "texto": "Escribiendo en un teclado, ¿cómo te va?",
+      "tipo": "una",
+      "opciones": [
+        "Escribo rápido sin mirar las teclas",
+        "Escribo bien, pero mirando",
+        "Busco las teclas una por una",
+        "Casi no he usado un teclado"
+      ]
+    },
+    {
+      "id": "ingles",
+      "texto": "Palabras como start, file, save, error, ¿las entiendes?",
+      "tipo": "una",
+      "opciones": [
+        "Casi todas",
+        "Algunas",
+        "Casi ninguna",
+        "Las reconozco de los juegos"
+      ]
+    },
+    {
+      "id": "ya_programo",
+      "texto": "¿Cuáles de estas has hecho alguna vez?",
+      "tipo": "varias",
+      "opciones": [
+        "Scratch — programar arrastrando bloques de colores",
+        "Roblox Studio — hacer tus propios juegos, no solo jugarlos",
+        "Minecraft con redstone o comandos",
+        "HTML — el esqueleto de una página web",
+        "CSS — los colores y el diseño de la página",
+        "JavaScript — lo que hace que la página reaccione",
+        "Python — escribir programas con texto, como los de verdad",
+        "La Hora del Código o code.org",
+        "Robótica — programar un robot o un carrito",
+        "Ninguna todavía"
+      ]
+    },
+    {
+      "id": "apps",
+      "texto": "¿Cuáles de estas aplicaciones usas?",
+      "tipo": "varias",
+      "opciones": [
+        "WhatsApp",
+        "TikTok",
+        "Instagram",
+        "YouTube",
+        "Roblox",
+        "Minecraft",
+        "Canva",
+        "Word o Documentos de Google",
+        "Zoom o Meet",
+        "Ninguna"
+      ]
+    },
+    {
+      "id": "juegos",
+      "texto": "¿Cuáles son tus videojuegos favoritos?",
+      "tipo": "texto",
+      "opciones": []
+    },
+    {
+      "id": "ia",
+      "texto": "¿Usas inteligencia artificial, tipo ChatGPT?",
+      "tipo": "una",
+      "opciones": [
+        "No sé qué es",
+        "Sé qué es, pero no la uso",
+        "La he probado alguna vez",
+        "La uso a veces",
+        "La uso casi todos los días",
+        "La uso para las tareas"
+      ]
+    },
+    {
+      "id": "cuentas",
+      "texto": "Aparte de la cuenta de la escuela, ¿tienes cuenta propia en algo?",
+      "tipo": "varias",
+      "opciones": [
+        "Un correo mío",
+        "Redes sociales",
+        "Juegos en línea",
+        "Una tienda o app de compras",
+        "No, ninguna"
+      ]
+    },
+    {
+      "id": "supervision",
+      "texto": "En tu casa, ¿alguien revisa lo que haces en el celular o la computadora?",
+      "tipo": "una",
+      "opciones": [
+        "Sí, seguido",
+        "A veces",
+        "Casi nunca",
+        "No, nunca",
+        "No tengo aparato propio"
+      ]
+    },
+    {
+      "id": "real",
+      "texto": "Un video donde una persona famosa dice algo que nunca dijo, ¿puede existir?",
+      "tipo": "una",
+      "opciones": [
+        "Sí, hoy se puede fabricar",
+        "No, si hay video es porque pasó",
+        "No lo sé"
+      ]
+    },
+    {
+      "id": "quiere_crear",
+      "texto": "Si pudieras hacer algo tuyo este año, ¿qué te gustaría crear?",
+      "tipo": "texto",
+      "opciones": []
+    }
+  ]
+}
